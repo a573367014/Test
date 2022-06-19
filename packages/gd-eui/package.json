@@ -94,10 +94,11 @@
         "vue-template-compiler": "^2.6.11",
         "vuepress": "^1.8.2",
         "vuepress-plugin-typescript": "^0.3.1",
-        "xterm": "^4.17.0",
         "webpack": "^4.16.1",
         "webpack-cli": "^3.1.0",
-        "webpack-dev-server": "^3.1.14"
+        "webpack-dev-server": "^3.1.14",
+        "xterm": "^4.17.0",
+        "tslib": "^2.4.0"
     },
     "peerDependencies": {
         "@vue/composition-api": "^1.1.0",

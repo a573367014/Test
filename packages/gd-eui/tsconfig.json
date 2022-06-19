@@ -18,7 +18,6 @@
         "noErrorTruncation": true,
         "noEmitOnError": false,
         "types": [
-            "webpack-env",
             "jest"
         ],
         "paths": {

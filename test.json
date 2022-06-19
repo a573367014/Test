@@ -1,0 +1,1106 @@
+[
+    {
+        "input": "src/components/base/slider/style/index.less",
+        "output": { "file": "lib/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/container/aside/style/index.less",
+        "output": { "file": "lib/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/container/container/style/index.less",
+        "output": { "file": "lib/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/container/footer/style/index.less",
+        "output": { "file": "lib/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/container/header/style/index.less",
+        "output": { "file": "lib/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/container/main/style/index.less",
+        "output": { "file": "lib/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/high-level/load-more/style/index.less",
+        "output": { "file": "lib/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/high-level/waterfall/style/index.less",
+        "output": { "file": "lib/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/modules/aside-button/style/index.less",
+        "output": { "file": "lib/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/modules/aside-item/style/index.less",
+        "output": { "file": "lib/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/modules/category-search/style/index.less",
+        "output": { "file": "lib/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/modules/category-tag/style/index.less",
+        "output": { "file": "lib/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/modules/color-picker/style/alpha.less",
+        "output": { "file": "lib/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/modules/color-picker/style/check-board.less",
+        "output": { "file": "lib/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/modules/color-picker/style/color-input.less",
+        "output": { "file": "lib/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/modules/color-picker/style/color-pick-panel.less",
+        "output": { "file": "lib/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/modules/color-picker/style/degree-disk.less",
+        "output": { "file": "lib/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/modules/color-picker/style/degree-input.less",
+        "output": { "file": "lib/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/modules/color-picker/style/gradient-picker-panel.less",
+        "output": { "file": "lib/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/modules/color-picker/style/gradient-picker.less",
+        "output": { "file": "lib/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/modules/color-picker/style/hue.less",
+        "output": { "file": "lib/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/modules/color-picker/style/index.less",
+        "output": { "file": "lib/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/modules/color-picker/style/sv-panel.less",
+        "output": { "file": "lib/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/modules/color-picker/style/swatches-list.less",
+        "output": { "file": "lib/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/modules/composition-search/style/index.less",
+        "output": { "file": "lib/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/modules/dropdown-font-size/style/index.less",
+        "output": { "file": "lib/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/modules/image/style/index.less",
+        "output": { "file": "lib/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/modules/layout-ratio-popover/style/index.less",
+        "output": { "file": "lib/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/modules/music-item/style/index.less",
+        "output": { "file": "lib/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/modules/popover-input/style/index.less",
+        "output": { "file": "lib/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/modules/slider-list/style/index.less",
+        "output": { "file": "lib/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/modules/style-background/style/index.less",
+        "output": { "file": "lib/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/modules/style-preview/style/index.less",
+        "output": { "file": "lib/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/modules/style-select-item-list/style/index.less",
+        "output": { "file": "lib/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/modules/tag-select/style/index.less",
+        "output": { "file": "lib/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/modules/toggle-tabs-bar/style/index.less",
+        "output": { "file": "lib/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/modules/tree-search/style/index.less",
+        "output": { "file": "lib/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/style/color/bezier-easing.less",
+        "output": { "file": "lib/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/style/color/color-palette.less",
+        "output": { "file": "lib/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/style/color/colors.less",
+        "output": { "file": "lib/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/style/color/tiny-color.less",
+        "output": { "file": "lib/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/style/themes/default.less",
+        "output": { "file": "lib/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/style/themes/index.less",
+        "output": { "file": "lib/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/base/slider/style/index.less",
+        "output": { "file": "es/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/container/aside/style/index.less",
+        "output": { "file": "es/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/container/container/style/index.less",
+        "output": { "file": "es/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/container/footer/style/index.less",
+        "output": { "file": "es/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/container/header/style/index.less",
+        "output": { "file": "es/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/container/main/style/index.less",
+        "output": { "file": "es/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/high-level/load-more/style/index.less",
+        "output": { "file": "es/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/high-level/waterfall/style/index.less",
+        "output": { "file": "es/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/modules/aside-button/style/index.less",
+        "output": { "file": "es/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/modules/aside-item/style/index.less",
+        "output": { "file": "es/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/modules/category-search/style/index.less",
+        "output": { "file": "es/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/modules/category-tag/style/index.less",
+        "output": { "file": "es/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/modules/color-picker/style/alpha.less",
+        "output": { "file": "es/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/modules/color-picker/style/check-board.less",
+        "output": { "file": "es/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/modules/color-picker/style/color-input.less",
+        "output": { "file": "es/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/modules/color-picker/style/color-pick-panel.less",
+        "output": { "file": "es/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/modules/color-picker/style/degree-disk.less",
+        "output": { "file": "es/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/modules/color-picker/style/degree-input.less",
+        "output": { "file": "es/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/modules/color-picker/style/gradient-picker-panel.less",
+        "output": { "file": "es/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/modules/color-picker/style/gradient-picker.less",
+        "output": { "file": "es/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/modules/color-picker/style/hue.less",
+        "output": { "file": "es/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/modules/color-picker/style/index.less",
+        "output": { "file": "es/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/modules/color-picker/style/sv-panel.less",
+        "output": { "file": "es/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/modules/color-picker/style/swatches-list.less",
+        "output": { "file": "es/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/modules/composition-search/style/index.less",
+        "output": { "file": "es/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/modules/dropdown-font-size/style/index.less",
+        "output": { "file": "es/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/modules/image/style/index.less",
+        "output": { "file": "es/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/modules/layout-ratio-popover/style/index.less",
+        "output": { "file": "es/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/modules/music-item/style/index.less",
+        "output": { "file": "es/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/modules/popover-input/style/index.less",
+        "output": { "file": "es/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/modules/slider-list/style/index.less",
+        "output": { "file": "es/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/modules/style-background/style/index.less",
+        "output": { "file": "es/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/modules/style-preview/style/index.less",
+        "output": { "file": "es/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/modules/style-select-item-list/style/index.less",
+        "output": { "file": "es/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/modules/tag-select/style/index.less",
+        "output": { "file": "es/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/modules/toggle-tabs-bar/style/index.less",
+        "output": { "file": "es/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/components/modules/tree-search/style/index.less",
+        "output": { "file": "es/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/style/color/bezier-easing.less",
+        "output": { "file": "es/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/style/color/color-palette.less",
+        "output": { "file": "es/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/style/color/colors.less",
+        "output": { "file": "es/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/style/color/tiny-color.less",
+        "output": { "file": "es/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/style/themes/default.less",
+        "output": { "file": "es/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "src/style/themes/index.less",
+        "output": { "file": "es/css-index.js", "format": "es" },
+        "plugins": [{ "name": "postcss" }, {}]
+    },
+    {
+        "input": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/style/index.ts",
+        "output": [
+            {
+                "file": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/es/style/index.js",
+                "format": "es"
+            },
+            {
+                "file": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/lib/style/index.js",
+                "format": "cjs"
+            }
+        ],
+        "plugins": [
+            { "name": "node-resolve" },
+            { "name": "commonjs" },
+            { "name": "babel" },
+            {}
+        ]
+    },
+    {
+        "input": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/base/slider/style/index.ts",
+        "output": [
+            {
+                "file": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/es/components/base/slider/style/index.js",
+                "format": "es"
+            },
+            {
+                "file": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/lib/components/base/slider/style/index.js",
+                "format": "cjs"
+            }
+        ],
+        "plugins": [
+            { "name": "node-resolve" },
+            { "name": "commonjs" },
+            { "name": "babel" },
+            {}
+        ]
+    },
+    {
+        "input": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/container/aside/style/index.ts",
+        "output": [
+            {
+                "file": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/es/components/container/aside/style/index.js",
+                "format": "es"
+            },
+            {
+                "file": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/lib/components/container/aside/style/index.js",
+                "format": "cjs"
+            }
+        ],
+        "plugins": [
+            { "name": "node-resolve" },
+            { "name": "commonjs" },
+            { "name": "babel" },
+            {}
+        ]
+    },
+    {
+        "input": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/container/container/style/index.ts",
+        "output": [
+            {
+                "file": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/es/components/container/container/style/index.js",
+                "format": "es"
+            },
+            {
+                "file": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/lib/components/container/container/style/index.js",
+                "format": "cjs"
+            }
+        ],
+        "plugins": [
+            { "name": "node-resolve" },
+            { "name": "commonjs" },
+            { "name": "babel" },
+            {}
+        ]
+    },
+    {
+        "input": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/container/footer/style/index.ts",
+        "output": [
+            {
+                "file": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/es/components/container/footer/style/index.js",
+                "format": "es"
+            },
+            {
+                "file": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/lib/components/container/footer/style/index.js",
+                "format": "cjs"
+            }
+        ],
+        "plugins": [
+            { "name": "node-resolve" },
+            { "name": "commonjs" },
+            { "name": "babel" },
+            {}
+        ]
+    },
+    {
+        "input": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/container/header/style/index.ts",
+        "output": [
+            {
+                "file": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/es/components/container/header/style/index.js",
+                "format": "es"
+            },
+            {
+                "file": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/lib/components/container/header/style/index.js",
+                "format": "cjs"
+            }
+        ],
+        "plugins": [
+            { "name": "node-resolve" },
+            { "name": "commonjs" },
+            { "name": "babel" },
+            {}
+        ]
+    },
+    {
+        "input": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/container/main/style/index.ts",
+        "output": [
+            {
+                "file": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/es/components/container/main/style/index.js",
+                "format": "es"
+            },
+            {
+                "file": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/lib/components/container/main/style/index.js",
+                "format": "cjs"
+            }
+        ],
+        "plugins": [
+            { "name": "node-resolve" },
+            { "name": "commonjs" },
+            { "name": "babel" },
+            {}
+        ]
+    },
+    {
+        "input": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/high-level/load-more/style/index.ts",
+        "output": [
+            {
+                "file": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/es/components/high-level/load-more/style/index.js",
+                "format": "es"
+            },
+            {
+                "file": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/lib/components/high-level/load-more/style/index.js",
+                "format": "cjs"
+            }
+        ],
+        "plugins": [
+            { "name": "node-resolve" },
+            { "name": "commonjs" },
+            { "name": "babel" },
+            {}
+        ]
+    },
+    {
+        "input": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/high-level/waterfall/style/index.ts",
+        "output": [
+            {
+                "file": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/es/components/high-level/waterfall/style/index.js",
+                "format": "es"
+            },
+            {
+                "file": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/lib/components/high-level/waterfall/style/index.js",
+                "format": "cjs"
+            }
+        ],
+        "plugins": [
+            { "name": "node-resolve" },
+            { "name": "commonjs" },
+            { "name": "babel" },
+            {}
+        ]
+    },
+    {
+        "input": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/aside-button/style/index.ts",
+        "output": [
+            {
+                "file": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/es/components/modules/aside-button/style/index.js",
+                "format": "es"
+            },
+            {
+                "file": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/lib/components/modules/aside-button/style/index.js",
+                "format": "cjs"
+            }
+        ],
+        "plugins": [
+            { "name": "node-resolve" },
+            { "name": "commonjs" },
+            { "name": "babel" },
+            {}
+        ]
+    },
+    {
+        "input": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/aside-item/style/index.ts",
+        "output": [
+            {
+                "file": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/es/components/modules/aside-item/style/index.js",
+                "format": "es"
+            },
+            {
+                "file": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/lib/components/modules/aside-item/style/index.js",
+                "format": "cjs"
+            }
+        ],
+        "plugins": [
+            { "name": "node-resolve" },
+            { "name": "commonjs" },
+            { "name": "babel" },
+            {}
+        ]
+    },
+    {
+        "input": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/category-search/style/index.ts",
+        "output": [
+            {
+                "file": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/es/components/modules/category-search/style/index.js",
+                "format": "es"
+            },
+            {
+                "file": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/lib/components/modules/category-search/style/index.js",
+                "format": "cjs"
+            }
+        ],
+        "plugins": [
+            { "name": "node-resolve" },
+            { "name": "commonjs" },
+            { "name": "babel" },
+            {}
+        ]
+    },
+    {
+        "input": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/category-tag/style/index.ts",
+        "output": [
+            {
+                "file": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/es/components/modules/category-tag/style/index.js",
+                "format": "es"
+            },
+            {
+                "file": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/lib/components/modules/category-tag/style/index.js",
+                "format": "cjs"
+            }
+        ],
+        "plugins": [
+            { "name": "node-resolve" },
+            { "name": "commonjs" },
+            { "name": "babel" },
+            {}
+        ]
+    },
+    {
+        "input": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/color-picker/style/index.ts",
+        "output": [
+            {
+                "file": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/es/components/modules/color-picker/style/index.js",
+                "format": "es"
+            },
+            {
+                "file": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/lib/components/modules/color-picker/style/index.js",
+                "format": "cjs"
+            }
+        ],
+        "plugins": [
+            { "name": "node-resolve" },
+            { "name": "commonjs" },
+            { "name": "babel" },
+            {}
+        ]
+    },
+    {
+        "input": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/composition-search/style/index.ts",
+        "output": [
+            {
+                "file": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/es/components/modules/composition-search/style/index.js",
+                "format": "es"
+            },
+            {
+                "file": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/lib/components/modules/composition-search/style/index.js",
+                "format": "cjs"
+            }
+        ],
+        "plugins": [
+            { "name": "node-resolve" },
+            { "name": "commonjs" },
+            { "name": "babel" },
+            {}
+        ]
+    },
+    {
+        "input": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/dropdown-font-size/style/index.ts",
+        "output": [
+            {
+                "file": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/es/components/modules/dropdown-font-size/style/index.js",
+                "format": "es"
+            },
+            {
+                "file": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/lib/components/modules/dropdown-font-size/style/index.js",
+                "format": "cjs"
+            }
+        ],
+        "plugins": [
+            { "name": "node-resolve" },
+            { "name": "commonjs" },
+            { "name": "babel" },
+            {}
+        ]
+    },
+    {
+        "input": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/image/style/index.ts",
+        "output": [
+            {
+                "file": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/es/components/modules/image/style/index.js",
+                "format": "es"
+            },
+            {
+                "file": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/lib/components/modules/image/style/index.js",
+                "format": "cjs"
+            }
+        ],
+        "plugins": [
+            { "name": "node-resolve" },
+            { "name": "commonjs" },
+            { "name": "babel" },
+            {}
+        ]
+    },
+    {
+        "input": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/layout-ratio-popover/style/index.ts",
+        "output": [
+            {
+                "file": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/es/components/modules/layout-ratio-popover/style/index.js",
+                "format": "es"
+            },
+            {
+                "file": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/lib/components/modules/layout-ratio-popover/style/index.js",
+                "format": "cjs"
+            }
+        ],
+        "plugins": [
+            { "name": "node-resolve" },
+            { "name": "commonjs" },
+            { "name": "babel" },
+            {}
+        ]
+    },
+    {
+        "input": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/music-item/style/index.ts",
+        "output": [
+            {
+                "file": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/es/components/modules/music-item/style/index.js",
+                "format": "es"
+            },
+            {
+                "file": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/lib/components/modules/music-item/style/index.js",
+                "format": "cjs"
+            }
+        ],
+        "plugins": [
+            { "name": "node-resolve" },
+            { "name": "commonjs" },
+            { "name": "babel" },
+            {}
+        ]
+    },
+    {
+        "input": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/popover-input/style/index.ts",
+        "output": [
+            {
+                "file": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/es/components/modules/popover-input/style/index.js",
+                "format": "es"
+            },
+            {
+                "file": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/lib/components/modules/popover-input/style/index.js",
+                "format": "cjs"
+            }
+        ],
+        "plugins": [
+            { "name": "node-resolve" },
+            { "name": "commonjs" },
+            { "name": "babel" },
+            {}
+        ]
+    },
+    {
+        "input": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/slider-list/style/index.ts",
+        "output": [
+            {
+                "file": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/es/components/modules/slider-list/style/index.js",
+                "format": "es"
+            },
+            {
+                "file": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/lib/components/modules/slider-list/style/index.js",
+                "format": "cjs"
+            }
+        ],
+        "plugins": [
+            { "name": "node-resolve" },
+            { "name": "commonjs" },
+            { "name": "babel" },
+            {}
+        ]
+    },
+    {
+        "input": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/style-background/style/index.ts",
+        "output": [
+            {
+                "file": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/es/components/modules/style-background/style/index.js",
+                "format": "es"
+            },
+            {
+                "file": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/lib/components/modules/style-background/style/index.js",
+                "format": "cjs"
+            }
+        ],
+        "plugins": [
+            { "name": "node-resolve" },
+            { "name": "commonjs" },
+            { "name": "babel" },
+            {}
+        ]
+    },
+    {
+        "input": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/style-preview/style/index.ts",
+        "output": [
+            {
+                "file": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/es/components/modules/style-preview/style/index.js",
+                "format": "es"
+            },
+            {
+                "file": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/lib/components/modules/style-preview/style/index.js",
+                "format": "cjs"
+            }
+        ],
+        "plugins": [
+            { "name": "node-resolve" },
+            { "name": "commonjs" },
+            { "name": "babel" },
+            {}
+        ]
+    },
+    {
+        "input": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/style-select-item-list/style/index.ts",
+        "output": [
+            {
+                "file": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/es/components/modules/style-select-item-list/style/index.js",
+                "format": "es"
+            },
+            {
+                "file": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/lib/components/modules/style-select-item-list/style/index.js",
+                "format": "cjs"
+            }
+        ],
+        "plugins": [
+            { "name": "node-resolve" },
+            { "name": "commonjs" },
+            { "name": "babel" },
+            {}
+        ]
+    },
+    {
+        "input": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/tag-select/style/index.ts",
+        "output": [
+            {
+                "file": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/es/components/modules/tag-select/style/index.js",
+                "format": "es"
+            },
+            {
+                "file": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/lib/components/modules/tag-select/style/index.js",
+                "format": "cjs"
+            }
+        ],
+        "plugins": [
+            { "name": "node-resolve" },
+            { "name": "commonjs" },
+            { "name": "babel" },
+            {}
+        ]
+    },
+    {
+        "input": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/toggle-tabs-bar/style/index.ts",
+        "output": [
+            {
+                "file": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/es/components/modules/toggle-tabs-bar/style/index.js",
+                "format": "es"
+            },
+            {
+                "file": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/lib/components/modules/toggle-tabs-bar/style/index.js",
+                "format": "cjs"
+            }
+        ],
+        "plugins": [
+            { "name": "node-resolve" },
+            { "name": "commonjs" },
+            { "name": "babel" },
+            {}
+        ]
+    },
+    {
+        "input": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/tree-search/style/index.ts",
+        "output": [
+            {
+                "file": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/es/components/modules/tree-search/style/index.js",
+                "format": "es"
+            },
+            {
+                "file": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/lib/components/modules/tree-search/style/index.js",
+                "format": "cjs"
+            }
+        ],
+        "plugins": [
+            { "name": "node-resolve" },
+            { "name": "commonjs" },
+            { "name": "babel" },
+            {}
+        ]
+    },
+    {
+        "input": {
+            "components/base/index": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/base/index.ts",
+            "components/base/slider/button": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/base/slider/button.vue",
+            "components/base/slider/hooks/use-computed-position": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/base/slider/hooks/use-computed-position.ts",
+            "components/base/slider/hooks/use-input": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/base/slider/hooks/use-input.ts",
+            "components/base/slider/hooks/use-mark": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/base/slider/hooks/use-mark.ts",
+            "components/base/slider/hooks/use-select": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/base/slider/hooks/use-select.ts",
+            "components/base/slider/hooks/use-slider-button": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/base/slider/hooks/use-slider-button.ts",
+            "components/base/slider/hooks/use-slider": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/base/slider/hooks/use-slider.ts",
+            "components/base/slider/index": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/base/slider/index.ts",
+            "components/base/slider/slider": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/base/slider/slider.vue",
+            "components/container/aside/aside": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/container/aside/aside.vue",
+            "components/container/aside/index": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/container/aside/index.ts",
+            "components/container/container/container": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/container/container/container.vue",
+            "components/container/container/index": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/container/container/index.ts",
+            "components/container/footer/footer": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/container/footer/footer.vue",
+            "components/container/footer/index": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/container/footer/index.ts",
+            "components/container/header/header": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/container/header/header.vue",
+            "components/container/header/index": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/container/header/index.ts",
+            "components/container/index": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/container/index.ts",
+            "components/container/main/index": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/container/main/index.ts",
+            "components/container/main/main": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/container/main/main.vue",
+            "components/high-level/index": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/high-level/index.ts",
+            "components/high-level/load-more/index": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/high-level/load-more/index.ts",
+            "components/high-level/load-more/load-more": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/high-level/load-more/load-more.vue",
+            "components/high-level/waterfall/hooks/use-calculator": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/high-level/waterfall/hooks/use-calculator.ts",
+            "components/high-level/waterfall/hooks/use-metas": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/high-level/waterfall/hooks/use-metas.ts",
+            "components/high-level/waterfall/hooks/use-render": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/high-level/waterfall/hooks/use-render.ts",
+            "components/high-level/waterfall/index": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/high-level/waterfall/index.ts",
+            "components/high-level/waterfall/utils": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/high-level/waterfall/utils.ts",
+            "components/high-level/waterfall/waterfall-item": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/high-level/waterfall/waterfall-item.vue",
+            "components/high-level/waterfall/waterfall": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/high-level/waterfall/waterfall.vue",
+            "components/index": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/index.ts",
+            "components/modules/aside-button/aside-button": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/aside-button/aside-button.vue",
+            "components/modules/aside-button/index": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/aside-button/index.ts",
+            "components/modules/aside-item/aside-item": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/aside-item/aside-item.vue",
+            "components/modules/aside-item/index": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/aside-item/index.ts",
+            "components/modules/category-search/category-search": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/category-search/category-search.vue",
+            "components/modules/category-search/index": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/category-search/index.ts",
+            "components/modules/category-tag/category-tag": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/category-tag/category-tag.vue",
+            "components/modules/category-tag/index": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/category-tag/index.ts",
+            "components/modules/color-picker/alpha": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/color-picker/alpha.vue",
+            "components/modules/color-picker/check-board": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/color-picker/check-board.vue",
+            "components/modules/color-picker/color-input": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/color-picker/color-input.vue",
+            "components/modules/color-picker/color-picker-panel": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/color-picker/color-picker-panel.vue",
+            "components/modules/color-picker/degree-disk": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/color-picker/degree-disk.vue",
+            "components/modules/color-picker/degree-input": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/color-picker/degree-input.vue",
+            "components/modules/color-picker/gradient-picker-panel": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/color-picker/gradient-picker-panel.vue",
+            "components/modules/color-picker/gradient-picker": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/color-picker/gradient-picker.vue",
+            "components/modules/color-picker/hue": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/color-picker/hue.vue",
+            "components/modules/color-picker/index": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/color-picker/index.ts",
+            "components/modules/color-picker/main-color-picker": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/color-picker/main-color-picker.vue",
+            "components/modules/color-picker/sv-panel": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/color-picker/sv-panel.vue",
+            "components/modules/color-picker/swatches-list": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/color-picker/swatches-list.vue",
+            "components/modules/composition-search/composition-search": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/composition-search/composition-search.vue",
+            "components/modules/composition-search/index": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/composition-search/index.ts",
+            "components/modules/dropdown-font-size/dropdown-font-size": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/dropdown-font-size/dropdown-font-size.vue",
+            "components/modules/dropdown-font-size/hook/use-show-font-size": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/dropdown-font-size/hook/use-show-font-size.ts",
+            "components/modules/dropdown-font-size/index": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/dropdown-font-size/index.ts",
+            "components/modules/image/image": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/image/image.vue",
+            "components/modules/image/index": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/image/index.ts",
+            "components/modules/index": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/index.ts",
+            "components/modules/layout-ratio-popover/index": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/layout-ratio-popover/index.ts",
+            "components/modules/layout-ratio-popover/layout-ratio-popover": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/layout-ratio-popover/layout-ratio-popover.vue",
+            "components/modules/music-item/index": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/music-item/index.ts",
+            "components/modules/music-item/keyline-mini": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/music-item/keyline-mini.vue",
+            "components/modules/music-item/music-item": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/music-item/music-item.vue",
+            "components/modules/popover-input/index": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/popover-input/index.ts",
+            "components/modules/popover-input/popover-input": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/popover-input/popover-input.vue",
+            "components/modules/slider-list/index": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/slider-list/index.ts",
+            "components/modules/slider-list/slider-list": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/slider-list/slider-list.vue",
+            "components/modules/style-background/hooks/use-preview": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/style-background/hooks/use-preview.ts",
+            "components/modules/style-background/index": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/style-background/index.ts",
+            "components/modules/style-background/style-background": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/style-background/style-background.vue",
+            "components/modules/style-preview/index": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/style-preview/index.ts",
+            "components/modules/style-preview/style-preview": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/style-preview/style-preview.vue",
+            "components/modules/style-select-item-list/hooks/index": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/style-select-item-list/hooks/index.ts",
+            "components/modules/style-select-item-list/index": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/style-select-item-list/index.ts",
+            "components/modules/style-select-item-list/style-select-item-list": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/style-select-item-list/style-select-item-list.vue",
+            "components/modules/tag-select/index": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/tag-select/index.ts",
+            "components/modules/tag-select/tag-select": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/tag-select/tag-select.vue",
+            "components/modules/toggle-tabs-bar/index": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/toggle-tabs-bar/index.ts",
+            "components/modules/toggle-tabs-bar/toggle-tabs-bar": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/toggle-tabs-bar/toggle-tabs-bar.vue",
+            "components/modules/tree-search/index": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/tree-search/index.ts",
+            "components/modules/tree-search/tree-search": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/components/modules/tree-search/tree-search.vue",
+            "directives/click-outside": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/directives/click-outside.ts",
+            "directives/index": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/directives/index.ts",
+            "directives/resize": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/directives/resize.ts",
+            "hooks/index": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/hooks/index.ts",
+            "hooks/use-input-to-number": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/hooks/use-input-to-number.ts",
+            "index": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/index.ts",
+            "init-composition": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/init-composition.ts",
+            "init-setting": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/init-setting.ts",
+            "plugins/gd-icons": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/plugins/gd-icons.ts",
+            "plugins/index": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/plugins/index.ts",
+            "types/category-tag": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/types/category-tag.ts",
+            "types/color-picker": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/types/color-picker.ts",
+            "types/common": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/types/common.ts",
+            "types/dropdown-font-size": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/types/dropdown-font-size.ts",
+            "types/gradient-picker": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/types/gradient-picker.ts",
+            "types/image": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/types/image.ts",
+            "types/index": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/types/index.ts",
+            "types/layout-ratio-popover": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/types/layout-ratio-popover.ts",
+            "types/music-item": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/types/music-item.ts",
+            "types/slider-list": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/types/slider-list.ts",
+            "types/slider": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/types/slider.ts",
+            "types/style-background": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/types/style-background.ts",
+            "types/style-select-item-list": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/types/style-select-item-list.ts",
+            "types/swatches-list": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/types/swatches-list.ts",
+            "types/tag-select": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/types/tag-select.ts",
+            "types/toggle-tabs-bar": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/types/toggle-tabs-bar.ts",
+            "types/waterfall": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/types/waterfall.ts",
+            "utils/constants": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/utils/constants.ts",
+            "utils/event": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/utils/event.ts",
+            "utils/get-color-string-by-icolor": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/utils/get-color-string-by-icolor.ts",
+            "utils/get-gradient-string": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/utils/get-gradient-string.ts",
+            "utils/get-icolor-by-string": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/utils/get-icolor-by-string.ts",
+            "utils/get-transformation-color": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/utils/get-transformation-color.ts",
+            "utils/get-transformation-gradient": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/utils/get-transformation-gradient.ts",
+            "utils/index": "/Users/facai/Desktop/github/new-editor/packages/gd-eui/src/utils/index.ts"
+        },
+        "external": [
+            {},
+            "lodash",
+            "tinycolor2",
+            "lodash/throttle",
+            "lodash/debounce",
+            "vue",
+            "vue-demi",
+            "mitt",
+            "resize-observer-polyfill",
+            "@vue/composition-api",
+            {}
+        ],
+        "output": [
+            {
+                "name": "gd-eui",
+                "format": "cjs",
+                "dir": "lib",
+                "chunkFileNames": "[name].js",
+                "globals": { "vue": "Vue" }
+            },
+            {
+                "name": "gd-eui",
+                "format": "esm",
+                "dir": "es",
+                "chunkFileNames": "[name].js",
+                "globals": { "vue": "Vue" }
+            }
+        ],
+        "plugins": [
+            { "name": "VuePlugin" },
+            { "name": "postcss" },
+            {},
+            { "name": "rpt2" },
+            { "name": "node-resolve" },
+            { "name": "commonjs" },
+            { "name": "babel" }
+        ]
+    }
+]

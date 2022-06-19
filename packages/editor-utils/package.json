@@ -1,0 +1,64 @@
+{
+    "version": "1.2.5",
+    "name": "@gaoding/editor-utils",
+    "description": "Gaoding Editor Utils Lib",
+    "author": "xiaomi <admin@laoshu133.com>",
+    "license": "UNLICENSED",
+    "repository": {
+        "type": "git",
+        "url": "git@git.huanleguang.com:danchaofan/gd-editor.git"
+    },
+    "miniprogram": ".",
+    "scripts": {
+        "build": "babel ./ -d lib --delete-dir-on-start --extensions '.js,.ts' --copy-files && rm -rf lib/package.json lib/node_modules",
+        "publish-hlg": "npm publish --registry https://npm.huanleguang.com",
+        "publish-gd": "npm publish --registry https://registry-npm.gaoding.com",
+        "prepublishOnly": "npm run build",
+        "test": "vitest"
+    },
+    "maintainers": [
+        {
+            "name": "juanbai",
+            "email": "juanbai@gaoding.com"
+        },
+        {
+            "name": "facai",
+            "email": "facai@gaoding.com"
+        },
+        {
+            "name": "huoshan",
+            "email": "huoshan@gaoding.com"
+        },
+        {
+            "name": "cuibo",
+            "email": "cuibo@gaoding.com"
+        }
+    ],
+    "devDependencies": {
+        "@babel/cli": "^7.12.8",
+        "@babel/core": "^7.12.10",
+        "@babel/plugin-proposal-class-properties": "^7.12.1",
+        "@babel/plugin-transform-runtime": "^7.12.10",
+        "@babel/preset-env": "^7.12.10",
+        "@babel/preset-typescript": "^7.5.5",
+        "babel-plugin-lodash": "3.3.4",
+        "babel-plugin-transform-inline-environment-variables": "^6.8.0",
+        "happy-dom": "^2.50.0",
+        "vitest": "^0.7.11"
+    },
+    "dependencies": {
+        "@gaoding/shadow": "0.0.41",
+        "abs-svg-path": "^0.1.1",
+        "bluebird": "^3.5.5",
+        "fontfaceobserver": "^2.1.0",
+        "lodash": "^4.17.15",
+        "lru_map": "^0.3.3",
+        "normalize-svg-path": "^1.1.0",
+        "omggif": "^1.0.9",
+        "parse-svg-path": "^0.1.2",
+        "pica": "9.0.1",
+        "sat": "0.8.0",
+        "tinycolor2": "^1.4.1",
+        "uuid": "^8.3.2"
+    }
+}

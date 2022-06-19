@@ -1,0 +1,13 @@
+<div class="editor-cut-grid">
+    <div
+        class="editor-cut-grid-x"
+        v-for="(item, index) in xLinesStyle"
+        :key="index"
+        :style="item"></div>
+
+    <div
+        class="editor-cut-grid-y"
+        v-for="(item, index) in yLinesStyle"
+        :key="'y' + index"
+        :style="item"></div>
+</div>

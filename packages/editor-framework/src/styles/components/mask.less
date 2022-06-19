@@ -1,0 +1,50 @@
+.editor-mask-editor {
+    position: absolute;
+    z-index: 1;
+
+    .editor-mask-editor-main,
+    .editor-mask-editor-canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+    }
+}
+.editor-mask-editor-main {
+    &::before,
+    &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        border: 1px solid #fff;
+        pointer-events: none;
+        content: '';
+    }
+
+    &::after {
+        border: 1px dashed #666;
+    }
+
+    img,
+    video,
+    canvas {
+        display: block;
+        width: 100%;
+        height: 100%;
+        opacity: 0.3;
+    }
+}
+
+.editor-mask-editor-grid {
+    position: absolute;
+    z-index: 2;
+    margin: -1px 0 0 -1px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    pointer-events: none;
+}

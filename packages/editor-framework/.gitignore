@@ -1,0 +1,14 @@
+selenium-debug.log
+*-screenshot-tmp.png
+*-fail-diff.png
+.env
+.vite
+.nyc_output
+/coverage/
+dist/
+/.repeater/
+/docs/
+/lib/
+.history/
+/matcher
+videos

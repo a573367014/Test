@@ -1,0 +1,44 @@
+<span>
+    <div class="element-blink" @animationend="hideBlink" v-if="isShowBlink"></div>
+
+    <i :style="{ visibility: !global.$draging ? 'unset' : 'hidden' }" class="border-before"></i>
+
+    <watermark
+        v-if="element.watermarkEnable"
+        :global="global"
+        :options="options"
+        :model="element"
+    />
+
+    <background
+        v-if="backgroundVisible"
+        :element="element"
+        :mode="options.mode"
+        :global="global"
+        :options="options"
+        :layout="layout"
+    />
+
+    <ninePatch-element
+        v-if="
+            element.backgroundEffect &&
+            element.backgroundEffect.enable &&
+            element.backgroundEffect.type === 'ninePatch' &&
+            editor.supportTypesMap.ninePatch
+        "
+        class="is-background"
+        :editor="editor"
+        :model="bgNinePatch"
+        :global="global"
+        :options="options"
+    />
+
+    <border
+        v-if="element.border && element.border.enable"
+        :global="global"
+        :options="options"
+        :mode="options.mode"
+        :element="element"
+        :layout="layout"
+    />
+</span>

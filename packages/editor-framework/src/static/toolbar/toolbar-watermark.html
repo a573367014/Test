@@ -1,0 +1,67 @@
+<div class="editor-toolbar" :class="['editor-toolbar-' + model.type]">
+    <div class="editor-toolbar-inner">
+        <span class="editor-toolbar-text">{{$tsl('缩放')}}</span>
+        <!-- <percentage-scaler :$events="$events"/> -->
+        <span class="editor-percentage-scaler">
+            <span class="scaler-wrapper">
+                <span class="scaler-mask" @click.stop="seek" ref="bar">
+                    <span class="scaler-mask-inner">
+                        <span class="scaler-bar" :style="{width: scaleOffset + 'px'}"></span>
+                    </span>
+                </span>
+                <i
+                    class="scaler-line"
+                    v-show="initialScaleOffset"
+                    :style="{left: initialScaleOffset + 'px'}"
+                ></i>
+                <div
+                    v-if="scale && elementLoaded"
+                    class="scaler-btn"
+                    :class="{active: isDragging}"
+                    :style="{left: scaleOffset - 8 + 'px'}"
+                    @mousedown.stop="beginScale"
+                    @touchstart.stop="beginScale"
+                >
+                    <span
+                        class="editor-tooltips scaler-tooltip-wrapper"
+                        :aria-label="scalePercentage"
+                    ></span>
+                </div>
+            </span>
+        </span>
+
+        <i class="editor-toolbar-pipe is-full"></i>
+
+        <button
+            :data-cursor="cursorStyle"
+            :disabled="!canReset"
+            class="editor-tooltips editor-toolbar-btn"
+            data-action="cancel"
+            @click.stop="editReset()"
+        >
+            {{$tsl('重置')}}
+        </button>
+        <i class="editor-toolbar-pipe"></i>
+
+        <button
+            data-cursor="pointer"
+            class="editor-tooltips editor-toolbar-btn"
+            data-action="cancel"
+            @mousedown.stop
+            @click.stop="editCancel()"
+        >
+            <i class="icon-close"></i>
+        </button>
+        <i class="editor-toolbar-pipe"></i>
+
+        <button
+            data-cursor="pointer"
+            class="editor-tooltips editor-toolbar-btn"
+            data-action="apply"
+            @mousedown.stop
+            @click.stop="editApply()"
+        >
+            <i class="icon-success"></i>
+        </button>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="editor-mask-editor" @mousedown="activeOuterEdit" data-cursor="move" :style="boxStyle">
+    <div :style="imageStyle" class="editor-mask-editor-main">
+        <canvas v-if="isAnimationImage || model.isGif || isVideo" ref="bgCanvas" />
+
+        <img crossorigin v-else :src="editModel.url" />
+    </div>
+
+    <canvas class="editor-mask-editor-canvas" ref="canvas" />
+
+    <div class="editor-croper-grid editor-mask-editor-grid" :class="{active: showGrid}">
+        <i class="editor-croper-grid-x1"></i>
+        <i class="editor-croper-grid-x2"></i>
+        <i class="editor-croper-grid-y1"></i>
+        <i class="editor-croper-grid-y2"></i>
+        <slot name="watermark"></slot>
+    </div>
+</div>

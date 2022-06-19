@@ -1,0 +1,57 @@
+<!-- 隐藏用opacity，不要用hidden, 否则富文本编辑将无法生成选区 -->
+<div
+    data-cursor="text"
+    class="editor-element editor-text-editor"
+    :class="[
+        'editor-element-' + model.type,
+        model.type === 'threeText' ? 'editor-element-text' : '',
+        model.$loaded ? '' : 'editor-element-loading',
+        model.$selected ? 'editor-element-selected' : '',
+        model.$editing ? 'editor-element-editing' : ''
+    ]"
+    :style="{
+        opacity: model.$editing ? model.opacity : 0,
+        width: model.width + 'px',
+        height: model.height + 'px',
+        transform: 'scale(' + global.zoom + ')'
+    }"
+    @mousedown="onMousedown"
+>
+    <label
+        class="element-inner"
+        :style="{
+            writingMode: model.writingMode,
+            textAlign: model.textAlign,
+            lineHeight: model.lineHeight,
+            textShadow: textShadow,
+            cursor: 'inherit'
+        }"
+        :for="'vue_poster_editor_text_editor_'+model.$id"
+    >
+        <div
+            class="elment-inner-content"
+            :class="[isVertical ? 'middle-v' : 'middle-h', listClass]"
+            :style="{
+                padding: textPadding
+            }"
+        >
+            <div
+                :id="'vue_poster_editor_text_editor_'+model.$id"
+                class="element-main"
+                :style="textStyle"
+                ref="edit"
+                v-html="html"
+                :contenteditable="model.$editing"
+            />
+        </div>
+    </label>
+
+    <ElementCommon
+        :element="model"
+        :options="options"
+        :global="newGlobal"
+        :editor="editor"
+        :layout="editor.currentLayout"
+        :bgNinePatch="bgNinePatch"
+    />
+</div>

@@ -1,0 +1,103 @@
+// editor-opacity-picker
+.editor-opacity-picker {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+
+    > label {
+        display: inline-block;
+        padding: 0 5px 0 16px;
+        line-height: 28px;
+        vertical-align: top;
+        background-repeat: no-repeat;
+        background-position: 2px 7px;
+        cursor: pointer;
+        .icon(opacity);
+
+        &::after {
+            .icon(arrow-down);
+
+            width: 8px;
+            height: 8px;
+            margin: 10px 0 0 5px;
+            vertical-align: top;
+            content: '';
+        }
+    }
+
+    > label > input {
+        width: 3.2em;
+        height: 28px;
+        padding: 0 3px;
+        margin-left: 5px;
+        vertical-align: top;
+        background: #fff;
+        border: 1px solid rgba(0, 0, 0, 0);
+        border-radius: 2px;
+        outline: 0;
+
+        &[readonly] {
+            cursor: inherit;
+        }
+    }
+    &.active > label > input {
+        border-color: #d9dade;
+    }
+
+    .editor-popup {
+        width: 172px;
+        margin: 18px 0 0 1.5em;
+    }
+
+    &.inline {
+        display: block;
+
+        > label {
+            display: block;
+            padding: 0;
+            cursor: default;
+
+            input {
+                float: right;
+
+                &:focus {
+                    border-color: #aaa;
+                }
+            }
+
+            &::after {
+                display: none;
+            }
+        }
+
+        .editor-popup {
+            position: static;
+            width: auto;
+            padding: 5px 0 0;
+            margin: 0;
+            background: none;
+            border: 0;
+            box-shadow: none;
+
+            &::before {
+                display: none;
+            }
+        }
+    }
+}
+
+.toolbar-north {
+    .editor-opacity-picker {
+        .editor-popup {
+            top: inherit;
+            bottom: 100%;
+            margin-bottom: 18px;
+
+            &::before {
+                bottom: 0;
+                margin-top: 5px;
+                box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+            }
+        }
+    }
+}

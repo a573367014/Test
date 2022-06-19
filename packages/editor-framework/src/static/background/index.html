@@ -1,0 +1,32 @@
+<div
+    class="editor-background"
+    :class="{
+        'editor-background--hasimage': !!effectImage,
+        'editor-background--selected': selected,
+        'editor-background--loaded': layout.$backgroundLoaded
+    }"
+    :style="{
+        width: model.width * global.zoom + 'px',
+        height: model.height * global.zoom + 'px',
+        backgroundColor
+    }"
+>
+    <div v-if="effectGradient" class="editor-background__main" :style="backgroundGradientStyle" />
+
+    <div class="editor-background__main" v-if="effectImage">
+        <BackgroundImage
+            @loaded="onLoadedChange"
+            :element="element"
+            :layout="layout"
+            :editor="editor"
+            :options="options"
+            :global="global" />
+    </div>
+
+    <template v-if="options.mode !== 'preview'">
+        <i class="editor-background__border"></i>
+    </template>
+
+    <slot></slot>
+    <slot name="watermark"></slot>
+</div>

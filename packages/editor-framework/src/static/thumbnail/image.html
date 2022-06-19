@@ -1,0 +1,18 @@
+<div>
+    <div class="layer-thumbnail">
+        <span
+            class="thumbnail-image"
+            :style="{
+                width: width + 'px',
+                height: height + 'px',
+                backgroundColor: element.backgroundColor,
+                backgroundImage: imageUrl ? 'url('+ imageUrl +')' : null,
+                backgroundSize: outerSize.width + 'px ' + outerSize.height + 'px',
+                backgroundPosition: -clip.left / ratio +'px '+ -clip.top / ratio + 'px',
+            }"
+        >
+        </span>
+    </div>
+
+    <span class="layer-info" v-text="title"></span>
+</div>

@@ -1,0 +1,57 @@
+.editor-watermark-editor {
+    position: absolute;
+    z-index: 1;
+
+    &-outer {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        image-rendering: -webkit-optimize-contrast;
+    }
+
+    &-inner {
+        position: absolute;
+        z-index: 2;
+        image-rendering: -webkit-optimize-contrast;
+    }
+
+    &-rotator {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 4;
+        margin: 14px 0 0 -11px;
+        // cursor: pointer;
+        transform: translate(-50%, -50%);
+
+        b {
+            .icon(rotator);
+
+            position: relative;
+            z-index: 2;
+            display: block;
+            width: 22px;
+            height: 22px;
+            background-size: 100% 100%;
+
+            span {
+                position: absolute;
+                top: 40px;
+                left: 50%;
+                height: 28px;
+                padding: 0 8px;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: normal;
+                line-height: 28px;
+                color: white;
+                background: #0e1217;
+                border-radius: 4px;
+                transform: translateX(-50%);
+            }
+        }
+    }
+}

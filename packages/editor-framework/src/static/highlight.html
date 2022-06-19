@@ -1,0 +1,15 @@
+<div class="editor-highlight">
+    <div
+        v-for="element in highlights"
+        class="editor-highlight-element"
+        :class="[element.className]"
+        :key="element.$id"
+        :style="{
+            left: element.left + 'px',
+            top: element.top + 'px',
+            width: element.width + 'px',
+            height: element.height + 'px',
+            transform: element.transform
+        }"
+    ></div>
+</div>

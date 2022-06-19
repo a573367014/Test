@@ -1,0 +1,26 @@
+<div
+    class="editor-element"
+    :class="[
+        'editor-element-ninePatch',
+        model.lock ? 'editor-element-lock' : '',
+        model.hidden ? 'editor-element-hidden' : '',
+        model.frozen ? 'editor-element-frozen' : '',
+        model.$loaded ? '' : 'editor-element-loading',
+        model.$selected ? 'editor-element-selected' : '',
+        model.$editing ? 'editor-element-editing' : ''
+    ]"
+    :style="baseStyle"
+>
+    <div class="element-main" :style="mainStyle" v-if="!canvasRender" />
+    <canvas class="element-main" ref="canvas" v-show="canvasRender"></canvas>
+    <ElementCommon
+        :element="model"
+        :options="options"
+        :global="global"
+        :editor="editor"
+        :layout="editor.currentLayout"
+        :hideBlink="hideBlink"
+        :isShowBlink="isShowBlink"
+        :bgNinePatch="bgNinePatch"
+    />
+</div>

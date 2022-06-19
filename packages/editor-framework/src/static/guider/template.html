@@ -1,0 +1,33 @@
+<div class="editor-guider">
+    <div class="editor-guider-x" :class="xIsLayouts[0] ? 'editor-guider-canvas' : null" :style="xStyles[0]"></div>
+    <div class="editor-guider-x" :class="xIsLayouts[1] ? 'editor-guider-canvas' : null" :style="xStyles[1]"></div>
+    <div class="editor-guider-x" :class="xIsLayouts[2] ? 'editor-guider-canvas' : null" :style="xStyles[2]"></div>
+    <div class="editor-guider-y" :class="yIsLayouts[0] ? 'editor-guider-canvas' : null" :style="yStyles[0]"></div>
+    <div class="editor-guider-y" :class="yIsLayouts[1] ? 'editor-guider-canvas' : null" :style="yStyles[1]"></div>
+    <div class="editor-guider-y" :class="yIsLayouts[2] ? 'editor-guider-canvas' : null" :style="yStyles[2]"></div>
+    <!-- 等边 -->
+    <div class="editor-equally-guider-y"
+        :style="{
+            width: item.width * zoom + 'px',
+            top: (item.top + layout.top) * zoom + 'px',
+            left: item.left * zoom + 'px',
+            height: item.height * zoom + 'px',
+        }"
+        v-for="item in margin.yStyles">
+        <i>
+            <span class="editor-equally-guider-text" v-if="item.value && options.marginGuiderOptions.showValue">{{item.value}}</span>
+        </i>
+    </div>
+    <div class="editor-equally-guider-x"
+        :style="{
+            width: item.width * zoom + 'px',
+            top: (item.top + layout.top) * zoom + 'px',
+            left: item.left * zoom + 'px',
+            height: item.height * zoom + 'px',
+        }"
+        v-for="item in margin.xStyles">
+        <i>
+            <span class="editor-equally-guider-text" v-if="item.value && options.marginGuiderOptions.showValue">{{item.value}}</span>
+        </i>
+    </div>
+</div>

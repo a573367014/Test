@@ -1,0 +1,44 @@
+.editor-croper-grid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border: 1px solid #fff;
+
+    i {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+        border: 0 solid rgba(255, 255, 255, 0.7);
+    }
+    &.active i {
+        display: block;
+    }
+
+    i[class^='editor-croper-grid-x'] {
+        width: 0;
+        height: 100%;
+        border-left-width: 1px;
+    }
+    i[class^='editor-croper-grid-y'] {
+        width: 100%;
+        height: 0;
+        border-top-width: 1px;
+    }
+    .editor-croper-grid-x1 {
+        left: 33.3332%;
+    }
+    .editor-croper-grid-x2 {
+        left: 66.6664%;
+    }
+    .editor-croper-grid-y1 {
+        top: 33.332%;
+    }
+    .editor-croper-grid-y2 {
+        top: 66.664%;
+    }
+}

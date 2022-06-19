@@ -1,0 +1,64 @@
+<div
+    :class="bem('', [simple ? 'simple' : '', size, isMouseenter ? 'hover' : ''])"
+    ref="control"
+    @mouseenter="handleToggleMouseenter(true)"
+    @mouseleave="handleToggleMouseenter(false)"
+>
+    <div :class="bem('inner', seeking ? 'active' : '')">
+        <div data-cursor="pointer" :class="bem('play-btn')" @click.stop="handlePlay">
+            <span :class="bem(`play-btn--${paused ? 'media-play' : 'media-pause'}`)" />
+        </div>
+
+        <div v-if="controls" :class="bem('bottom')">
+            <span
+                v-if="!simple"
+                data-cursor="pointer"
+                :class="bem('status-btn', [paused ? 'media-play' : 'media-pause'])"
+                @click.stop="handlePlay"
+            />
+
+            <div v-if="!simple" :class="bem('time')">{{ formatTime(currentTime) }}</div>
+
+            <RangeSlider
+                v-if="rangeSliderVisible"
+                data-cursor="pointer"
+                :class="bem('progress')"
+                :min="0"
+                :max="ceilDuration"
+                :interval="0.1"
+                :duration="0"
+                :value="ceilCurrentTime"
+                :tooltipFormatter="v => formatTime(v, simple)"
+                :railStyle="railStyle"
+                :dotSize="simple ? 13 : 20"
+                @drag-start="handleTimeDragStart"
+                @dragging="handleTimeDragging"
+                @drag-end="handleTimeDragEnd"
+                @change="handleTimeChange"
+                @click.native.stop
+                @mousedown.native="e => e.stopPropagation()"
+            />
+
+            <div :class="[bem('time'), bem('duration')]">{{ formatTime(duration, simple) }}</div>
+
+            <div v-if="!simple" data-cursor="pointer" :class="bem('volume', [volumeDraging ? 'active' : ''])">
+                <div :class="bem('volume__inner')">
+                    <RangeSlider
+                        :class="bem('volume-value')"
+                        direction="btt"
+                        :value="Math.floor(volume * 100)"
+                        @change="handleVolumeChange"
+                        :min="0"
+                        :max="100"
+                        @drag-start="handleVolumeDragStart"
+                        @drag-end="handleVolumeDragEnd"
+                    />
+                    <span
+                        :class="bem('volume-btn', [volume === 0 || muted ? 'media-mute' : 'media-volume'])"
+                        @click="handleVolumeClick"
+                    />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

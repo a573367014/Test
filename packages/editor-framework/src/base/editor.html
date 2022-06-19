@@ -1,0 +1,223 @@
+
+<div
+    ref="container"
+    class="editor-container"
+    data-cursor="default"
+    tabindex="-1"
+    :class="[
+        'editor-container-' + mode,
+        global && global.$loaded ? 'editor-loaded' : null,
+        global && global.$rendered ? 'editor-rendered' : null,
+        options.scopePointerEventsEnable ? null : 'editor-scope-pointer-events-disable',
+    ]"
+    :style="{
+        paddingTop: containerRect.topOffset + 'px'
+    }"
+>
+    <!-- Shell -->
+    <div
+        class="editor-shell-wrap"
+        :style="{
+        padding: containerRect.paddingCss,
+        height: zoom * height + 'px',
+        width: zoom * width + 'px'
+    }"
+    >
+        <div
+            v-if="global && currentLayout"
+            class="editor-shell"
+            :class="options.canvasOverflowHidden ? '' : 'editor-overflow-mask'"
+            :style="{
+                height: zoom * height + 'px',
+                width: zoom * width + 'px'
+            }"
+        >
+            <editor-canvas
+                ref="canvas"
+                v-if="mode=='design' || mode=='preview'"
+                :global="global"
+                :options="options"
+                :layouts="layouts"
+                :current-layout="currentLayout"
+            />
+
+            <editor-mirror
+                v-if="mode=='mirror'"
+                :global="global"
+                :options="options"
+                :layouts="layouts"
+                :current-layout="currentLayout"
+            />
+
+            <editor-flow
+                v-if="mode=='flow'"
+                :global="global"
+                :options="options"
+                :layouts="layouts"
+                :current-layout="currentLayout"
+            >
+            </editor-flow>
+
+            <hover
+                v-if="!options.touchEnable && !global.$referenceLineDraging"
+                ref="hover"
+                :global="global"
+                :options="options"
+                :current-element="currentElement"
+            />
+
+            <transform
+                ref="transform"
+                v-if="!global.$referenceLineDraging && editable && currentElement && !currentElement.frozen"
+                :global="global"
+                :options="options"
+                :current-layout="currentLayout"
+                :model.sync="currentElement"
+                :sub-model.sync="currentSubElement"
+            />
+
+            <toolbar
+                ref="toolbar"
+                v-if="currentElement && (currentLayout.$backgroundEditing || currentEditWatermark || currentCropElement || currentEditMask)"
+                :global="global"
+                :options="options"
+                :current-layout="currentLayout"
+                :model.sync="currentElement"
+                :sub-model.sync="currentSubElement"
+            />
+
+            <guider
+                ref="guider"
+                v-if="editable && options.showGuider"
+                :currentElement="currentElement"
+                :currentSubElement="currentSubElement"
+                :options="options"
+                :layout="currentLayout"
+                :global="global"
+            />
+
+            <resize-guider
+                ref="resize-guider"
+                v-if="editable && options.showResizeGuider && !options.touchEnable"
+                :model="currentElement"
+                :layout="currentLayout"
+                :options="options"
+                :global="global"
+            />
+
+            <mask-editor
+                ref="croper"
+                v-if="editable && currentCropElement"
+                :model.sync="currentCropElement"
+                :current-element="currentElement"
+                :current-layout="currentLayout"
+                :global="global"
+                :options="options"
+            >
+                <watermark
+                    slot="watermark"
+                    v-if="currentCropElement.watermarkEnable"
+                    :global="global"
+                    :options="options"
+                    :model="currentElement"
+                />
+            </mask-editor>
+
+            <mask-editor
+                ref="croper"
+                v-if="editable && currentEditMask"
+                :model.sync="currentEditMask"
+                :current-element="currentElement"
+                :current-layout="currentLayout"
+                :global="global"
+                :options="options"
+            >
+                <watermark
+                    slot="watermark"
+                    v-if="currentEditMask.watermarkEnable"
+                    :global="global"
+                    :options="options"
+                    :model="currentElement"
+                />
+            </mask-editor>
+
+            <background-editor
+                ref="backgroundEditor"
+                v-if="editable && currentLayout && currentLayout.$backgroundEditing && currentLayout.$backgroundImageInfo"
+                :layout="currentLayout"
+                :global="global"
+                :options="options"
+            >
+                <watermark
+                    v-if="currentLayout.background.watermarkEnable"
+                    :global="global"
+                    :options="options"
+                    :layout="currentLayout"
+                />
+            </background-editor>
+
+            <watermark-editor
+                ref="watermarkEditor"
+                v-if="editable && currentEditWatermark"
+                :model.sync="currentEditWatermark"
+                :current-element="currentElement"
+                :global="global"
+                :options="options"
+            />
+
+            <path-editor
+                v-if="currentElement && currentElement.type === 'path'"
+                :model.sync="currentElement"
+                :editor="this"
+            ></path-editor>
+
+            <tips
+                ref="tips"
+                :global="global"
+                :options="options"
+                :current-element="currentElement"
+                v-if="!options.touchEnable"
+            />
+
+            <bleeding-line
+                v-if="options.bleedingLine.show"
+                :layout="currentLayout"
+                :global="global"
+                :options="options"
+            />
+
+            <temp-group
+                ref="tempGroup"
+                :current-element="currentElement"
+                :currentSubElement="currentSubElement"
+                :layout="currentLayout"
+                :global="global"
+                :options="options"
+            />
+
+            <cut-grid
+                v-if="options.showCutGrid && global.cutGuide && global.cutGuide.grid && global.cutGuide.grid.enable"
+                :layout="currentLayout"
+                :global="global"
+                :options="options" />
+
+            <slot name="shell-slot"></slot>
+        </div>
+    </div>
+
+    <selector
+        ref="selector"
+        v-if="!global.$referenceLineDraging && editable && currentLayout && !(currentLayout.$backgroundEditing && currentLayout.$backgroundImageInfo)"
+        :current-element="currentElement"
+        :layout="currentLayout"
+    />
+
+    <contextmenu ref="contextmenu" v-if="options.contextmenu && editable && currentLayout" />
+
+    <highlight :current-layout="currentLayout" />
+
+    <div class="editor-slot">
+        <slot></slot>
+    </div>
+</div>
+

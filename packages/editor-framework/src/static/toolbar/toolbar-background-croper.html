@@ -1,0 +1,42 @@
+<div class="editor-toolbar" :class="['editor-toolbar-' + model.type]" @click.stop>
+    <div class="editor-toolbar-inner">
+        <span class="editor-toolbar-text">{{$tsl('缩放')}}</span>
+        <percentage-scaler
+            :$events="$events"
+            :min-scale="1"
+            :min-image-size="model.$isRepeat ? 20 : 1"
+            :from-zero="!model.$isRepeat"
+        />
+        <i class="editor-toolbar-pipe is-full"></i>
+
+        <button
+            :data-cursor="cursorStyle"
+            :disabled="!canReset"
+            class="editor-tooltips editor-toolbar-btn"
+            data-action="cancel"
+            @click.stop="editReset()"
+        >
+            {{$tsl('重置')}}
+        </button>
+        <i class="editor-toolbar-pipe"></i>
+
+        <button
+            data-cursor="pointer"
+            class="editor-tooltips editor-toolbar-btn"
+            data-action="cancel"
+            @click.stop="editCancel()"
+        >
+            <i class="icon-close"></i>
+        </button>
+        <i class="editor-toolbar-pipe"></i>
+
+        <button
+            data-cursor="pointer"
+            class="editor-tooltips editor-toolbar-btn"
+            data-action="apply"
+            @click.stop="editApply()"
+        >
+            <i class="icon-success"></i>
+        </button>
+    </div>
+</div>

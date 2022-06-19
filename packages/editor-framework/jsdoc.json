@@ -1,0 +1,25 @@
+{
+    "tags": {
+        "allowUnknownTags": false
+    },
+    "source": {
+        "include": ["./resources/jsdoc", "./src/base", "../editor-elements"],
+        "includePattern": "/tpl.js|editor.js|/methods.js|/layout.js|/misc.js|/element.js|/snapshot.js|/templet.js|/export.js|/editor-defaults|/background-efffect.js|/border.js/"
+    },
+    "plugins": ["plugins/markdown"],
+    "opts": {
+        "template": "../../node_modules/docdash",
+        "encoding": "utf8",
+        "destination": "../../docs/public/docs/editor-framework-api/",
+        "recurse": true,
+        "verbose": true
+    },
+    "templates": {
+        "cleverLinks": true,
+        "monospaceLinks": true
+    },
+    "docdash": {
+        "static": true,
+        "sort": false
+    }
+}

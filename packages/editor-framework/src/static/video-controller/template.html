@@ -1,0 +1,17 @@
+<div class="editor-video-controller" :style="transformStyle">
+    <video-controls
+        v-if="model"
+        v-show="!editor.currentElement.$draging"
+        :size="sizeMode"
+        :currentTime="currentTime"
+        :duration="duration"
+        :volume="model.volume"
+        :muted="model.muted"
+        :paused="!model.$playing"
+        :simple="true"
+        @seek="handleSeek"
+        @play-click="handlePlayClick"
+        @volume-change="handleVolumeChange"
+        @mute="handleMute"
+    />
+</div>

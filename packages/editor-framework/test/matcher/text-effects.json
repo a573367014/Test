@@ -1,0 +1,4045 @@
+{
+    "layouts": [
+        {
+            "width": 300,
+            "height": 200,
+            "backgroundColor": "white",
+            "backgroundImage": "",
+            "elements": [
+                {
+                    "transform": {
+                        "a": 1,
+                        "b": 0,
+                        "c": 0,
+                        "d": 1,
+                        "tx": 0,
+                        "ty": 0
+                    },
+                    "type": "text",
+                    "category": "",
+                    "opacity": 1,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "width": 184,
+                    "height": 96,
+                    "left": 65.5,
+                    "top": 57,
+                    "boxShadow": null,
+                    "resize": 5,
+                    "dragable": true,
+                    "rotatable": true,
+                    "editable": true,
+                    "frozen": false,
+                    "hidden": false,
+                    "lock": false,
+                    "borderRadius": 0,
+                    "filter": {
+                        "hueRotate": 0,
+                        "saturate": 0,
+                        "brightness": 0,
+                        "gaussianBlur": 0
+                    },
+                    "color": "#000000ff",
+                    "backgroundColor": "#ffffff00",
+                    "fontFamily": "SourceHanSansSC-Heavy",
+                    "fontStyle": "normal",
+                    "fontWeight": 400,
+                    "fontSize": "80",
+                    "lineHeight": 1.2,
+                    "letterSpacing": 0,
+                    "textDecoration": "none",
+                    "writingMode": "horizontal-tb",
+                    "textAlign": "center",
+                    "verticalAlign": "top",
+                    "content": "样式",
+                    "effectScale": 1,
+                    "textShadow": null,
+                    "autoScale": true,
+                    "textEffects": [
+                        {
+                            "enable": true,
+                            "collapse": false,
+                            "offset": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "skew": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "stroke": {
+                                "enable": false,
+                                "color": "#000000ff",
+                                "width": 2.8235294117647056
+                            },
+                            "shadow": {
+                                "enable": true,
+                                "color": "#00000038",
+                                "offsetX": 11.768330040717132,
+                                "offsetY": 12.186462499854795,
+                                "blur": 16.700000000000003
+                            },
+                            "filling": {
+                                "enable": false,
+                                "type": 0,
+                                "repeat": 1,
+                                "color": "#000000ff",
+                                "imageContent": {
+                                    "repeat": 0,
+                                    "image": null,
+                                    "width": null,
+                                    "height": null,
+                                    "scaleX": 1,
+                                    "scaleY": 1
+                                },
+                                "gradient": {
+                                    "byLine": 0,
+                                    "angle": 0,
+                                    "stops": [
+                                        {
+                                            "color": "#ffffffff",
+                                            "offset": 0
+                                        },
+                                        {
+                                            "color": "#000000ff",
+                                            "offset": 1
+                                        }
+                                    ]
+                                }
+                            },
+                            "excludeScale": []
+                        }
+                    ],
+                    "aggregatedColors": [
+                        "#000000ff",
+                        "#00000038"
+                    ],
+                    "mainColor": null,
+                    "clip": null,
+                    "style": {},
+                    "version": "5.4.14.beta.8",
+                    "rule": "rule_30b6e5c96600e6d18d521750f7766d7c"
+                }
+            ]
+        },
+        {
+            "width": 300,
+            "height": 200,
+            "backgroundColor": "white",
+            "backgroundImage": "",
+            "elements": [
+                {
+                    "transform": {
+                        "a": 1,
+                        "b": 0,
+                        "c": 0,
+                        "d": 1,
+                        "tx": 0,
+                        "ty": 0
+                    },
+                    "type": "text",
+                    "category": "",
+                    "opacity": 1,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "width": 191,
+                    "height": 96,
+                    "left": 61.99999999999999,
+                    "top": 56.99999999999999,
+                    "boxShadow": null,
+                    "resize": 5,
+                    "dragable": true,
+                    "rotatable": true,
+                    "editable": true,
+                    "frozen": false,
+                    "hidden": false,
+                    "lock": false,
+                    "borderRadius": 0,
+                    "filter": {
+                        "hueRotate": 0,
+                        "saturate": 0,
+                        "brightness": 0,
+                        "gaussianBlur": 0
+                    },
+                    "color": "#271cffff",
+                    "backgroundColor": "#000000",
+                    "fontFamily": "SourceHanSansSC-Heavy",
+                    "fontStyle": "normal",
+                    "fontWeight": 400,
+                    "fontSize": "80",
+                    "lineHeight": 1.2,
+                    "letterSpacing": 0,
+                    "textDecoration": "none",
+                    "writingMode": "horizontal-tb",
+                    "textAlign": "center",
+                    "verticalAlign": "top",
+                    "content": "抖音",
+                    "textShadow": null,
+                    "autoScale": true,
+                    "textEffects": [
+                        {
+                            "enable": true,
+                            "collapse": true,
+                            "offset": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "skew": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "stroke": {
+                                "enable": false,
+                                "color": "#000000ff",
+                                "width": 3
+                            },
+                            "shadow": {
+                                "enable": false,
+                                "color": "#000000ff",
+                                "offsetX": 0,
+                                "offsetY": 0,
+                                "blur": 0
+                            },
+                            "filling": {
+                                "enable": true,
+                                "type": 2,
+                                "repeat": 1,
+                                "color": "#ffffffff",
+                                "imageContent": {
+                                    "repeat": 0,
+                                    "image": null,
+                                    "width": null,
+                                    "height": null
+                                },
+                                "gradient": {
+                                    "byLine": 0,
+                                    "angle": 90,
+                                    "stops": [
+                                        {
+                                            "color": "#ffffffff",
+                                            "offset": 0
+                                        },
+                                        {
+                                            "color": "#ffffffff",
+                                            "offset": 0.361764705882353
+                                        },
+                                        {
+                                            "color": "#ffffff00",
+                                            "offset": 0.3676470588235294
+                                        },
+                                        {
+                                            "color": "#ffffff00",
+                                            "offset": 0.538235294117647
+                                        },
+                                        {
+                                            "color": "#ffffffff",
+                                            "offset": 0.5500000000000003
+                                        },
+                                        {
+                                            "color": "#ffffffff",
+                                            "offset": 1
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "enable": true,
+                            "collapse": false,
+                            "offset": {
+                                "enable": false,
+                                "x": -4.5,
+                                "y": 0
+                            },
+                            "skew": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "stroke": {
+                                "enable": false,
+                                "color": "#000000ff",
+                                "width": 3
+                            },
+                            "shadow": {
+                                "enable": false,
+                                "color": "#000000ff",
+                                "offsetX": 0,
+                                "offsetY": 0,
+                                "blur": 0
+                            },
+                            "filling": {
+                                "enable": true,
+                                "type": 2,
+                                "repeat": 1,
+                                "color": "#ffffffff",
+                                "imageContent": {
+                                    "repeat": 0,
+                                    "image": null,
+                                    "width": null,
+                                    "height": null
+                                },
+                                "gradient": {
+                                    "byLine": 0,
+                                    "angle": 90,
+                                    "stops": [
+                                        {
+                                            "color": "#ffffff00",
+                                            "offset": 0
+                                        },
+                                        {
+                                            "color": "#ffffff00",
+                                            "offset": 0.35294117647058826
+                                        },
+                                        {
+                                            "color": "#ffffffff",
+                                            "offset": 0.35588235294117654
+                                        },
+                                        {
+                                            "color": "#ffffffff",
+                                            "offset": 0.5470588235294119
+                                        },
+                                        {
+                                            "color": "#ffffff00",
+                                            "offset": 0.5529411764705884
+                                        },
+                                        {
+                                            "color": "#ffffff00",
+                                            "offset": 1
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "enable": true,
+                            "collapse": true,
+                            "offset": {
+                                "enable": false,
+                                "x": -3.889087296526012,
+                                "y": 3.889087296526011
+                            },
+                            "skew": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "stroke": {
+                                "enable": false,
+                                "color": "#000000ff",
+                                "width": 3
+                            },
+                            "shadow": {
+                                "enable": false,
+                                "color": "#000000ff",
+                                "offsetX": 0,
+                                "offsetY": 0,
+                                "blur": 0
+                            },
+                            "filling": {
+                                "enable": true,
+                                "type": 2,
+                                "repeat": 1,
+                                "color": "#271cffff",
+                                "imageContent": {
+                                    "repeat": 0,
+                                    "image": null,
+                                    "width": null,
+                                    "height": null
+                                },
+                                "gradient": {
+                                    "byLine": 0,
+                                    "angle": 90,
+                                    "stops": [
+                                        {
+                                            "color": "#177cffd1",
+                                            "offset": 0
+                                        },
+                                        {
+                                            "color": "#271cffff",
+                                            "offset": 0.3617647058823529
+                                        },
+                                        {
+                                            "color": "#2414ff00",
+                                            "offset": 0.3735294117647059
+                                        },
+                                        {
+                                            "color": "#2519ff00",
+                                            "offset": 1
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "enable": true,
+                            "collapse": true,
+                            "offset": {
+                                "enable": false,
+                                "x": 2.5475257879851654,
+                                "y": -3.0838470065083583
+                            },
+                            "skew": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "stroke": {
+                                "enable": false,
+                                "color": "#000000ff",
+                                "width": 3
+                            },
+                            "shadow": {
+                                "enable": false,
+                                "color": "#000000ff",
+                                "offsetX": 0,
+                                "offsetY": 0,
+                                "blur": 0
+                            },
+                            "filling": {
+                                "enable": true,
+                                "type": 2,
+                                "repeat": 1,
+                                "color": "#271cffff",
+                                "imageContent": {
+                                    "repeat": 0,
+                                    "image": null,
+                                    "width": null,
+                                    "height": null
+                                },
+                                "gradient": {
+                                    "byLine": 0,
+                                    "angle": 90,
+                                    "stops": [
+                                        {
+                                            "color": "#00000000",
+                                            "offset": 0
+                                        },
+                                        {
+                                            "color": "#ff005100",
+                                            "offset": 0.4205882352941177
+                                        },
+                                        {
+                                            "color": "#ff0051c2",
+                                            "offset": 0.42941176470588244
+                                        },
+                                        {
+                                            "color": "#ff0051b8",
+                                            "offset": 1
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "enable": true,
+                            "collapse": false,
+                            "offset": {
+                                "enable": false,
+                                "x": -8.5,
+                                "y": 0
+                            },
+                            "skew": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "stroke": {
+                                "enable": false,
+                                "color": "#000000ff",
+                                "width": 3
+                            },
+                            "shadow": {
+                                "enable": false,
+                                "color": "#000000ff",
+                                "offsetX": 0,
+                                "offsetY": 0,
+                                "blur": 0
+                            },
+                            "filling": {
+                                "enable": true,
+                                "type": 2,
+                                "repeat": 1,
+                                "color": "#271cffff",
+                                "imageContent": {
+                                    "repeat": 0,
+                                    "image": null,
+                                    "width": null,
+                                    "height": null
+                                },
+                                "gradient": {
+                                    "byLine": 0,
+                                    "angle": 90,
+                                    "stops": [
+                                        {
+                                            "color": "#000000ff",
+                                            "offset": 0.26176470588235295
+                                        },
+                                        {
+                                            "color": "#00d5ff00",
+                                            "offset": 0.2647058823529412
+                                        },
+                                        {
+                                            "color": "#00d5ffff",
+                                            "offset": 0.27647058823529413
+                                        },
+                                        {
+                                            "color": "#00d5ffff",
+                                            "offset": 0.573529411764706
+                                        },
+                                        {
+                                            "color": "#00d5ff00",
+                                            "offset": 0.5852941176470587
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    "style": {},
+                    "clip": null,
+                    "version": "5.3.22"
+                }
+            ]
+        },
+        {
+            "width": 300,
+            "height": 200,
+            "backgroundColor": "white",
+            "backgroundImage": "",
+            "elements": [
+                {
+                    "transform": {
+                        "a": 1,
+                        "b": 0,
+                        "c": 0,
+                        "d": 1,
+                        "tx": 0,
+                        "ty": 0
+                    },
+                    "type": "text",
+                    "category": "",
+                    "opacity": 1,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "width": 184,
+                    "height": 102,
+                    "left": 65.5,
+                    "top": 52,
+                    "boxShadow": null,
+                    "resize": 5,
+                    "dragable": true,
+                    "rotatable": true,
+                    "editable": true,
+                    "frozen": false,
+                    "hidden": false,
+                    "lock": false,
+                    "borderRadius": 0,
+                    "filter": {
+                        "hueRotate": 0,
+                        "saturate": 0,
+                        "brightness": 0,
+                        "gaussianBlur": 0
+                    },
+                    "color": "#000000ff",
+                    "backgroundColor": "#ffffff00",
+                    "fontFamily": "SourceHanSansSC-Bold",
+                    "fontStyle": "normal",
+                    "fontWeight": 400,
+                    "fontSize": "85",
+                    "lineHeight": 1.2,
+                    "letterSpacing": 0,
+                    "textDecoration": "none",
+                    "writingMode": "horizontal-tb",
+                    "textAlign": "center",
+                    "verticalAlign": "top",
+                    "content": "描边",
+                    "textShadow": null,
+                    "autoScale": true,
+                    "textEffects": [
+                        {
+                            "enable": true,
+                            "collapse": true,
+                            "offset": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "skew": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "stroke": {
+                                "enable": false,
+                                "color": "#000000ff",
+                                "width": 3
+                            },
+                            "shadow": {
+                                "enable": false,
+                                "color": "#000000ff",
+                                "offsetX": 0,
+                                "offsetY": 0,
+                                "blur": 0
+                            },
+                            "filling": {
+                                "enable": true,
+                                "type": 0,
+                                "repeat": 1,
+                                "color": "#ffffffff",
+                                "imageContent": {
+                                    "repeat": 0,
+                                    "image": null,
+                                    "width": null,
+                                    "height": null
+                                },
+                                "gradient": {
+                                    "byLine": 0,
+                                    "angle": 0,
+                                    "stops": [
+                                        {
+                                            "color": "#ffffffff",
+                                            "offset": 0
+                                        },
+                                        {
+                                            "color": "#000000ff",
+                                            "offset": 1
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "enable": true,
+                            "collapse": false,
+                            "offset": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "skew": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "stroke": {
+                                "enable": true,
+                                "color": "#000000ff",
+                                "width": 14.5
+                            },
+                            "shadow": {
+                                "enable": false,
+                                "color": "#000000ff",
+                                "offsetX": 0,
+                                "offsetY": 0,
+                                "blur": 0
+                            },
+                            "filling": {
+                                "enable": false,
+                                "type": 0,
+                                "repeat": 1,
+                                "color": "#000000ff",
+                                "imageContent": {
+                                    "repeat": 0,
+                                    "image": null,
+                                    "width": null,
+                                    "height": null
+                                },
+                                "gradient": {
+                                    "byLine": 0,
+                                    "angle": 0,
+                                    "stops": [
+                                        {
+                                            "color": "#ffffffff",
+                                            "offset": 0
+                                        },
+                                        {
+                                            "color": "#000000ff",
+                                            "offset": 1
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    "style": {},
+                    "clip": null,
+                    "version": "5.3.22",
+                    "rule": "rule_43759b04d318119d5f162eabcec7c5db"
+                }
+            ]
+        },
+        {
+            "width": 300,
+            "height": 200,
+            "backgroundColor": "white",
+            "backgroundImage": "",
+            "elements": [
+                {
+                    "type": "text",
+                    "category": "",
+                    "opacity": 1,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "width": 207,
+                    "height": 109,
+                    "left": 55,
+                    "top": 52,
+                    "transform": {
+                        "a": 1,
+                        "b": 0,
+                        "c": 0,
+                        "d": 1,
+                        "tx": 0,
+                        "ty": 0
+                    },
+                    "boxShadow": null,
+                    "resize": 5,
+                    "dragable": true,
+                    "rotatable": true,
+                    "editable": true,
+                    "frozen": false,
+                    "hidden": false,
+                    "lock": false,
+                    "borderRadius": 0,
+                    "filter": {
+                        "hueRotate": 0,
+                        "saturate": 0,
+                        "brightness": 0,
+                        "gaussianBlur": 0
+                    },
+                    "color": "#000000ff",
+                    "backgroundColor": "#ffffff00",
+                    "fontFamily": "SourceHanSansSC-Bold",
+                    "fontStyle": "normal",
+                    "fontWeight": 400,
+                    "fontSize": 85,
+                    "lineHeight": 1.2,
+                    "letterSpacing": 0,
+                    "textDecoration": "none",
+                    "writingMode": "horizontal-tb",
+                    "textAlign": "center",
+                    "verticalAlign": "top",
+                    "contents": null,
+                    "effectScale": 1,
+                    "textShadow": null,
+                    "autoScale": true,
+                    "textEffects": [
+                        {
+                            "enable": true,
+                            "collapse": true,
+                            "offset": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "skew": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "stroke": {
+                                "enable": false,
+                                "color": "#000000ff",
+                                "width": 3
+                            },
+                            "shadow": {
+                                "enable": false,
+                                "color": "#000000ff",
+                                "offsetX": 0,
+                                "offsetY": 0,
+                                "blur": 0
+                            },
+                            "filling": {
+                                "enable": true,
+                                "type": 0,
+                                "repeat": 1,
+                                "color": "#ffffffff",
+                                "imageContent": {
+                                    "repeat": 0,
+                                    "image": null,
+                                    "width": null,
+                                    "height": null,
+                                    "scaleX": 1,
+                                    "scaleY": 1
+                                },
+                                "gradient": {
+                                    "byLine": 0,
+                                    "angle": 0,
+                                    "stops": [
+                                        {
+                                            "color": "#ffffffff",
+                                            "offset": 0
+                                        },
+                                        {
+                                            "color": "#000000ff",
+                                            "offset": 1
+                                        }
+                                    ]
+                                }
+                            },
+                            "excludeScale": []
+                        },
+                        {
+                            "enable": true,
+                            "collapse": false,
+                            "offset": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "skew": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "stroke": {
+                                "enable": true,
+                                "color": "#000000ff",
+                                "width": 7.9
+                            },
+                            "shadow": {
+                                "enable": false,
+                                "color": "#000000ff",
+                                "offsetX": 0,
+                                "offsetY": 0,
+                                "blur": 0
+                            },
+                            "filling": {
+                                "enable": false,
+                                "type": 0,
+                                "repeat": 1,
+                                "color": "#000000ff",
+                                "imageContent": {
+                                    "repeat": 0,
+                                    "image": null,
+                                    "width": null,
+                                    "height": null,
+                                    "scaleX": 1,
+                                    "scaleY": 1
+                                },
+                                "gradient": {
+                                    "byLine": 0,
+                                    "angle": 0,
+                                    "stops": [
+                                        {
+                                            "color": "#ffffffff",
+                                            "offset": 0
+                                        },
+                                        {
+                                            "color": "#000000ff",
+                                            "offset": 1
+                                        }
+                                    ]
+                                }
+                            },
+                            "excludeScale": []
+                        }
+                    ],
+                    "aggregatedColors": [
+                        "#000000ff",
+                        "#ffffffff"
+                    ],
+                    "mainColor": null,
+                    "content": "描边",
+                    "style": {},
+                    "clip": null,
+                    "version": "5.3.22",
+                    "rule": "rule_fb9d8aa31f1afcb6bf69f37dfe36bf84"
+                }
+            ]
+        },
+        {
+            "width": 300,
+            "height": 200,
+            "backgroundColor": "white",
+            "backgroundImage": "",
+            "elements": [
+                {
+                    "transform": {
+                        "a": 1,
+                        "b": 0,
+                        "c": 0,
+                        "d": 1,
+                        "tx": 0,
+                        "ty": 0
+                    },
+                    "type": "text",
+                    "category": "",
+                    "opacity": 1,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "width": 209,
+                    "height": 102,
+                    "left": 53,
+                    "top": 53,
+                    "boxShadow": null,
+                    "resize": 5,
+                    "dragable": true,
+                    "rotatable": true,
+                    "editable": true,
+                    "frozen": false,
+                    "hidden": false,
+                    "lock": false,
+                    "borderRadius": 0,
+                    "filter": {
+                        "hueRotate": 0,
+                        "saturate": 0,
+                        "brightness": 0,
+                        "gaussianBlur": 0
+                    },
+                    "color": "#000000ff",
+                    "backgroundColor": "#ffffff00",
+                    "fontFamily": "SourceHanSansSC-Bold",
+                    "fontStyle": "normal",
+                    "fontWeight": 400,
+                    "fontSize": "85",
+                    "lineHeight": 1.2,
+                    "letterSpacing": 0,
+                    "textDecoration": "none",
+                    "writingMode": "horizontal-tb",
+                    "textAlign": "center",
+                    "verticalAlign": "top",
+                    "content": "描边",
+                    "textShadow": null,
+                    "autoScale": true,
+                    "textEffects": [
+                        {
+                            "enable": true,
+                            "collapse": true,
+                            "offset": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "skew": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "stroke": {
+                                "enable": false,
+                                "color": "#000000ff",
+                                "width": 3
+                            },
+                            "shadow": {
+                                "enable": false,
+                                "color": "#000000ff",
+                                "offsetX": 0,
+                                "offsetY": 0,
+                                "blur": 0
+                            },
+                            "filling": {
+                                "enable": false,
+                                "type": 0,
+                                "repeat": 1,
+                                "color": "#ffffffff",
+                                "imageContent": {
+                                    "repeat": 0,
+                                    "image": null,
+                                    "width": null,
+                                    "height": null
+                                },
+                                "gradient": {
+                                    "byLine": 0,
+                                    "angle": 0,
+                                    "stops": [
+                                        {
+                                            "color": "#ffffffff",
+                                            "offset": 0
+                                        },
+                                        {
+                                            "color": "#000000ff",
+                                            "offset": 1
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "enable": true,
+                            "collapse": true,
+                            "offset": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "skew": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "stroke": {
+                                "enable": true,
+                                "color": "#ffffffff",
+                                "width": 4.3
+                            },
+                            "shadow": {
+                                "enable": false,
+                                "color": "#000000ff",
+                                "offsetX": 0,
+                                "offsetY": 0,
+                                "blur": 0
+                            },
+                            "filling": {
+                                "enable": false,
+                                "type": 0,
+                                "repeat": 1,
+                                "color": "#000000ff",
+                                "imageContent": {
+                                    "repeat": 0,
+                                    "image": null,
+                                    "width": null,
+                                    "height": null
+                                },
+                                "gradient": {
+                                    "byLine": 0,
+                                    "angle": 0,
+                                    "stops": [
+                                        {
+                                            "color": "#ffffffff",
+                                            "offset": 0
+                                        },
+                                        {
+                                            "color": "#000000ff",
+                                            "offset": 1
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "enable": true,
+                            "collapse": false,
+                            "offset": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "skew": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "stroke": {
+                                "enable": true,
+                                "color": "#000000ff",
+                                "width": 11.9
+                            },
+                            "shadow": {
+                                "enable": false,
+                                "color": "#000000ff",
+                                "offsetX": 0,
+                                "offsetY": 0,
+                                "blur": 0
+                            },
+                            "filling": {
+                                "enable": false,
+                                "type": 0,
+                                "repeat": 1,
+                                "color": "#000000ff",
+                                "imageContent": {
+                                    "repeat": 0,
+                                    "image": null,
+                                    "width": null,
+                                    "height": null
+                                },
+                                "gradient": {
+                                    "byLine": 0,
+                                    "angle": 0,
+                                    "stops": [
+                                        {
+                                            "color": "#ffffffff",
+                                            "offset": 0
+                                        },
+                                        {
+                                            "color": "#000000ff",
+                                            "offset": 1
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    "style": {},
+                    "clip": null,
+                    "version": "5.3.22",
+                    "rule": "rule_797eea8c26837bc1672dd26db6f22e8b"
+                }
+            ]
+        },
+        {
+            "width": 300,
+            "height": 200,
+            "backgroundColor": "white",
+            "backgroundImage": "",
+            "elements": [
+                {
+                    "transform": {
+                        "a": 1,
+                        "b": 0,
+                        "c": 0,
+                        "d": 1,
+                        "tx": 0,
+                        "ty": 0
+                    },
+                    "type": "text",
+                    "category": "",
+                    "opacity": 1,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "width": 228,
+                    "height": 110,
+                    "left": 43.5,
+                    "top": 50,
+                    "boxShadow": null,
+                    "resize": 5,
+                    "dragable": true,
+                    "rotatable": true,
+                    "editable": true,
+                    "frozen": false,
+                    "hidden": false,
+                    "lock": false,
+                    "borderRadius": 0,
+                    "filter": {
+                        "hueRotate": 0,
+                        "saturate": 0,
+                        "brightness": 0,
+                        "gaussianBlur": 0
+                    },
+                    "color": "#eb7087ff",
+                    "backgroundColor": "#ffffff00",
+                    "fontFamily": "HYTiaoTiaoTiJ",
+                    "fontStyle": "normal",
+                    "fontWeight": 400,
+                    "fontSize": "92",
+                    "lineHeight": 1.2,
+                    "letterSpacing": 0,
+                    "textDecoration": "none",
+                    "writingMode": "horizontal-tb",
+                    "textAlign": "center",
+                    "verticalAlign": "top",
+                    "content": "可爱",
+                    "effectScale": 1,
+                    "textShadow": null,
+                    "autoScale": true,
+                    "textEffects": [
+                        {
+                            "enable": true,
+                            "collapse": false,
+                            "offset": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "skew": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "stroke": {
+                                "enable": false,
+                                "color": "#000000ff",
+                                "width": 3.247058823529411
+                            },
+                            "shadow": {
+                                "enable": false,
+                                "color": "#00000069",
+                                "offsetX": 2.7250284201064185,
+                                "offsetY": 2.6315293563270257,
+                                "blur": 2.1999999999999997
+                            },
+                            "filling": {
+                                "enable": true,
+                                "type": 0,
+                                "repeat": 1,
+                                "color": "#eb7087ff",
+                                "imageContent": {
+                                    "repeat": 0,
+                                    "image": null,
+                                    "width": null,
+                                    "height": null,
+                                    "scaleX": 1,
+                                    "scaleY": 1
+                                },
+                                "gradient": {
+                                    "byLine": 0,
+                                    "angle": 0,
+                                    "stops": [
+                                        {
+                                            "color": "#ffffffff",
+                                            "offset": 0
+                                        },
+                                        {
+                                            "color": "#000000ff",
+                                            "offset": 1
+                                        }
+                                    ]
+                                }
+                            },
+                            "excludeScale": []
+                        },
+                        {
+                            "enable": true,
+                            "collapse": false,
+                            "offset": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "skew": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "stroke": {
+                                "enable": true,
+                                "color": "#fceee1ff",
+                                "width": 11.5
+                            },
+                            "shadow": {
+                                "enable": false,
+                                "color": "#000000ff",
+                                "offsetX": 0,
+                                "offsetY": 0,
+                                "blur": 0
+                            },
+                            "filling": {
+                                "enable": false,
+                                "type": 0,
+                                "color": "#eb7087ff",
+                                "imageContent": {
+                                    "repeat": 0,
+                                    "scaleX": 1,
+                                    "scaleY": 1,
+                                    "image": null,
+                                    "width": null,
+                                    "height": null
+                                },
+                                "gradient": {
+                                    "byLine": 0,
+                                    "angle": 0,
+                                    "stops": [
+                                        {
+                                            "color": "#ffffffff",
+                                            "offset": 0
+                                        },
+                                        {
+                                            "color": "#000000ff",
+                                            "offset": 1
+                                        }
+                                    ]
+                                }
+                            },
+                            "excludeScale": []
+                        }
+                    ],
+                    "aggregatedColors": [
+                        "#eb7087ff",
+                        "#fceee1ff"
+                    ],
+                    "mainColor": null,
+                    "style": {},
+                    "clip": null,
+                    "version": "5.4.14.beta.8",
+                    "rule": "rule_c8033bdf1a05980c29995246203ec366",
+                    "materialId": 5144,
+                    "disableColor": true,
+                    "ruleIndex": -1
+                }
+            ]
+        },
+        {
+            "width": 300,
+            "height": 200,
+            "backgroundColor": "white",
+            "backgroundImage": "",
+            "elements": [
+                {
+                    "transform": {
+                        "a": 1,
+                        "b": 0,
+                        "c": 0,
+                        "d": 1,
+                        "tx": 0,
+                        "ty": 0
+                    },
+                    "type": "text",
+                    "category": "",
+                    "opacity": 1,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "width": 223,
+                    "height": 108,
+                    "left": 46,
+                    "top": 51,
+                    "boxShadow": null,
+                    "resize": 5,
+                    "dragable": true,
+                    "rotatable": true,
+                    "editable": true,
+                    "frozen": false,
+                    "hidden": false,
+                    "lock": false,
+                    "borderRadius": 0,
+                    "filter": {
+                        "hueRotate": 0,
+                        "saturate": 0,
+                        "brightness": 0,
+                        "gaussianBlur": 0
+                    },
+                    "color": "#6595e8ff",
+                    "backgroundColor": "#ffffff00",
+                    "fontFamily": "HYXiaoMaiTiJ",
+                    "fontStyle": "normal",
+                    "fontWeight": 400,
+                    "fontSize": "90",
+                    "lineHeight": 1.2,
+                    "letterSpacing": 0,
+                    "textDecoration": "none",
+                    "writingMode": "horizontal-tb",
+                    "textAlign": "center",
+                    "verticalAlign": "top",
+                    "content": "贴纸",
+                    "effectScale": 1,
+                    "textShadow": null,
+                    "autoScale": true,
+                    "textEffects": [
+                        {
+                            "enable": true,
+                            "collapse": false,
+                            "offset": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "skew": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "stroke": {
+                                "enable": false,
+                                "color": "#000000ff",
+                                "width": 3.176470588235294
+                            },
+                            "shadow": {
+                                "enable": false,
+                                "color": "#00000069",
+                                "offsetX": 2.665788671843236,
+                                "offsetY": 2.5743221964068734,
+                                "blur": 2.1999999999999997
+                            },
+                            "filling": {
+                                "enable": true,
+                                "type": 0,
+                                "repeat": 1,
+                                "color": "#6595e8ff",
+                                "imageContent": {
+                                    "repeat": 0,
+                                    "image": null,
+                                    "width": null,
+                                    "height": null,
+                                    "scaleX": 1,
+                                    "scaleY": 1
+                                },
+                                "gradient": {
+                                    "byLine": 0,
+                                    "angle": 0,
+                                    "stops": [
+                                        {
+                                            "color": "#ffffffff",
+                                            "offset": 0
+                                        },
+                                        {
+                                            "color": "#000000ff",
+                                            "offset": 1
+                                        }
+                                    ]
+                                }
+                            },
+                            "excludeScale": []
+                        },
+                        {
+                            "enable": true,
+                            "collapse": false,
+                            "offset": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "skew": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "stroke": {
+                                "enable": true,
+                                "color": "#ffffffff",
+                                "width": 10
+                            },
+                            "shadow": {
+                                "enable": true,
+                                "color": "#0000006e",
+                                "offsetX": 3.889087296526011,
+                                "offsetY": 3.8890872965260117,
+                                "blur": 14.599999999999998
+                            },
+                            "filling": {
+                                "enable": false,
+                                "type": 0,
+                                "color": "#6595e8ff",
+                                "imageContent": {
+                                    "repeat": 0,
+                                    "scaleX": 1,
+                                    "scaleY": 1,
+                                    "image": null,
+                                    "width": null,
+                                    "height": null
+                                },
+                                "gradient": {
+                                    "byLine": 0,
+                                    "angle": 0,
+                                    "stops": [
+                                        {
+                                            "color": "#ffffffff",
+                                            "offset": 0
+                                        },
+                                        {
+                                            "color": "#000000ff",
+                                            "offset": 1
+                                        }
+                                    ]
+                                }
+                            },
+                            "excludeScale": []
+                        }
+                    ],
+                    "aggregatedColors": [
+                        "rgba(101,149,232,1)",
+                        "rgba(255,255,255,1)",
+                        "rgba(0,0,0,0.43137254901960786)"
+                    ],
+                    "mainColor": null,
+                    "style": {},
+                    "clip": null,
+                    "version": "5.4.14.beta.8",
+                    "rule": "rule_c8033bdf1a05980c29995246203ec366",
+                    "materialId": 5144,
+                    "disableColor": true,
+                    "ruleIndex": -1
+                }
+            ]
+        },
+        {
+            "width": 300,
+            "height": 200,
+            "backgroundColor": "white",
+            "backgroundImage": "",
+            "elements": [
+                {
+                    "transform": {
+                        "a": 1,
+                        "b": 0,
+                        "c": 0,
+                        "d": 1,
+                        "tx": 0,
+                        "ty": 0
+                    },
+                    "type": "text",
+                    "category": "",
+                    "opacity": 1,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "width": 183,
+                    "height": 120,
+                    "left": 66,
+                    "top": 45,
+                    "boxShadow": null,
+                    "resize": 5,
+                    "dragable": true,
+                    "rotatable": true,
+                    "editable": true,
+                    "frozen": false,
+                    "hidden": false,
+                    "lock": false,
+                    "borderRadius": 0,
+                    "filter": {
+                        "hueRotate": 0,
+                        "saturate": 0,
+                        "brightness": 0,
+                        "gaussianBlur": 0
+                    },
+                    "color": "#fdd835ff",
+                    "backgroundColor": "#ffffff00",
+                    "fontFamily": "SentyTang",
+                    "fontStyle": "normal",
+                    "fontWeight": 400,
+                    "fontSize": "100",
+                    "lineHeight": 1.2,
+                    "letterSpacing": "-4",
+                    "textDecoration": "none",
+                    "writingMode": "horizontal-tb",
+                    "textAlign": "center",
+                    "verticalAlign": "top",
+                    "content": "书法法1",
+                    "effectScale": 1,
+                    "textShadow": null,
+                    "autoScale": true,
+                    "textEffects": [
+                        {
+                            "enable": true,
+                            "collapse": false,
+                            "offset": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "skew": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "stroke": {
+                                "enable": false,
+                                "color": "#000000ff",
+                                "width": 2.727272727272727
+                            },
+                            "shadow": {
+                                "enable": false,
+                                "color": "#000000ff",
+                                "offsetX": 0,
+                                "offsetY": 0,
+                                "blur": 0
+                            },
+                            "filling": {
+                                "enable": true,
+                                "type": 1,
+                                "repeat": 1,
+                                "color": "#999999ff",
+                                "imageContent": {
+                                    "repeat": 1,
+                                    "image": "https://st-gdx.dancf.com/www/8/design/20180404-192434-3.png",
+                                    "width": 480,
+                                    "height": 223,
+                                    "scaleX": 0.9132039059273807,
+                                    "scaleY": 0.9132039059273807
+                                },
+                                "gradient": {
+                                    "byLine": 0,
+                                    "angle": 0,
+                                    "stops": [
+                                        {
+                                            "color": "#ffffffff",
+                                            "offset": 0
+                                        },
+                                        {
+                                            "color": "#000000ff",
+                                            "offset": 1
+                                        }
+                                    ]
+                                }
+                            },
+                            "excludeScale": []
+                        }
+                    ],
+                    "aggregatedColors": [
+                        "#000000ff"
+                    ],
+                    "mainColor": null,
+                    "style": {},
+                    "clip": null,
+                    "version": "5.4.14.beta.8",
+                    "rule": "rule_1b09c199ddfe3735d85d0ee2b1d93a1d"
+                }
+            ]
+        },
+        {
+            "width": 300,
+            "height": 200,
+            "backgroundColor": "white",
+            "backgroundImage": "",
+            "elements": [
+                {
+                    "transform": {
+                        "a": 1,
+                        "b": 0,
+                        "c": 0,
+                        "d": 1,
+                        "tx": 0,
+                        "ty": 0
+                    },
+                    "type": "text",
+                    "category": "",
+                    "opacity": 1,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "width": 223,
+                    "height": 108,
+                    "left": 46,
+                    "top": 51,
+                    "boxShadow": null,
+                    "resize": 5,
+                    "dragable": true,
+                    "rotatable": true,
+                    "editable": true,
+                    "frozen": false,
+                    "hidden": false,
+                    "lock": false,
+                    "borderRadius": 0,
+                    "filter": {
+                        "hueRotate": 0,
+                        "saturate": 0,
+                        "brightness": 0,
+                        "gaussianBlur": 0
+                    },
+                    "color": "#8199ecff",
+                    "backgroundColor": "#ffffff00",
+                    "fontFamily": "HYMiaoHunTiW",
+                    "fontStyle": "normal",
+                    "fontWeight": 400,
+                    "fontSize": "90",
+                    "lineHeight": 1.2,
+                    "letterSpacing": 0,
+                    "textDecoration": "none",
+                    "writingMode": "horizontal-tb",
+                    "textAlign": "center",
+                    "verticalAlign": "top",
+                    "content": "手写",
+                    "effectScale": 1,
+                    "textShadow": null,
+                    "autoScale": true,
+                    "textEffects": [
+                        {
+                            "enable": true,
+                            "collapse": false,
+                            "offset": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "skew": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "stroke": {
+                                "enable": false,
+                                "color": "#000000ff",
+                                "width": 3.1764705882352935
+                            },
+                            "shadow": {
+                                "enable": false,
+                                "color": "#00000069",
+                                "offsetX": 0,
+                                "offsetY": 0,
+                                "blur": 0
+                            },
+                            "filling": {
+                                "enable": true,
+                                "type": 0,
+                                "repeat": 1,
+                                "color": "#8199ecff",
+                                "imageContent": {
+                                    "repeat": 0,
+                                    "image": null,
+                                    "width": null,
+                                    "height": null,
+                                    "scaleX": 1,
+                                    "scaleY": 1
+                                },
+                                "gradient": {
+                                    "byLine": 0,
+                                    "angle": 0,
+                                    "stops": [
+                                        {
+                                            "color": "#ffffffff",
+                                            "offset": 0
+                                        },
+                                        {
+                                            "color": "#000000ff",
+                                            "offset": 1
+                                        }
+                                    ]
+                                }
+                            },
+                            "excludeScale": []
+                        },
+                        {
+                            "enable": true,
+                            "collapse": false,
+                            "offset": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "skew": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "stroke": {
+                                "enable": true,
+                                "color": "#ffffffff",
+                                "width": 11.25
+                            },
+                            "shadow": {
+                                "enable": false,
+                                "color": "#000000ff",
+                                "offsetX": 0,
+                                "offsetY": 0,
+                                "blur": 0
+                            },
+                            "filling": {
+                                "enable": false,
+                                "type": 0,
+                                "color": "#8199ecff",
+                                "imageContent": {
+                                    "repeat": 0,
+                                    "scaleX": 1,
+                                    "scaleY": 1,
+                                    "image": null,
+                                    "width": null,
+                                    "height": null
+                                },
+                                "gradient": {
+                                    "byLine": 0,
+                                    "angle": 0,
+                                    "stops": [
+                                        {
+                                            "color": "#ffffffff",
+                                            "offset": 0
+                                        },
+                                        {
+                                            "color": "#000000ff",
+                                            "offset": 1
+                                        }
+                                    ]
+                                }
+                            },
+                            "excludeScale": []
+                        },
+                        {
+                            "enable": true,
+                            "collapse": false,
+                            "offset": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "skew": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "stroke": {
+                                "enable": true,
+                                "color": "#8199ecff",
+                                "width": 14.625
+                            },
+                            "shadow": {
+                                "enable": false,
+                                "color": "#000000ff",
+                                "offsetX": 0,
+                                "offsetY": 0,
+                                "blur": 0
+                            },
+                            "filling": {
+                                "enable": false,
+                                "type": 0,
+                                "color": "#8199ecff",
+                                "imageContent": {
+                                    "repeat": 0,
+                                    "scaleX": 1,
+                                    "scaleY": 1,
+                                    "image": null,
+                                    "width": null,
+                                    "height": null
+                                },
+                                "gradient": {
+                                    "byLine": 0,
+                                    "angle": 0,
+                                    "stops": [
+                                        {
+                                            "color": "#ffffffff",
+                                            "offset": 0
+                                        },
+                                        {
+                                            "color": "#000000ff",
+                                            "offset": 1
+                                        }
+                                    ]
+                                }
+                            },
+                            "excludeScale": []
+                        }
+                    ],
+                    "aggregatedColors": [
+                        "rgba(129,153,236,1)",
+                        "rgba(255,255,255,1)"
+                    ],
+                    "mainColor": null,
+                    "style": {},
+                    "clip": null,
+                    "version": "5.4.14.beta.8",
+                    "rule": "rule_c8033bdf1a05980c29995246203ec366",
+                    "materialId": 5144,
+                    "disableColor": true,
+                    "ruleIndex": -1
+                }
+            ]
+        },
+        {
+            "width": 300,
+            "height": 200,
+            "backgroundColor": "white",
+            "backgroundImage": "",
+            "elements": [
+                {
+                    "transform": {
+                        "a": 1,
+                        "b": 0,
+                        "c": 0,
+                        "d": 1,
+                        "tx": 0,
+                        "ty": 0
+                    },
+                    "type": "text",
+                    "category": "",
+                    "opacity": 1,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "width": 198,
+                    "height": 96,
+                    "left": 58.5,
+                    "top": 56,
+                    "boxShadow": null,
+                    "resize": 5,
+                    "dragable": true,
+                    "rotatable": true,
+                    "editable": true,
+                    "frozen": false,
+                    "hidden": false,
+                    "lock": false,
+                    "borderRadius": 0,
+                    "filter": {
+                        "hueRotate": 0,
+                        "saturate": 0,
+                        "brightness": 0,
+                        "gaussianBlur": 0
+                    },
+                    "color": "#000000ff",
+                    "backgroundColor": "#ffffff00",
+                    "fontFamily": "QingYuan",
+                    "fontStyle": "normal",
+                    "fontWeight": 400,
+                    "fontSize": "80",
+                    "lineHeight": 1.2,
+                    "letterSpacing": 0,
+                    "textDecoration": "none",
+                    "writingMode": "horizontal-tb",
+                    "textAlign": "center",
+                    "verticalAlign": "top",
+                    "content": "描边",
+                    "effectScale": 1,
+                    "textShadow": null,
+                    "autoScale": true,
+                    "textEffects": [
+                        {
+                            "enable": true,
+                            "collapse": false,
+                            "offset": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "skew": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "stroke": {
+                                "enable": true,
+                                "color": "#013cc3ff",
+                                "width": 1
+                            },
+                            "shadow": {
+                                "enable": false,
+                                "color": "#00000069",
+                                "offsetX": 2.369589930527321,
+                                "offsetY": 2.2882863968061096,
+                                "blur": 2.1999999999999997
+                            },
+                            "filling": {
+                                "enable": true,
+                                "type": 0,
+                                "repeat": 1,
+                                "color": "#ffffffff",
+                                "imageContent": {
+                                    "repeat": 0,
+                                    "image": null,
+                                    "width": null,
+                                    "height": null,
+                                    "scaleX": 1,
+                                    "scaleY": 1
+                                },
+                                "gradient": {
+                                    "byLine": 0,
+                                    "angle": 0,
+                                    "stops": [
+                                        {
+                                            "color": "#ffffffff",
+                                            "offset": 0
+                                        },
+                                        {
+                                            "color": "#000000ff",
+                                            "offset": 1
+                                        }
+                                    ]
+                                }
+                            },
+                            "excludeScale": []
+                        },
+                        {
+                            "enable": true,
+                            "collapse": false,
+                            "offset": {
+                                "enable": false,
+                                "x": -2.4492935982947064e-16,
+                                "y": 4
+                            },
+                            "skew": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "stroke": {
+                                "enable": true,
+                                "color": "#013cc3ff",
+                                "width": 1
+                            },
+                            "shadow": {
+                                "enable": false,
+                                "color": "#000000ff",
+                                "offsetX": 0,
+                                "offsetY": 0,
+                                "blur": 0
+                            },
+                            "filling": {
+                                "enable": true,
+                                "type": 0,
+                                "color": "#77c3ffff",
+                                "imageContent": {
+                                    "repeat": 0,
+                                    "scaleX": 1,
+                                    "scaleY": 1,
+                                    "image": null,
+                                    "width": null,
+                                    "height": null
+                                },
+                                "gradient": {
+                                    "byLine": 0,
+                                    "angle": 0,
+                                    "stops": [
+                                        {
+                                            "color": "#ffffffff",
+                                            "offset": 0
+                                        },
+                                        {
+                                            "color": "#000000ff",
+                                            "offset": 1
+                                        }
+                                    ]
+                                }
+                            },
+                            "excludeScale": []
+                        }
+                    ],
+                    "aggregatedColors": [
+                        "#013cc3ff",
+                        "#ffffffff",
+                        "#77c3ffff"
+                    ],
+                    "mainColor": "#013cc3ff",
+                    "style": {},
+                    "clip": null,
+                    "version": "5.4.14.beta.8",
+                    "rule": "rule_c8033bdf1a05980c29995246203ec366",
+                    "materialId": 5144,
+                    "disableColor": true,
+                    "ruleIndex": -1
+                }
+            ]
+        },
+        {
+            "width": 300,
+            "height": 200,
+            "backgroundColor": "white",
+            "backgroundImage": "",
+            "elements": [
+                {
+                    "type": "text",
+                    "category": "",
+                    "opacity": 1,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "width": 198,
+                    "height": 99,
+                    "left": 58.5,
+                    "top": 57,
+                    "transform": {
+                        "a": 1,
+                        "b": 0,
+                        "c": 0,
+                        "d": 1,
+                        "tx": 0,
+                        "ty": 0
+                    },
+                    "boxShadow": null,
+                    "resize": 5,
+                    "dragable": true,
+                    "rotatable": true,
+                    "editable": true,
+                    "frozen": false,
+                    "hidden": false,
+                    "lock": false,
+                    "borderRadius": 0,
+                    "filter": {
+                        "hueRotate": 0,
+                        "saturate": 0,
+                        "brightness": 0,
+                        "gaussianBlur": 0
+                    },
+                    "color": "#000000ff",
+                    "backgroundColor": "#ffffff00",
+                    "fontFamily": "HYLiLiangHeiJ",
+                    "fontStyle": "normal",
+                    "fontWeight": 400,
+                    "fontSize": 80,
+                    "lineHeight": 1.2,
+                    "letterSpacing": 0,
+                    "textDecoration": "none",
+                    "writingMode": "horizontal-tb",
+                    "textAlign": "center",
+                    "verticalAlign": "top",
+                    "contents": null,
+                    "effectScale": 1,
+                    "textShadow": null,
+                    "autoScale": true,
+                    "textEffects": [
+                        {
+                            "enable": true,
+                            "collapse": false,
+                            "offset": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "skew": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "stroke": {
+                                "enable": false,
+                                "color": "#000000ff",
+                                "width": 2.8235294117647056
+                            },
+                            "shadow": {
+                                "enable": false,
+                                "color": "#00000069",
+                                "offsetX": 2.369589930527321,
+                                "offsetY": 2.2882863968061096,
+                                "blur": 2.1999999999999997
+                            },
+                            "filling": {
+                                "enable": false,
+                                "type": 0,
+                                "repeat": 1,
+                                "color": "#000000ff",
+                                "imageContent": {
+                                    "repeat": 0,
+                                    "image": null,
+                                    "width": null,
+                                    "height": null,
+                                    "scaleX": 1,
+                                    "scaleY": 1
+                                },
+                                "gradient": {
+                                    "byLine": 0,
+                                    "angle": 0,
+                                    "stops": [
+                                        {
+                                            "color": "#ffffffff",
+                                            "offset": 0
+                                        },
+                                        {
+                                            "color": "#000000ff",
+                                            "offset": 1
+                                        }
+                                    ]
+                                }
+                            },
+                            "excludeScale": []
+                        },
+                        {
+                            "enable": true,
+                            "collapse": false,
+                            "offset": {
+                                "enable": false,
+                                "x": 7.424621202458749,
+                                "y": 7.4246212024587495
+                            },
+                            "skew": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "stroke": {
+                                "enable": false,
+                                "color": "#000000ff",
+                                "width": 3
+                            },
+                            "shadow": {
+                                "enable": false,
+                                "color": "#000000ff",
+                                "offsetX": 0,
+                                "offsetY": 0,
+                                "blur": 0
+                            },
+                            "filling": {
+                                "enable": true,
+                                "type": 0,
+                                "color": "#ffef00ff",
+                                "imageContent": {
+                                    "repeat": 0,
+                                    "scaleX": 1,
+                                    "scaleY": 1,
+                                    "image": null,
+                                    "width": null,
+                                    "height": null
+                                },
+                                "gradient": {
+                                    "byLine": 0,
+                                    "angle": 0,
+                                    "stops": [
+                                        {
+                                            "color": "#ffffffff",
+                                            "offset": 0
+                                        },
+                                        {
+                                            "color": "#000000ff",
+                                            "offset": 1
+                                        }
+                                    ]
+                                }
+                            },
+                            "excludeScale": []
+                        }
+                    ],
+                    "aggregatedColors": [
+                        "rgba(0,0,0,1)",
+                        "rgba(255,239,0,1)"
+                    ],
+                    "mainColor": null,
+                    "content": "力量",
+                    "style": {},
+                    "clip": null,
+                    "version": "5.6.5-beta.3",
+                    "rule": "rule_c8033bdf1a05980c29995246203ec366",
+                    "materialId": 5144,
+                    "disableColor": true,
+                    "ruleIndex": -1
+                }
+            ]
+        },
+        {
+            "width": 300,
+            "height": 200,
+            "backgroundColor": "white",
+            "backgroundImage": "",
+            "elements": [
+                {
+                    "transform": {
+                        "a": 1,
+                        "b": 0,
+                        "c": 0,
+                        "d": 1,
+                        "tx": 0,
+                        "ty": 0
+                    },
+                    "type": "text",
+                    "category": "",
+                    "opacity": 1,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "width": 186,
+                    "height": 96,
+                    "left": 64.5,
+                    "top": 57,
+                    "boxShadow": null,
+                    "resize": 5,
+                    "dragable": true,
+                    "rotatable": true,
+                    "editable": true,
+                    "frozen": false,
+                    "hidden": false,
+                    "lock": false,
+                    "borderRadius": 0,
+                    "filter": {
+                        "hueRotate": 0,
+                        "saturate": 0,
+                        "brightness": 0,
+                        "gaussianBlur": 0
+                    },
+                    "color": "#000000ff",
+                    "backgroundColor": "#ffffff00",
+                    "fontFamily": "QingYuan",
+                    "fontStyle": "normal",
+                    "fontWeight": 400,
+                    "fontSize": "80",
+                    "lineHeight": 1.2,
+                    "letterSpacing": 0,
+                    "textDecoration": "none",
+                    "writingMode": "horizontal-tb",
+                    "textAlign": "center",
+                    "verticalAlign": "top",
+                    "content": "描边",
+                    "effectScale": 1,
+                    "textShadow": null,
+                    "autoScale": true,
+                    "textEffects": [
+                        {
+                            "enable": true,
+                            "collapse": false,
+                            "offset": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "skew": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "stroke": {
+                                "enable": false,
+                                "color": "#000000ff",
+                                "width": 2.8235294117647056
+                            },
+                            "shadow": {
+                                "enable": false,
+                                "color": "#000000ff",
+                                "offsetX": 0,
+                                "offsetY": 0,
+                                "blur": 0
+                            },
+                            "filling": {
+                                "enable": true,
+                                "type": 0,
+                                "repeat": 1,
+                                "color": "#000000ff",
+                                "imageContent": {
+                                    "repeat": 0,
+                                    "image": null,
+                                    "width": null,
+                                    "height": null,
+                                    "scaleX": 1,
+                                    "scaleY": 1
+                                },
+                                "gradient": {
+                                    "byLine": 0,
+                                    "angle": 0,
+                                    "stops": [
+                                        {
+                                            "color": "#ffffffff",
+                                            "offset": 0
+                                        },
+                                        {
+                                            "color": "#000000ff",
+                                            "offset": 1
+                                        }
+                                    ]
+                                }
+                            },
+                            "excludeScale": []
+                        },
+                        {
+                            "enable": true,
+                            "collapse": false,
+                            "offset": {
+                                "enable": false,
+                                "x": 3,
+                                "y": -3.6739403974420594e-16
+                            },
+                            "skew": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "stroke": {
+                                "enable": true,
+                                "color": "#000000ff",
+                                "width": 2
+                            },
+                            "shadow": {
+                                "enable": false,
+                                "color": "#000000ff",
+                                "offsetX": 0,
+                                "offsetY": 0,
+                                "blur": 0
+                            },
+                            "filling": {
+                                "enable": true,
+                                "type": 0,
+                                "repeat": 1,
+                                "color": "#ffffffff",
+                                "imageContent": {
+                                    "repeat": 0,
+                                    "image": null,
+                                    "width": null,
+                                    "height": null,
+                                    "scaleX": 1,
+                                    "scaleY": 1
+                                },
+                                "gradient": {
+                                    "byLine": 0,
+                                    "angle": 0,
+                                    "stops": [
+                                        {
+                                            "color": "#ffffffff",
+                                            "offset": 0
+                                        },
+                                        {
+                                            "color": "#000000ff",
+                                            "offset": 1
+                                        }
+                                    ]
+                                }
+                            },
+                            "excludeScale": [
+                                "offset",
+                                "stroke"
+                            ]
+                        }
+                    ],
+                    "aggregatedColors": [
+                        "rgba(0,0,0,1)",
+                        "rgba(255,255,255,1)"
+                    ],
+                    "mainColor": null,
+                    "style": {},
+                    "clip": null,
+                    "version": "5.4.14.beta.8",
+                    "rule": "rule_610e292d9aa1e8becfaf8ae23a655e39",
+                    "materialId": 5142,
+                    "disableColor": true,
+                    "ruleIndex": -1
+                }
+            ]
+        },
+        {
+            "width": 300,
+            "height": 200,
+            "backgroundColor": "white",
+            "backgroundImage": "",
+            "elements": [
+                {
+                    "transform": {
+                        "a": 1,
+                        "b": 0,
+                        "c": 0,
+                        "d": 1,
+                        "tx": 0,
+                        "ty": 0
+                    },
+                    "type": "text",
+                    "category": "",
+                    "opacity": 1,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "width": 212,
+                    "height": 98,
+                    "left": 51.5,
+                    "top": 56,
+                    "boxShadow": null,
+                    "resize": 5,
+                    "dragable": true,
+                    "rotatable": true,
+                    "editable": true,
+                    "frozen": false,
+                    "hidden": false,
+                    "lock": false,
+                    "borderRadius": 0,
+                    "filter": {
+                        "hueRotate": 0,
+                        "saturate": 0,
+                        "brightness": 0,
+                        "gaussianBlur": 0
+                    },
+                    "color": "#000000ff",
+                    "backgroundColor": "#ffffff00",
+                    "fontFamily": "HYRunYuan-FEW",
+                    "fontStyle": "normal",
+                    "fontWeight": 400,
+                    "fontSize": "82",
+                    "lineHeight": 1.2,
+                    "letterSpacing": 0,
+                    "textDecoration": "none",
+                    "writingMode": "horizontal-tb",
+                    "textAlign": "center",
+                    "verticalAlign": "top",
+                    "content": "波浪",
+                    "effectScale": 1,
+                    "textShadow": null,
+                    "autoScale": true,
+                    "textEffects": [
+                        {
+                            "enable": true,
+                            "collapse": false,
+                            "offset": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "skew": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "stroke": {
+                                "enable": false,
+                                "color": "#000000ff",
+                                "width": 3
+                            },
+                            "shadow": {
+                                "enable": false,
+                                "color": "#000000ff",
+                                "offsetX": 0,
+                                "offsetY": 0,
+                                "blur": 0
+                            },
+                            "filling": {
+                                "enable": true,
+                                "type": 2,
+                                "color": "#ffffffff",
+                                "imageContent": {
+                                    "repeat": 0,
+                                    "scaleX": 1,
+                                    "scaleY": 1,
+                                    "image": null,
+                                    "width": null,
+                                    "height": null
+                                },
+                                "gradient": {
+                                    "byLine": 0,
+                                    "angle": 90,
+                                    "stops": [
+                                        {
+                                            "color": "#faee05ff",
+                                            "offset": 0
+                                        },
+                                        {
+                                            "color": "#faee05ff",
+                                            "offset": 0.5500000000000002
+                                        },
+                                        {
+                                            "color": "#faf20500",
+                                            "offset": 0.5529411764705883
+                                        }
+                                    ]
+                                },
+                                "repeat": 1
+                            },
+                            "excludeScale": []
+                        },
+                        {
+                            "enable": true,
+                            "collapse": true,
+                            "offset": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "skew": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "stroke": {
+                                "enable": false,
+                                "color": "#000000ff",
+                                "width": 3
+                            },
+                            "shadow": {
+                                "enable": false,
+                                "color": "#000000ff",
+                                "offsetX": 0,
+                                "offsetY": 0,
+                                "blur": 0
+                            },
+                            "filling": {
+                                "enable": true,
+                                "type": 0,
+                                "color": "#ffffffff",
+                                "imageContent": {
+                                    "repeat": 0,
+                                    "scaleX": 1,
+                                    "scaleY": 1,
+                                    "image": null,
+                                    "width": null,
+                                    "height": null
+                                },
+                                "gradient": {
+                                    "byLine": 0,
+                                    "angle": 0,
+                                    "stops": [
+                                        {
+                                            "color": "#ffffffff",
+                                            "offset": 0
+                                        },
+                                        {
+                                            "color": "#000000ff",
+                                            "offset": 1
+                                        }
+                                    ]
+                                },
+                                "repeat": 1
+                            },
+                            "excludeScale": []
+                        },
+                        {
+                            "enable": true,
+                            "collapse": true,
+                            "offset": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "skew": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "stroke": {
+                                "enable": true,
+                                "color": "#000000ff",
+                                "width": 3
+                            },
+                            "shadow": {
+                                "enable": false,
+                                "color": "#000000ff",
+                                "offsetX": 0,
+                                "offsetY": 0,
+                                "blur": 0
+                            },
+                            "filling": {
+                                "enable": false,
+                                "type": 0,
+                                "repeat": 1,
+                                "color": "#000000ff",
+                                "imageContent": {
+                                    "repeat": 0,
+                                    "image": null,
+                                    "width": null,
+                                    "height": null,
+                                    "scaleX": 1,
+                                    "scaleY": 1
+                                },
+                                "gradient": {
+                                    "byLine": 0,
+                                    "angle": 0,
+                                    "stops": [
+                                        {
+                                            "color": "#ffffffff",
+                                            "offset": 0
+                                        },
+                                        {
+                                            "color": "#000000ff",
+                                            "offset": 1
+                                        }
+                                    ]
+                                }
+                            },
+                            "excludeScale": []
+                        }
+                    ],
+                    "aggregatedColors": [
+                        "rgba(0,0,0,1)",
+                        "rgba(255,255,255,1)"
+                    ],
+                    "mainColor": null,
+                    "style": {},
+                    "clip": null,
+                    "version": "5.4.14.beta.8",
+                    "rule": "rule_b339d8da1bf158d08af09a797e7e275f",
+                    "materialId": 5137,
+                    "disableColor": true,
+                    "ruleIndex": -1
+                }
+            ]
+        },
+        {
+            "width": 300,
+            "height": 200,
+            "backgroundColor": "white",
+            "backgroundImage": "",
+            "elements": [
+                {
+                    "transform": {
+                        "a": 1,
+                        "b": 0,
+                        "c": 0,
+                        "d": 1,
+                        "tx": 0,
+                        "ty": 0
+                    },
+                    "type": "text",
+                    "category": "",
+                    "opacity": 1,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "width": 196,
+                    "height": 96,
+                    "left": 59.5,
+                    "top": 57,
+                    "boxShadow": null,
+                    "resize": 5,
+                    "dragable": true,
+                    "rotatable": true,
+                    "editable": true,
+                    "frozen": false,
+                    "hidden": false,
+                    "lock": false,
+                    "borderRadius": 0,
+                    "filter": {
+                        "hueRotate": 0,
+                        "saturate": 0,
+                        "brightness": 0,
+                        "gaussianBlur": 0
+                    },
+                    "color": "#1328c4ff",
+                    "backgroundColor": "#ffffff00",
+                    "fontFamily": "PangMenZhengDao",
+                    "fontStyle": "normal",
+                    "fontWeight": 400,
+                    "fontSize": "80",
+                    "lineHeight": 1.2,
+                    "letterSpacing": "2",
+                    "textDecoration": "none",
+                    "writingMode": "horizontal-tb",
+                    "textAlign": "center",
+                    "verticalAlign": "top",
+                    "content": "样式",
+                    "effectScale": 1,
+                    "textShadow": null,
+                    "autoScale": true,
+                    "textEffects": [
+                        {
+                            "enable": true,
+                            "collapse": false,
+                            "offset": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "skew": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "stroke": {
+                                "enable": true,
+                                "color": "#1328c4ff",
+                                "width": 2
+                            },
+                            "shadow": {
+                                "enable": false,
+                                "color": "#000000ff",
+                                "offsetX": 0,
+                                "offsetY": 0,
+                                "blur": 0
+                            },
+                            "filling": {
+                                "enable": true,
+                                "type": 0,
+                                "repeat": 1,
+                                "color": "#88c7f200",
+                                "imageContent": {
+                                    "repeat": 0,
+                                    "image": null,
+                                    "width": null,
+                                    "height": null,
+                                    "scaleX": 1,
+                                    "scaleY": 1
+                                },
+                                "gradient": {
+                                    "byLine": 0,
+                                    "angle": 0,
+                                    "stops": [
+                                        {
+                                            "color": "#ffffffff",
+                                            "offset": 0
+                                        },
+                                        {
+                                            "color": "#000000ff",
+                                            "offset": 1
+                                        }
+                                    ]
+                                }
+                            },
+                            "excludeScale": []
+                        },
+                        {
+                            "enable": true,
+                            "collapse": false,
+                            "offset": {
+                                "enable": false,
+                                "x": 3.4732918522949867,
+                                "y": 3.5966990016932554
+                            },
+                            "skew": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "stroke": {
+                                "enable": false,
+                                "color": "#1328c4ff",
+                                "width": 2.4
+                            },
+                            "shadow": {
+                                "enable": false,
+                                "color": "#000000ff",
+                                "offsetX": 0,
+                                "offsetY": 0,
+                                "blur": 0
+                            },
+                            "filling": {
+                                "enable": true,
+                                "type": 0,
+                                "repeat": 1,
+                                "color": "#88c7f2ff",
+                                "imageContent": {
+                                    "repeat": 0,
+                                    "image": null,
+                                    "width": null,
+                                    "height": null,
+                                    "scaleX": 1,
+                                    "scaleY": 1
+                                },
+                                "gradient": {
+                                    "byLine": 0,
+                                    "angle": 0,
+                                    "stops": [
+                                        {
+                                            "color": "#ffffffff",
+                                            "offset": 0
+                                        },
+                                        {
+                                            "color": "#000000ff",
+                                            "offset": 1
+                                        }
+                                    ]
+                                }
+                            },
+                            "excludeScale": []
+                        }
+                    ],
+                    "aggregatedColors": [
+                        "#1328c4ff",
+                        "#88c7f2ff"
+                    ],
+                    "mainColor": null,
+                    "style": {},
+                    "clip": null,
+                    "version": "5.4.14.beta.8",
+                    "rule": "rule_d2b5985b785a6c1007c7573229eda9eb"
+                }
+            ]
+        },
+        {
+            "width": 300,
+            "height": 200,
+            "backgroundColor": "white",
+            "backgroundImage": "",
+            "elements": [
+                {
+                    "transform": {
+                        "a": 1,
+                        "b": 0,
+                        "c": 0,
+                        "d": 1,
+                        "tx": 0,
+                        "ty": 0
+                    },
+                    "type": "text",
+                    "category": "",
+                    "opacity": 1,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "width": 198,
+                    "height": 96,
+                    "left": 58.5,
+                    "top": 51,
+                    "boxShadow": null,
+                    "resize": 5,
+                    "dragable": true,
+                    "rotatable": true,
+                    "editable": true,
+                    "frozen": false,
+                    "hidden": false,
+                    "lock": false,
+                    "borderRadius": 0,
+                    "filter": {
+                        "hueRotate": 0,
+                        "saturate": 0,
+                        "brightness": 0,
+                        "gaussianBlur": 0
+                    },
+                    "color": "#000000ff",
+                    "backgroundColor": "#ffffff00",
+                    "fontFamily": "HYXiaoBoDunHeiW",
+                    "fontStyle": "normal",
+                    "fontWeight": 400,
+                    "fontSize": "80",
+                    "lineHeight": 1.2,
+                    "letterSpacing": 0,
+                    "textDecoration": "none",
+                    "writingMode": "horizontal-tb",
+                    "textAlign": "center",
+                    "verticalAlign": "middle",
+                    "content": "渐变",
+                    "effectScale": 1,
+                    "textShadow": null,
+                    "autoScale": true,
+                    "textEffects": [
+                        {
+                            "enable": true,
+                            "collapse": false,
+                            "offset": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "skew": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "stroke": {
+                                "enable": false,
+                                "color": "#000000ff",
+                                "width": 2.8235294117647056
+                            },
+                            "shadow": {
+                                "enable": false,
+                                "color": "#00000069",
+                                "offsetX": 2.369589930527321,
+                                "offsetY": 2.2882863968061096,
+                                "blur": 2.1999999999999997
+                            },
+                            "filling": {
+                                "enable": true,
+                                "type": 2,
+                                "repeat": 1,
+                                "color": "#000000ff",
+                                "imageContent": {
+                                    "repeat": 0,
+                                    "image": null,
+                                    "width": null,
+                                    "height": null,
+                                    "scaleX": 1,
+                                    "scaleY": 1
+                                },
+                                "gradient": {
+                                    "byLine": 0,
+                                    "angle": 0,
+                                    "stops": [
+                                        {
+                                            "color": "#d64971ff",
+                                            "offset": 0
+                                        },
+                                        {
+                                            "color": "#962086ff",
+                                            "offset": 0.27941176470588236
+                                        },
+                                        {
+                                            "color": "#3338d4ff",
+                                            "offset": 0.5764705882352942
+                                        },
+                                        {
+                                            "color": "#60ccf7ff",
+                                            "offset": 1
+                                        }
+                                    ]
+                                }
+                            },
+                            "excludeScale": []
+                        }
+                    ],
+                    "aggregatedColors": [
+                        "#000000ff"
+                    ],
+                    "mainColor": null,
+                    "style": {},
+                    "clip": null,
+                    "version": "5.4.14.beta.8",
+                    "rule": "rule_c8033bdf1a05980c29995246203ec366",
+                    "materialId": 5144,
+                    "disableColor": true,
+                    "ruleIndex": -1
+                }
+            ]
+        },
+        {
+            "width": 300,
+            "height": 200,
+            "backgroundColor": "white",
+            "backgroundImage": "",
+            "elements": [
+                {
+                    "transform": {
+                        "a": 1,
+                        "b": 0,
+                        "c": 0,
+                        "d": 1,
+                        "tx": 0,
+                        "ty": 0
+                    },
+                    "type": "text",
+                    "category": "",
+                    "opacity": 1,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "width": 207,
+                    "height": 102,
+                    "left": 54,
+                    "top": 53,
+                    "boxShadow": null,
+                    "resize": 5,
+                    "dragable": true,
+                    "rotatable": true,
+                    "editable": true,
+                    "frozen": false,
+                    "hidden": false,
+                    "lock": false,
+                    "borderRadius": 0,
+                    "filter": {
+                        "hueRotate": 0,
+                        "saturate": 0,
+                        "brightness": 0,
+                        "gaussianBlur": 0
+                    },
+                    "color": "#000000ff",
+                    "backgroundColor": "#ffffff00",
+                    "fontFamily": "SourceHanSerifSC-Medium",
+                    "fontStyle": "normal",
+                    "fontWeight": 400,
+                    "fontSize": "85",
+                    "lineHeight": 1.2,
+                    "letterSpacing": 0,
+                    "textDecoration": "none",
+                    "writingMode": "horizontal-tb",
+                    "textAlign": "center",
+                    "verticalAlign": "top",
+                    "content": "描边1",
+                    "effectScale": 1,
+                    "textShadow": null,
+                    "autoScale": true,
+                    "textEffects": [
+                        {
+                            "enable": true,
+                            "collapse": false,
+                            "offset": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "skew": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "stroke": {
+                                "enable": false,
+                                "color": "#000000ff",
+                                "width": 3
+                            },
+                            "shadow": {
+                                "enable": false,
+                                "color": "#000000ff",
+                                "offsetX": 0,
+                                "offsetY": 0,
+                                "blur": 0
+                            },
+                            "filling": {
+                                "enable": true,
+                                "type": 2,
+                                "repeat": 1,
+                                "color": "#ffffffff",
+                                "imageContent": {
+                                    "repeat": 0,
+                                    "image": null,
+                                    "width": null,
+                                    "height": null,
+                                    "scaleX": 1,
+                                    "scaleY": 1
+                                },
+                                "gradient": {
+                                    "byLine": 0,
+                                    "angle": -120,
+                                    "stops": [
+                                        {
+                                            "color": "#0069d5ff",
+                                            "offset": 0.5470588235294117
+                                        },
+                                        {
+                                            "color": "#0067d600",
+                                            "offset": 0.8852941176470588
+                                        }
+                                    ]
+                                }
+                            },
+                            "excludeScale": []
+                        }
+                    ],
+                    "aggregatedColors": [
+                        "#000000ff"
+                    ],
+                    "mainColor": null,
+                    "style": {},
+                    "clip": null,
+                    "version": "5.4.14.beta.8",
+                    "rule": "rule_fb9d8aa31f1afcb6bf69f37dfe36bf84",
+                    "materialId": 5138,
+                    "disableColor": true,
+                    "ruleIndex": -1
+                }
+            ]
+        },
+        {
+            "width": 300,
+            "height": 200,
+            "backgroundColor": "white",
+            "backgroundImage": "",
+            "elements": [
+                {
+                    "transform": {
+                        "a": 1,
+                        "b": 0,
+                        "c": 0,
+                        "d": 1,
+                        "tx": 0,
+                        "ty": 0
+                    },
+                    "type": "text",
+                    "category": "",
+                    "opacity": 1,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "width": 188,
+                    "height": 102,
+                    "left": 63.5,
+                    "top": 53.99999999999999,
+                    "boxShadow": null,
+                    "resize": 5,
+                    "dragable": true,
+                    "rotatable": true,
+                    "editable": true,
+                    "frozen": false,
+                    "hidden": false,
+                    "lock": false,
+                    "borderRadius": 0,
+                    "filter": {
+                        "hueRotate": 0,
+                        "saturate": 0,
+                        "brightness": 0,
+                        "gaussianBlur": 0
+                    },
+                    "color": "#031ccfff",
+                    "backgroundColor": "#ffffff00",
+                    "fontFamily": "PangMenZhengDao",
+                    "fontStyle": "normal",
+                    "fontWeight": 400,
+                    "fontSize": "85",
+                    "lineHeight": 1.2,
+                    "letterSpacing": 0,
+                    "textDecoration": "none",
+                    "writingMode": "horizontal-tb",
+                    "textAlign": "center",
+                    "verticalAlign": "top",
+                    "content": "劲爆\n",
+                    "effectScale": 1,
+                    "textShadow": null,
+                    "autoScale": true,
+                    "textEffects": [
+                        {
+                            "enable": true,
+                            "collapse": false,
+                            "offset": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "skew": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "stroke": {
+                                "enable": false,
+                                "color": "#000000ff",
+                                "width": 3
+                            },
+                            "shadow": {
+                                "enable": false,
+                                "color": "#000000ff",
+                                "offsetX": 0,
+                                "offsetY": 0,
+                                "blur": 0
+                            },
+                            "filling": {
+                                "enable": true,
+                                "type": 1,
+                                "repeat": 1,
+                                "color": "#999999ff",
+                                "imageContent": {
+                                    "repeat": 1,
+                                    "image": "https://st-gdx.dancf.com/www/8/design/20180408-152346-1.png",
+                                    "width": 362,
+                                    "height": 85,
+                                    "scaleX": 1,
+                                    "scaleY": 1
+                                },
+                                "gradient": {
+                                    "byLine": 0,
+                                    "angle": 0,
+                                    "stops": [
+                                        {
+                                            "color": "#ffffffff",
+                                            "offset": 0
+                                        },
+                                        {
+                                            "color": "#000000ff",
+                                            "offset": 1
+                                        }
+                                    ]
+                                }
+                            },
+                            "excludeScale": []
+                        }
+                    ],
+                    "aggregatedColors": [
+                        "#000000ff"
+                    ],
+                    "mainColor": null,
+                    "style": {},
+                    "clip": null,
+                    "version": "5.4.14.beta.8",
+                    "rule": "rule_436e4b13c368da6985ece76353146081"
+                }
+            ]
+        },
+        {
+            "width": 300,
+            "height": 200,
+            "backgroundColor": "white",
+            "backgroundImage": "",
+            "elements": [
+                {
+                    "transform": {
+                        "a": 1,
+                        "b": 0,
+                        "c": 0,
+                        "d": 1,
+                        "tx": 0,
+                        "ty": 0
+                    },
+                    "type": "text",
+                    "category": "",
+                    "opacity": 1,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "width": 201,
+                    "height": 114,
+                    "left": 57,
+                    "top": 55,
+                    "boxShadow": null,
+                    "resize": 5,
+                    "dragable": true,
+                    "rotatable": true,
+                    "editable": true,
+                    "frozen": false,
+                    "hidden": false,
+                    "lock": false,
+                    "borderRadius": 0,
+                    "filter": {
+                        "hueRotate": 0,
+                        "saturate": 0,
+                        "brightness": 0,
+                        "gaussianBlur": 0
+                    },
+                    "color": "#bb0000ff",
+                    "backgroundColor": "#ffffff00",
+                    "fontFamily": "SentyTang",
+                    "fontStyle": "normal",
+                    "fontWeight": 400,
+                    "fontSize": "95",
+                    "lineHeight": 1.2,
+                    "letterSpacing": 0,
+                    "textDecoration": "none",
+                    "writingMode": "horizontal-tb",
+                    "textAlign": "center",
+                    "verticalAlign": "top",
+                    "content": "描边",
+                    "effectScale": 1,
+                    "textShadow": null,
+                    "autoScale": true,
+                    "textEffects": [
+                        {
+                            "enable": true,
+                            "collapse": false,
+                            "offset": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "skew": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "stroke": {
+                                "enable": false,
+                                "color": "#000000ff",
+                                "width": 3
+                            },
+                            "shadow": {
+                                "enable": false,
+                                "color": "#000000ff",
+                                "offsetX": 0,
+                                "offsetY": 0,
+                                "blur": 0
+                            },
+                            "filling": {
+                                "enable": true,
+                                "type": 0,
+                                "repeat": 1,
+                                "color": "#fdf1cfff",
+                                "imageContent": {
+                                    "repeat": 0,
+                                    "image": null,
+                                    "width": null,
+                                    "height": null,
+                                    "scaleX": 1,
+                                    "scaleY": 1
+                                },
+                                "gradient": {
+                                    "byLine": 0,
+                                    "angle": 0,
+                                    "stops": [
+                                        {
+                                            "color": "#ffffffff",
+                                            "offset": 0
+                                        },
+                                        {
+                                            "color": "#000000ff",
+                                            "offset": 1
+                                        }
+                                    ]
+                                }
+                            },
+                            "excludeScale": []
+                        },
+                        {
+                            "enable": true,
+                            "collapse": false,
+                            "offset": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "skew": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "stroke": {
+                                "enable": true,
+                                "color": "#bb0000ff",
+                                "width": 10.7
+                            },
+                            "shadow": {
+                                "enable": false,
+                                "color": "#000000ff",
+                                "offsetX": 0,
+                                "offsetY": 0,
+                                "blur": 0
+                            },
+                            "filling": {
+                                "enable": false,
+                                "type": 0,
+                                "repeat": 1,
+                                "color": "#bb0000ff",
+                                "imageContent": {
+                                    "repeat": 0,
+                                    "image": null,
+                                    "width": null,
+                                    "height": null,
+                                    "scaleX": 1,
+                                    "scaleY": 1
+                                },
+                                "gradient": {
+                                    "byLine": 0,
+                                    "angle": 0,
+                                    "stops": [
+                                        {
+                                            "color": "#ffffffff",
+                                            "offset": 0
+                                        },
+                                        {
+                                            "color": "#000000ff",
+                                            "offset": 1
+                                        }
+                                    ]
+                                }
+                            },
+                            "excludeScale": []
+                        },
+                        {
+                            "enable": true,
+                            "collapse": false,
+                            "offset": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "skew": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "stroke": {
+                                "enable": true,
+                                "color": "#fdf1cfff",
+                                "width": 11.9
+                            },
+                            "shadow": {
+                                "enable": false,
+                                "color": "#000000ff",
+                                "offsetX": 0,
+                                "offsetY": 0,
+                                "blur": 0
+                            },
+                            "filling": {
+                                "enable": false,
+                                "type": 0,
+                                "repeat": 1,
+                                "color": "#bb0000ff",
+                                "imageContent": {
+                                    "repeat": 0,
+                                    "image": null,
+                                    "width": null,
+                                    "height": null,
+                                    "scaleX": 1,
+                                    "scaleY": 1
+                                },
+                                "gradient": {
+                                    "byLine": 0,
+                                    "angle": 0,
+                                    "stops": [
+                                        {
+                                            "color": "#ffffffff",
+                                            "offset": 0
+                                        },
+                                        {
+                                            "color": "#000000ff",
+                                            "offset": 1
+                                        }
+                                    ]
+                                }
+                            },
+                            "excludeScale": []
+                        },
+                        {
+                            "enable": true,
+                            "collapse": false,
+                            "offset": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "skew": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "stroke": {
+                                "enable": true,
+                                "color": "#bb0000ff",
+                                "width": 19.200000000000003
+                            },
+                            "shadow": {
+                                "enable": false,
+                                "color": "#000000ff",
+                                "offsetX": 0,
+                                "offsetY": 0,
+                                "blur": 0
+                            },
+                            "filling": {
+                                "enable": false,
+                                "type": 0,
+                                "repeat": 1,
+                                "color": "#bb0000ff",
+                                "imageContent": {
+                                    "repeat": 0,
+                                    "image": null,
+                                    "width": null,
+                                    "height": null,
+                                    "scaleX": 1,
+                                    "scaleY": 1
+                                },
+                                "gradient": {
+                                    "byLine": 0,
+                                    "angle": 0,
+                                    "stops": [
+                                        {
+                                            "color": "#ffffffff",
+                                            "offset": 0
+                                        },
+                                        {
+                                            "color": "#000000ff",
+                                            "offset": 1
+                                        }
+                                    ]
+                                }
+                            },
+                            "excludeScale": []
+                        }
+                    ],
+                    "aggregatedColors": [
+                        "rgba(187,0,0,1)",
+                        "rgba(253,241,207,1)"
+                    ],
+                    "mainColor": null,
+                    "style": {},
+                    "clip": null,
+                    "version": "5.4.14.beta.8",
+                    "rule": "rule_cbc8f7ee27f42c550d9c81c91c96ac1e"
+                }
+            ]
+        },
+        {
+            "width": 300,
+            "height": 200,
+            "backgroundColor": "white",
+            "backgroundImage": "",
+            "elements": [
+                {
+                    "transform": {
+                        "a": 1,
+                        "b": 0,
+                        "c": 0,
+                        "d": 1,
+                        "tx": 0,
+                        "ty": 0
+                    },
+                    "type": "text",
+                    "category": "",
+                    "opacity": 1,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "width": 188,
+                    "height": 102,
+                    "left": 64.5,
+                    "top": 51.99999999999999,
+                    "boxShadow": null,
+                    "resize": 5,
+                    "dragable": true,
+                    "rotatable": true,
+                    "editable": true,
+                    "frozen": false,
+                    "hidden": false,
+                    "lock": false,
+                    "borderRadius": 0,
+                    "filter": {
+                        "hueRotate": 0,
+                        "saturate": 0,
+                        "brightness": 0,
+                        "gaussianBlur": 0
+                    },
+                    "color": "#368f3aff",
+                    "backgroundColor": "#ffffff00",
+                    "fontFamily": "HappyZcool-2016",
+                    "fontStyle": "normal",
+                    "fontWeight": 700,
+                    "fontSize": "85",
+                    "lineHeight": 1.2,
+                    "letterSpacing": "0",
+                    "textDecoration": "none",
+                    "writingMode": "horizontal-tb",
+                    "textAlign": "center",
+                    "verticalAlign": "top",
+                    "content": "立体",
+                    "effectScale": 1,
+                    "textShadow": null,
+                    "autoScale": true,
+                    "textEffects": [
+                        {
+                            "enable": true,
+                            "collapse": false,
+                            "offset": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "skew": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "stroke": {
+                                "enable": false,
+                                "color": "#000000ff",
+                                "width": 3
+                            },
+                            "shadow": {
+                                "enable": true,
+                                "color": "#78b437ff",
+                                "offsetX": -1.8369701987210297e-16,
+                                "offsetY": 3,
+                                "blur": 0
+                            },
+                            "filling": {
+                                "enable": true,
+                                "type": 0,
+                                "repeat": 1,
+                                "color": "#ffffffff",
+                                "imageContent": {
+                                    "repeat": 0,
+                                    "image": null,
+                                    "width": null,
+                                    "height": null,
+                                    "scaleX": 1,
+                                    "scaleY": 1
+                                },
+                                "gradient": {
+                                    "byLine": 0,
+                                    "angle": 0,
+                                    "stops": [
+                                        {
+                                            "color": "#ffffffff",
+                                            "offset": 0
+                                        },
+                                        {
+                                            "color": "#000000ff",
+                                            "offset": 1
+                                        }
+                                    ]
+                                }
+                            },
+                            "excludeScale": []
+                        },
+                        {
+                            "enable": true,
+                            "collapse": false,
+                            "offset": {
+                                "enable": false,
+                                "x": -6.123233995736766e-20,
+                                "y": 0.001
+                            },
+                            "skew": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "stroke": {
+                                "enable": true,
+                                "color": "#368f3aff",
+                                "width": 12
+                            },
+                            "shadow": {
+                                "enable": false,
+                                "color": "#000000ff",
+                                "offsetX": 0,
+                                "offsetY": 0,
+                                "blur": 0
+                            },
+                            "filling": {
+                                "enable": false,
+                                "type": 0,
+                                "repeat": 1,
+                                "color": "#368f3aff",
+                                "imageContent": {
+                                    "repeat": 0,
+                                    "image": null,
+                                    "width": null,
+                                    "height": null,
+                                    "scaleX": 1,
+                                    "scaleY": 1
+                                },
+                                "gradient": {
+                                    "byLine": 0,
+                                    "angle": 0,
+                                    "stops": [
+                                        {
+                                            "color": "#ffffffff",
+                                            "offset": 0
+                                        },
+                                        {
+                                            "color": "#000000ff",
+                                            "offset": 1
+                                        }
+                                    ]
+                                }
+                            },
+                            "excludeScale": []
+                        },
+                        {
+                            "enable": true,
+                            "collapse": false,
+                            "offset": {
+                                "enable": false,
+                                "x": -2.755455298081545e-16,
+                                "y": 4.5
+                            },
+                            "skew": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "stroke": {
+                                "enable": true,
+                                "color": "#1c6919ff",
+                                "width": 15
+                            },
+                            "shadow": {
+                                "enable": false,
+                                "color": "#2747269c",
+                                "offsetX": -6.429395695523604e-16,
+                                "offsetY": 10.5,
+                                "blur": 10.3
+                            },
+                            "filling": {
+                                "enable": false,
+                                "type": 0,
+                                "repeat": 1,
+                                "color": "#368f3aff",
+                                "imageContent": {
+                                    "repeat": 0,
+                                    "image": null,
+                                    "width": null,
+                                    "height": null,
+                                    "scaleX": 1,
+                                    "scaleY": 1
+                                },
+                                "gradient": {
+                                    "byLine": 0,
+                                    "angle": 0,
+                                    "stops": [
+                                        {
+                                            "color": "#ffffffff",
+                                            "offset": 0
+                                        },
+                                        {
+                                            "color": "#000000ff",
+                                            "offset": 1
+                                        }
+                                    ]
+                                }
+                            },
+                            "excludeScale": []
+                        }
+                    ],
+                    "aggregatedColors": [
+                        "#ffffffff",
+                        "#78b437ff",
+                        "#368f3aff",
+                        "#1c6919ff",
+                        "#2747269c"
+                    ],
+                    "mainColor": "#78b437ff",
+                    "style": {},
+                    "clip": null,
+                    "version": "5.4.14.beta.8",
+                    "rule": "rule_f806202d34b8cdfe59e2fd3b9b462633"
+                }
+            ]
+        },
+        {
+            "width": 300,
+            "height": 200,
+            "backgroundColor": "white",
+            "backgroundImage": "",
+            "elements": [
+                {
+                    "transform": {
+                        "a": 0.997267754456709,
+                        "b": -0.07387168551531192,
+                        "c": 0.07387168551531192,
+                        "d": 0.997267754456709,
+                        "tx": 0,
+                        "ty": 0
+                    },
+                    "type": "text",
+                    "category": "",
+                    "opacity": 1,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "width": 212,
+                    "height": 120,
+                    "left": 62.5,
+                    "top": 50.00000000000001,
+                    "boxShadow": null,
+                    "resize": 5,
+                    "dragable": true,
+                    "rotatable": true,
+                    "editable": true,
+                    "frozen": false,
+                    "hidden": false,
+                    "lock": false,
+                    "borderRadius": 0,
+                    "filter": {
+                        "hueRotate": 0,
+                        "saturate": 0,
+                        "brightness": 0,
+                        "gaussianBlur": 0
+                    },
+                    "color": "#ff003cff",
+                    "backgroundColor": "#ffffff00",
+                    "fontFamily": "butter",
+                    "fontStyle": "normal",
+                    "fontWeight": null,
+                    "fontSize": "100",
+                    "lineHeight": 1.2,
+                    "letterSpacing": 0,
+                    "textDecoration": "none",
+                    "writingMode": "horizontal-tb",
+                    "textAlign": "center",
+                    "verticalAlign": "top",
+                    "content": "卡通",
+                    "effectScale": 1,
+                    "textShadow": null,
+                    "autoScale": true,
+                    "textEffects": [
+                        {
+                            "enable": true,
+                            "collapse": false,
+                            "offset": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "skew": {
+                                "enable": true,
+                                "x": -20,
+                                "y": 0
+                            },
+                            "stroke": {
+                                "enable": true,
+                                "color": "#ff003cff",
+                                "width": 1.0999999999999999
+                            },
+                            "shadow": {
+                                "enable": false,
+                                "color": "#000000ff",
+                                "offsetX": 0,
+                                "offsetY": 0,
+                                "blur": 0
+                            },
+                            "filling": {
+                                "enable": true,
+                                "type": 0,
+                                "repeat": 1,
+                                "color": "#ff003cff",
+                                "imageContent": {
+                                    "repeat": 0,
+                                    "image": null,
+                                    "width": null,
+                                    "height": null,
+                                    "scaleX": 1,
+                                    "scaleY": 1
+                                },
+                                "gradient": {
+                                    "byLine": 0,
+                                    "angle": 0,
+                                    "stops": [
+                                        {
+                                            "color": "#ffffffff",
+                                            "offset": 0
+                                        },
+                                        {
+                                            "color": "#000000ff",
+                                            "offset": 1
+                                        }
+                                    ]
+                                }
+                            },
+                            "excludeScale": []
+                        },
+                        {
+                            "enable": true,
+                            "collapse": false,
+                            "offset": {
+                                "enable": false,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "skew": {
+                                "enable": true,
+                                "x": -20,
+                                "y": 0
+                            },
+                            "stroke": {
+                                "enable": true,
+                                "color": "#ffffffff",
+                                "width": 7.500000000000001
+                            },
+                            "shadow": {
+                                "enable": false,
+                                "color": "#000000ff",
+                                "offsetX": 0,
+                                "offsetY": 0,
+                                "blur": 0
+                            },
+                            "filling": {
+                                "enable": false,
+                                "type": 0,
+                                "repeat": 1,
+                                "color": "#999999ff",
+                                "imageContent": {
+                                    "repeat": 0,
+                                    "image": null,
+                                    "width": null,
+                                    "height": null,
+                                    "scaleX": 1,
+                                    "scaleY": 1
+                                },
+                                "gradient": {
+                                    "byLine": 0,
+                                    "angle": 0,
+                                    "stops": [
+                                        {
+                                            "color": "#ffffffff",
+                                            "offset": 0
+                                        },
+                                        {
+                                            "color": "#000000ff",
+                                            "offset": 1
+                                        }
+                                    ]
+                                }
+                            },
+                            "excludeScale": []
+                        },
+                        {
+                            "enable": true,
+                            "collapse": false,
+                            "offset": {
+                                "enable": false,
+                                "x": 7.392057511395203,
+                                "y": 8.809511095868247
+                            },
+                            "skew": {
+                                "enable": true,
+                                "x": -20,
+                                "y": 0
+                            },
+                            "stroke": {
+                                "enable": true,
+                                "color": "#1328c4ff",
+                                "width": 7.700000000000001
+                            },
+                            "shadow": {
+                                "enable": false,
+                                "color": "#000000ff",
+                                "offsetX": 0,
+                                "offsetY": 0,
+                                "blur": 0
+                            },
+                            "filling": {
+                                "enable": true,
+                                "type": 0,
+                                "repeat": 1,
+                                "color": "#1328c4ff",
+                                "imageContent": {
+                                    "repeat": 0,
+                                    "image": null,
+                                    "width": null,
+                                    "height": null,
+                                    "scaleX": 1,
+                                    "scaleY": 1
+                                },
+                                "gradient": {
+                                    "byLine": 0,
+                                    "angle": 0,
+                                    "stops": [
+                                        {
+                                            "color": "#ffffffff",
+                                            "offset": 0
+                                        },
+                                        {
+                                            "color": "#000000ff",
+                                            "offset": 1
+                                        }
+                                    ]
+                                }
+                            },
+                            "excludeScale": []
+                        },
+                        {
+                            "enable": true,
+                            "collapse": true,
+                            "offset": {
+                                "enable": false,
+                                "x": 14.699999999999998,
+                                "y": 19.600000000000005
+                            },
+                            "skew": {
+                                "enable": true,
+                                "x": -20,
+                                "y": 0
+                            },
+                            "stroke": {
+                                "enable": false,
+                                "color": "#000000ff",
+                                "width": 3
+                            },
+                            "shadow": {
+                                "enable": false,
+                                "color": "#000000ff",
+                                "offsetX": 0,
+                                "offsetY": 0,
+                                "blur": 0
+                            },
+                            "filling": {
+                                "enable": true,
+                                "type": 1,
+                                "repeat": 1,
+                                "color": "#999999ff",
+                                "imageContent": {
+                                    "repeat": 1,
+                                    "image": "https://st-gdx.dancf.com/www/8/design/20180408-160135-3.png",
+                                    "width": 496,
+                                    "height": 182,
+                                    "scaleX": 1,
+                                    "scaleY": 1
+                                },
+                                "gradient": {
+                                    "byLine": 0,
+                                    "angle": 0,
+                                    "stops": [
+                                        {
+                                            "color": "#ffffffff",
+                                            "offset": 0
+                                        },
+                                        {
+                                            "color": "#000000ff",
+                                            "offset": 1
+                                        }
+                                    ]
+                                }
+                            },
+                            "excludeScale": []
+                        }
+                    ],
+                    "aggregatedColors": [
+                        "#ff003cff",
+                        "#ffffffff",
+                        "#1328c4ff"
+                    ],
+                    "mainColor": null,
+                    "style": {},
+                    "clip": null,
+                    "version": "5.4.14.beta.8",
+                    "rule": "rule_17c8f4430fa879b2e07ac579011be032"
+                }
+            ]
+        }
+    ]
+}

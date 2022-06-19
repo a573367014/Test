@@ -1,0 +1,63 @@
+<div
+    class="editor-element"
+    :class="[
+        'editor-element-styled-text',
+        model.lock ? 'editor-element-lock' : '',
+        model.hidden ? 'editor-element-hidden' : '',
+        model.frozen ? 'editor-element-frozen' : '',
+        model.$loaded ? '' : 'editor-element-loading',
+        model.$selected ? 'editor-element-selected' : '',
+        model.$editing ? 'editor-element-editing' : ''
+    ]"
+    :style="[baseStyle, cssStyle]"
+>
+    <div
+        class="element-inner"
+        :style="{
+            backgroundColor: backgroundColor,
+            textAlign: model.textAlign,
+            lineHeight: model.lineHeight,
+            textShadow: textShadow,
+            width: model.width + 'px',
+            height: model.height + 'px',
+            transform: 'scale(' + global.zoom + ')',
+        }"
+    >
+        <div
+            class="elment-inner-content"
+            :class="isVertical ? 'middle-v' : 'middle-h'"
+            :style="{
+                padding: padding
+            }"
+        >
+            <div class="element-main" :style="textStyle" v-html="contentsHTML"></div>
+            <div
+                class="element-main element-main-unrotated"
+                :style="[textStyle, {
+                    opacity: 0,
+                    zIndex: -1,
+                    position: 'absolute',
+                    transform: transformInvert,
+                }]"
+                v-html="contentsHTML"
+            ></div>
+            <div
+                class="render-error"
+                v-if="renderError && !resizing"
+                @click="renderStyledText(renderingTimeStamp)"
+            ></div>
+            <canvas class="styled-text-result" :style="canvasStyle" ref="canvas" />
+        </div>
+    </div>
+
+    <ElementCommon
+        :element="model"
+        :options="options"
+        :global="global"
+        :editor="editor"
+        :layout="editor.currentLayout"
+        :hideBlink="hideBlink"
+        :isShowBlink="isShowBlink"
+        :bgNinePatch="bgNinePatch"
+    />
+</div>

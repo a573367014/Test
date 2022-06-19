@@ -1,0 +1,52 @@
+<div
+    class="editor-element"
+    :class="[
+        'editor-element-' + model.type,
+        model.lock ? 'editor-element-lock' : '',
+        model.hidden ? 'editor-element-hidden' : '',
+        model.frozen ? 'editor-element-frozen' : '',
+        model.$loaded ? '' : 'editor-element-loading',
+        model.$selected ? 'editor-element-selected' : '',
+        model.$editing ? 'editor-element-editing' : ''
+    ]"
+    :style="[baseStyle]"
+>
+    <div class="editor-element-flex__container" :style="scaleStyle">
+        <!-- elements -->
+        <template v-for="(element, index) in model.elements">
+            <component
+                ref="elements"
+                v-if="editor.supportTypesMap[element.type]"
+                :data-id="element.$id"
+                :key="element.$id"
+                :is="element.type + '-element'"
+                :options="options"
+                :global="global"
+                :model="element"
+                :editor="editor"
+                :class="element.$className"
+            />
+            <common-element
+                v-else
+                :key="element.$id"
+                :model="element"
+                :global="global"
+                :options="options"
+                :editor="editor"
+            />
+        </template>
+    </div>
+
+    <div ref="shadowContainer" />
+
+    <ElementCommon
+        :element="model"
+        :options="options"
+        :global="global"
+        :editor="editor"
+        :layout="editor.currentLayout"
+        :hideBlink="hideBlink"
+        :isShowBlink="isShowBlink"
+        :bgNinePatch="bgNinePatch"
+    />
+</div>

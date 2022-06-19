@@ -1,0 +1,10 @@
+<div
+    class="editor-border"
+    :class="{
+        'editor-border--loaded': border.type !== 'image' || border.$loaded,
+        'is-element': !!element
+    }"
+    :style="cssStyle"
+>
+    <div class="editor-border__main" :style="borderStyle" />
+</div>

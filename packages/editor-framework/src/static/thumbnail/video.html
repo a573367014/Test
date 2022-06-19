@@ -1,0 +1,15 @@
+<div>
+    <div class="layer-thumbnail">
+        <video
+            class="thumbnail-image"
+            :src="element.url"
+            :style="{
+                width: width + 'px',
+                height: height + 'px',
+                backgroundColor: element.backgroundColor,
+            }"
+        ></video>
+    </div>
+
+    <span class="layer-info" v-text="title"></span>
+</div>

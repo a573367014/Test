@@ -1,0 +1,45 @@
+<div
+    class="editor-image-transform"
+    :class="[
+        isSmallMode ? 'is-small' : '',
+        isCrop ? 'is-crop' : '',
+        action.animation ? 'is-animation' : '',
+        action.scale ? 'is-scale': '',
+        action.draging ? 'is-drag': '',
+        action.rotate ? 'is-rotator': '',
+    ]"
+>
+    <span
+        class="editor-image-transform__bg"
+        :class="[action.scale && isMaxScaleLimit ? 'is-limit' : '']"
+        :style="bgStyle"
+        data-cursor="move"
+    >
+        <span
+            class="editor-image-transform__item editor-image-transform__drag"
+            @mousedown="initDrag($event)"
+        />
+    </span>
+
+    <span
+        class="editor-image-transform__item editor-image-transform__rotator"
+        :style="{
+            transform: 'rotate(' + imageRotate + 'deg)',
+            height: action.rotate ? activeRotatorHeight + 'px' : rotatorHeight + 'px'
+        }"
+        :data-cursor="'cursor:rotator, rotate:' + (180-rotate)"
+    >
+        <b @mousedown="initRotator($event)"  :style="{transform: 'rotate(-' + rotate + 'deg )'}">
+            <span class="text-tip">{{rotate | angle}}</span>
+        </b>
+    </span>
+
+    <span class="editor-image-transform__item editor-image-transform__scale" :style="bgStyle">
+        <span class="editor-image-transform__scale-inner" @mousedown="initScale($event)" data-cursor="ewResize">
+            <span class="text-tip text-tip--hover" v-if="!action.scale">{{$tsl('缩放')}}</span>
+            <span class="text-tip">{{scaleTip}}</span>
+        </span>
+    </span>
+
+    <span v-if="!isCrop || !isSmallMode" class="editor-image-transform__circle"></span>
+</div>

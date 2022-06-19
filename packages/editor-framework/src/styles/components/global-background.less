@@ -1,0 +1,57 @@
+.editor-global-layout {
+    .editor-shell-scale {
+        background-color: #fff;
+    }
+
+    .editor-canvas {
+        background-color: transparent !important;
+        background-image: none !important;
+    }
+}
+
+.editor-global-background,
+.editor-global-background__main {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.editor-global-background {
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+.editor-global-background--selected .editor-global-background__border {
+    pointer-events: none;
+}
+.editor-global-background--selected .editor-global-background__border,
+.editor-global-background-editor::after,
+.editor-global-background-editor::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border-width: 1px;
+    content: '';
+}
+.editor-global-background-editor::before,
+.editor-global-background--selected .editor-global-background__border--before {
+    display: block;
+    border-color: #666;
+    border-style: solid;
+}
+
+.editor-global-background-editor::after,
+.editor-global-background--selected .editor-global-background__border--after {
+    display: block;
+    border-color: #fff;
+    border-style: dashed;
+}

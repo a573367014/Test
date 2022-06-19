@@ -1,0 +1,6 @@
+<div :style="cssStyle" class="editor-background-mosaic">
+    <img v-if="imageUrl" draggable="false" crossorigin="anonymous" ref="image" :src="imageUrl" />
+
+    <canvas v-show="!imageUrl" ref="canvas"></canvas>
+    <slot></slot>
+</div>

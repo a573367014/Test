@@ -1,0 +1,23 @@
+<div
+    class="editor-background is-element"
+    :style="{
+        width: model.width * global.zoom + 'px',
+        height: model.height * global.zoom + 'px',
+        backgroundColor: backgroundColor
+    }"
+>
+    <div v-if="effectGradient" class="editor-background__main" :style="mainStyle" />
+
+    <div class="editor-background__main" v-if="backgroundImage">
+        <div class="editor-background__image-wrap" :style="imageStyle">
+            <img
+                draggable="false"
+                crossorigin="anonymous"
+                :src="backgroundImage"
+            />
+        </div>
+    </div>
+
+    <slot></slot>
+    <slot name="watermark"></slot>
+</div>

@@ -1,0 +1,1 @@
+export const MODIFY_MIN_FONTSIZE_VERSION = '7.1.62';

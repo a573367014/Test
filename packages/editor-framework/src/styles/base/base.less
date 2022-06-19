@@ -1,0 +1,189 @@
+* {
+    -webkit-tap-highlight-color:transparent;
+}
+
+// transparent
+.transparent(@width, @color-main:#ccc, @color-assist:#fff) {
+    background-color: @color-assist;
+    background-image: -webkit-linear-gradient(
+        bottom left,
+        @color-main 25%,
+        transparent 25%,
+        transparent 75%,
+        @color-main 75%,
+        @color-main
+    ),
+        -webkit-linear-gradient(bottom left, @color-main 25%, transparent 25%, transparent 75%, @color-main
+    75%, @color-main);
+    background-image: linear-gradient(
+        to top right,
+        @color-main 25%,
+        transparent 25%,
+        transparent 75%,
+        @color-main 75%,
+        @color-main
+    ),
+        linear-gradient(
+        to top right,
+        @color-main 25%,
+        transparent 25%,
+        transparent 75%,
+        @color-main 75%,
+        @color-main
+    );
+    background-position: 0 0, @width @width;
+    background-size: 2 * @width 2 * @width;
+}
+
+// icon
+.icon(@name; @fill:#757575) {
+    display: inline-block;
+
+    @path: './assets/svg/@{name}.svg';
+
+    background-image: svg-load(@path, fill= @fill);
+
+    // background-image: url("../assets/slice/icon-@{name}.png");
+    // background-image: -webkit-image-set(url("../assets/slice/icon-@{name}.png") 1x, url("../assets/slice/icon-@{name}@2x.png") 2x);
+    // background-image: -moz-image-set(url("../assets/slice/icon-@{name}.png") 1x, url("../assets/slice/icon-@{name}@2x.png") 2x);
+    // background-image: image-set(url("../assets/slice/icon-@{name}.png") 1x, url("../assets/slice/icon-@{name}@2x.png") 2x);
+}
+
+// container
+.editor-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    overflow: auto;
+    font: 14px/1.5 Arial, 'PingFangSC-Regular', 'STHeitiSC-Light', 'Helvetica Neue';
+    color: #333;
+    background: none;
+    outline: none;
+
+    .hide {
+        display: none;
+    }
+
+    // icon
+    [class|='icon'],
+    [class*=' icon-'] {
+        display: inline-block;
+        vertical-align: top;
+        background: no-repeat 50% 50%;
+    }
+}
+
+.editor-container,
+.editor-container *,
+.editor-container ::after,
+.editor-container ::before {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+// shel"
+.editor-shell-wrap {
+    position: relative;
+    box-sizing: content-box;
+    margin: 0 auto;
+    overflow: visible;
+}
+
+.editor-shell {
+    position: relative;
+    margin: 0 auto;
+    background: no-repeat 0 0;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
+
+    &.editor-overflow-mask {
+        &::after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5);
+            pointer-events: none;
+            content: ' ';
+        }
+        .editor-canvas {
+            overflow: visible;
+        }
+    }
+}
+
+.editor-tips[editor-aria-label] {
+    &::after,
+    &::before {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        display: none;
+        pointer-events: none;
+    }
+    &:hover {
+        z-index: 999;
+        &::before {
+            z-index: 999;
+            display: block;
+            width: 0;
+            height: 0;
+            margin: 3px 0 0 -5px;
+            color: rgba(0, 0, 0, 0.8);
+            border: 5px solid transparent;
+            border-bottom-color: rgba(0, 0, 0, 0.7);
+            content: '';
+        }
+        &::after {
+            z-index: 1;
+            display: block;
+            padding: 5px 8px;
+            margin-top: 13px;
+            font-size: 0.8em;
+            font-style: normal;
+            color: #fff;
+            text-align: center;
+            word-wrap: break-word;
+            white-space: pre;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 3px;
+            content: attr(editor-aria-label);
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+            -webkit-font-smoothing: subpixel-antialiased;
+        }
+    }
+}
+
+.editor-tips--up[editor-aria-label] {
+    &::after,
+    &::before {
+        top: auto;
+        bottom: 100%;
+    }
+    &:hover {
+        &::before {
+            margin: 0 0 3px -5px;
+            border: 5px solid transparent;
+            border-top-color: rgba(0, 0, 0, 0.7);
+        }
+        &::after {
+            margin-top: 13px;
+            margin-bottom: 13px;
+        }
+    }
+}
+
+.editor-scope-pointer-events-disable {
+    pointer-events: none;
+    .editor-shell,
+    .editor-selector,
+    .editor-highlight,
+    .editor-contextmenu {
+        pointer-events: auto;
+    }
+}

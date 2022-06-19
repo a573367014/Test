@@ -1,0 +1,41 @@
+// editor-num-picker
+.editor-num-picker {
+    line-height: 26px;
+    text-align: right;
+
+    label {
+        float: left;
+    }
+
+    input {
+        display: inline-block;
+        width: 3em;
+        height: 26px;
+        padding: 2px 3px;
+        font-size: inherit;
+        text-align: center;
+        vertical-align: top;
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 2px;
+        outline: 0;
+        -webkit-appearance: textfield;
+
+        &:focus {
+            border-color: #aaa;
+        }
+    }
+    button {
+        height: 26px;
+        vertical-align: top;
+        background: none;
+        border: 0;
+        outline: 0;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        display: none;
+    }
+}

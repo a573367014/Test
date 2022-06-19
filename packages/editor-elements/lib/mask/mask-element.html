@@ -1,0 +1,68 @@
+<div
+    class="editor-element"
+    :class="[
+        'editor-element-' + model.type,
+        model.lock ? 'editor-element-lock' : '',
+        model.hidden ? 'editor-element-hidden' : '',
+        model.frozen ? 'editor-element-frozen' : '',
+        model.$loaded ? '' : 'editor-element-loading',
+        model.$selected ? 'editor-element-selected' : '',
+        model.$editing ? 'editor-element-editing' : '',
+        linkSelected ? 'editor-element-link-selected' : ''
+    ]"
+    :style="[baseStyle, cssStyle]"
+>
+    <div draggable="false" class="element-main" :style="[mainStyle, maskStyle]">
+        <div class="element-main-inner" v-if="isGif && !canvasRendered" :style="imageWrapStyle">
+            <img ref="img" crossorigin :src="model.url" :style="imageStyle" />
+        </div>
+
+        <img
+            v-else-if="(!canvasRendered && imageUrl) || imageUrlCache"
+            crossorigin
+            ref="img"
+            class="element-mocker"
+            :src="imageUrl || imageUrlCache"
+            :style="effectedImageStyle"
+        />
+
+        <canvas
+            ref="canvas"
+            v-else-if="canvasRendered"
+            class="element-mocker"
+            :style="effectedImageStyle"
+        />
+    </div>
+
+    <div
+        class="mask-drop-area"
+        :class="{
+             'mask-drop-area--active': insideDropArea,
+             'mask-drop-area--small': maskDropAreaDimension.size === 'small'
+         }"
+        :style="maskDropAreaStyle"
+        v-if="isDesignMode && readyForDrop"
+    >
+        <svg version="1.1" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M17 15v4H1V2h12v1H2v15h14v-3h1zM7.547 9.547C9.7 5.849 13.517 4 19 4c-3.757 1.257-6.62 4.06-8.59 8.41L13 15H5V7l2.547 2.547z"
+            />
+        </svg>
+        {{ dropAreaText }}
+    </div>
+
+    <div class="element-tips-loading" v-if="lazyRendering">
+        <i class="fa fa-spin fa-spinner"></i>
+    </div>
+
+    <ElementCommon
+        :element="model"
+        :options="options"
+        :global="global"
+        :editor="editor"
+        :layout="editor.currentLayout"
+        :hideBlink="hideBlink"
+        :isShowBlink="isShowBlink"
+        :bgNinePatch="bgNinePatch"
+    />
+</div>

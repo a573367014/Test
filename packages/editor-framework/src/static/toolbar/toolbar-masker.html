@@ -1,0 +1,55 @@
+<div class="editor-toolbar" :class="['editor-toolbar-' + model.type]">
+    <div class="editor-toolbar-inner">
+        <span class="editor-toolbar-text">{{$tsl('缩放')}}</span>
+        <!-- <percentage-scaler :$events="$events"/> -->
+        <percentage-scaler
+            :min-scale="1"
+            :$events="$events"
+            :min-image-size="20"
+            from-zero />
+
+        <i class="editor-toolbar-pipe is-full"></i>
+
+        <template v-if="!isBackgroundCroper && config.maskerFitPictureEnable">
+            <button
+                :data-cursor="cursorFitStyle"
+                :disabled="!canFitImage"
+                class="editor-tooltips editor-toolbar-btn"
+                data-action="cancel"
+                @click.stop="editFitImage()"
+            >{{$tsl('适配图片')}}</button>
+
+            <i class="editor-toolbar-pipe"></i>
+        </template>
+
+        <button
+            :data-cursor="cursorResetStyle"
+            :disabled="!canReset"
+            class="editor-tooltips editor-toolbar-btn"
+            data-action="cancel"
+            @click.stop="editReset()"
+        >
+        {{$tsl('重置')}}
+        </button>
+        <i class="editor-toolbar-pipe"></i>
+
+        <button
+            data-cursor="pointer"
+            class="editor-tooltips editor-toolbar-btn"
+            data-action="cancel"
+            @click.stop="editCancel()"
+        >
+            <i class="icon-close"></i>
+        </button>
+        <i class="editor-toolbar-pipe"></i>
+
+        <button
+            data-cursor="pointer"
+            class="editor-tooltips editor-toolbar-btn"
+            data-action="apply"
+            @click.stop="editApply()"
+        >
+            <i class="icon-success"></i>
+        </button>
+    </div>
+</div>

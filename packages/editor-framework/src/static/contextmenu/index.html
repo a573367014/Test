@@ -1,0 +1,19 @@
+<UiContextmenu
+    ref="menu"
+    :menuData="menuData"
+    :show.sync="menu.isShow"
+    :x="menu.x"
+    :y="menu.y"
+    class="editor-contextmenu--editor"
+    :class="{'editor-contextmenu-no-sub-space': noSubSpace}"
+>
+    <LayerList
+        v-if="menu.isShow"
+        class="editor-contextmenu editor-contextmenu-layer-list editor-contextmenu--submenu"
+        thumbnailClass="editor-contextmenu__item editor-contextmenu__item--thumbnail"
+        :$events="$events"
+        :layer-list="layers"
+        :select-call="selectLayer"
+        :editor="editor"
+    />
+</UiContextmenu>

@@ -1,0 +1,16 @@
+.editor-mask-wrap {
+    position: absolute;
+    z-index: 1;
+    width: 0;
+    height: 0;
+    .editor-mask {
+        position: absolute;
+        overflow: hidden;
+        pointer-events: none;
+        mask-repeat: no-repeat;
+        mask-size: 100% 100%;
+        .editor-mask-info-element-move {
+            pointer-events: auto;
+        }
+    }
+}

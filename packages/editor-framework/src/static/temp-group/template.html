@@ -1,0 +1,33 @@
+<div v-if="tempGroupModel" class="editor-temp-group" :style="cssStyle">
+    <span
+        @mousedown="initDrag($event)"
+        @click.stop
+        class="editor-transition"
+        :class="{
+            'editor-fadeout': (currentElement && currentElement.$draging) || tempGroupModel.$draging
+        }"
+    >
+        <i
+            class="editor-temp-group__bd editor-temp-group__bd--top"
+            :class="{ disabled: dragDisabled }"
+            data-cursor="move"
+        ></i>
+        <i
+            class="editor-temp-group__bd editor-temp-group__bd--bottom"
+            :class="{ disabled: dragDisabled }"
+            data-cursor="move"
+        ></i>
+        <i
+            class="editor-temp-group__bd editor-temp-group__bd--left"
+            :class="{ disabled: dragDisabled }"
+            data-cursor="move"
+        ></i>
+        <i
+            class="editor-temp-group__bd editor-temp-group__bd--right"
+            :class="{ disabled: dragDisabled }"
+            data-cursor="move"
+        ></i>
+    </span>
+
+    <Watermark v-if="showWatermark" :global="global" :options="options" :model="currentCacheRoot" />
+</div>

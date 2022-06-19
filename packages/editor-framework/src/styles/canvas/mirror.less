@@ -1,0 +1,32 @@
+// editor-mirror
+.editor-container-mirror {
+    .editor-shell {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .editor-mirror {
+        position: relative;
+
+        .editor-layout {
+            position: relative;
+            margin: 0;
+            overflow: hidden;
+
+            & + .editor-layout {
+                margin-top: 40px;
+            }
+        }
+    }
+
+    .editor-canvas {
+        background: none;
+
+        .editor-element {
+            &::before,
+            &::after {
+                visibility: hidden;
+            }
+        }
+    }
+}

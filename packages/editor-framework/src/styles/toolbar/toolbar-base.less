@@ -1,0 +1,93 @@
+// .editor-toolbar-btn
+.editor-icon(@name) {
+    .icon-@{name} {
+        .icon(@name, #b4b4b4);
+
+        width: 14px;
+        height: 14px;
+    }
+}
+.editor-toolbar-btn {
+    position: relative;
+    width: auto;
+    height: 28px;
+    padding: 0 6px;
+    font-size: 12px;
+    line-height: 1;
+    display: inline-block;
+    color: #333;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: top;
+    background: none;
+    border: 0;
+    border-radius: 3px;
+    outline: 0;
+    cursor: inherit;
+    -webkit-appearance: none;
+
+    .editor-icon(success);
+    .editor-icon(close);
+
+    &.disabled,
+    &[disabled] {
+        opacity: 0.5;
+    }
+}
+
+// editor-toolbar
+.editor-toolbar {
+    position: relative;
+    z-index: 1;
+    float: left;
+    padding: 5px;
+    clear: both;
+    font-family: Arial, 'STHeitiSC-Light', 'Helvetica Neue', 'Microsoft Yahei';
+    font-size: 13px;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+
+    &:hover {
+        z-index: 3;
+    }
+
+    & + .editor-toolbar {
+        margin-top: 10px;
+    }
+}
+
+.editor-toolbar-inner {
+    height: 28px;
+    white-space: nowrap;
+}
+.editor-toolbar-block {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.editor-toolbar-pipe {
+    display: inline-block;
+    width: 0;
+    height: 16px;
+    margin: 6px 1px 0;
+    vertical-align: top;
+    border-left: 1px solid #eee;
+
+    &.is-full {
+        height: 38px;
+        margin: -5px 1px 0;
+    }
+}
+
+.editor-toolbar-loading {
+    position: absolute;
+    display: inline-block;
+    width: 15px;
+    height: 20px;
+    margin: 4px 0 0 -20px;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: top;
+    background: #fff;
+}

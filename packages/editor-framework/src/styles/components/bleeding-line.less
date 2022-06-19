@@ -1,0 +1,45 @@
+@guider-border: 1px solid #444950;
+@guider-size: 15px;
+@guider-margin: -3px;
+@guider-padding: 5px;
+@border-color: #e0e5ea;
+
+.editor-bleeding-line {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    box-sizing: content-box;
+    background: none;
+    border-color: rgba(255, 255, 255, 0.5);
+    border-style: solid;
+    pointer-events: none;
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        border: 1px dashed @border-color;
+        content: '';
+    }
+
+    &__guider {
+        position: absolute;
+
+        &--horizontal {
+            width: @guider-size;
+            height: 0;
+            border-top: @guider-border;
+        }
+
+        &--vertical {
+            width: 0;
+            height: @guider-size;
+            border-left: @guider-border;
+        }
+    }
+}

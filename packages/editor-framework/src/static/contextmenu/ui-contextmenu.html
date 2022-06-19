@@ -1,0 +1,44 @@
+<ul
+    :class="{
+        'editor-contextmenu': true,
+        'editor-contextmenu--submenu': isSubmenu,
+    }"
+    :style="menuStyle"
+    role="menu"
+    tabindex="-1"
+    @mousemove="mousemove"
+    @mouseleave="mouseleave"
+    @keydown="navigateItem"
+>
+    <template v-for="item in menuData">
+        <template v-if="item==='|'">
+            <li class="editor-contextmenu__delimiter"></li>
+        </template>
+        <template v-else>
+            <li
+                :key="item.text"
+                :class="{
+                    'editor-contextmenu__item': true,
+                    [`editor-contextmenu__item--${item.type}`]: !!item.type
+                }"
+                role="menuitem"
+                :aria-haspopup="!!(item.data || item.slot)"
+                aria-expanded="false"
+                :aria-disabled="item.disabled"
+                tabindex="-1"
+                @click="(e) => wrapAction(item)(e)"
+            >
+                <span>{{item.text}}</span>
+                <span v-if="item.shortcut" class="editor-contextmenu__item-shortcut">
+                    {{formatShortcut(item.shortcut)}}
+                </span>
+                <slot v-if="item.slot"></slot>
+                <ui-contextmenu
+                    v-if="item.data && item.data.length"
+                    isSubmenu
+                    :menuData="item.data"
+                />
+            </li>
+        </template>
+    </template>
+</ul>

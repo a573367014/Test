@@ -1,0 +1,41 @@
+<div
+    class="editor-element"
+    :class="[
+        'editor-element-' + model.type,
+        model.lock ? 'editor-element-lock' : '',
+        model.hidden ? 'editor-element-hidden' : '',
+        model.frozen ? 'editor-element-frozen' : '',
+        model.$loaded ? '' : 'editor-element-loading',
+        model.$selected ? 'editor-element-selected' : '',
+        model.$editing ? 'editor-element-editing' : ''
+    ]"
+    :style="[baseStyle, cssStyle]"
+>
+    <svg
+        class="element-main"
+        :width="model.width"
+        :height="model.height"
+        :viewBox="'0 0 ' + model.width + ' ' + model.strokeWidth"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <line
+            :x1="shapeAttr.x1"
+            :y1="shapeAttr.y1"
+            :x2="shapeAttr.x2"
+            :y2="shapeAttr.y2"
+            :style="shapeStyle"
+        />
+    </svg>
+
+    <ElementCommon
+        :element="model"
+        :options="options"
+        :global="global"
+        :editor="editor"
+        :layout="editor.currentLayout"
+        :hideBlink="hideBlink"
+        :isShowBlink="isShowBlink"
+        :bgNinePatch="bgNinePatch"
+    />
+</div>

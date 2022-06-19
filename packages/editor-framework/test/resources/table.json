@@ -1,0 +1,395 @@
+{
+    "version": "6.0.0",
+    "type": "poster",
+    "global": {
+        "zoom": 0.525,
+        "dpi": 72,
+        "unit": "px",
+        "showWatermark": false,
+        "referenceLines": [],
+        "layout": {
+            "height": 800,
+            "width": 800,
+            "backgroundImage": null,
+            "backgroundColor": "#ffffff00",
+            "backgroundImageInfo": {
+                "opacity": 1,
+                "width": 100,
+                "height": 100,
+                "transform": {
+                    "a": 1,
+                    "b": 0,
+                    "c": 0,
+                    "d": 1,
+                    "tx": 0,
+                    "ty": 0
+                }
+            },
+            "backgroundRepeat": "no-repeat",
+            "backgroundSize": [
+                0,
+                0
+            ],
+            "watermarkEnable": false
+        },
+        "metaInfo": null,
+        "cover": null,
+        "source": "gaoding",
+        "watermarkEnable": false
+    },
+    "layouts": [
+        {
+            "uuid": "0.369520401090176530",
+            "elements": [
+                {
+                    "uuid": "0.01108083306387119832",
+                    "type": "table",
+                    "title": "",
+                    "category": "",
+                    "opacity": 1,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "width": 426,
+                    "height": 213,
+                    "left": 191.2028164443965,
+                    "top": 201.74536463725548,
+                    "transform": {
+                        "a": 0.6383356331373009,
+                        "b": 0.7697581564798134,
+                        "c": -0.7697581564798135,
+                        "d": 0.638335633137301,
+                        "tx": 0,
+                        "ty": 0
+                    },
+                    "boxShadow": null,
+                    "resize": 7,
+                    "dragable": true,
+                    "rotatable": true,
+                    "editable": true,
+                    "frozen": false,
+                    "hidden": false,
+                    "lock": false,
+                    "borderRadius": 0,
+                    "filter": {
+                        "contrast": 0,
+                        "sharpness": 0,
+                        "hueRotate": 0,
+                        "saturate": 0,
+                        "brightness": 0,
+                        "gaussianBlur": 0,
+                        "temperature": 0,
+                        "tint": 0
+                    },
+                    "watermarkEnable": false,
+                    "metaInfo": null,
+                    "linkId": "",
+                    "groupable": true,
+                    "flex": null,
+                    "backgroundColor": null,
+                    "backgroundEffect": null,
+                    "border": null,
+                    "blendMode": null,
+                    "maskInfo": {
+                        "enable": false,
+                        "showSelf": false,
+                        "imageUrl": "",
+                        "effectedResult": {
+                            "width": 0,
+                            "height": 0,
+                            "left": 0,
+                            "top": 0
+                        }
+                    },
+                    "color": "",
+                    "fontFamily": "SourceHanSansSC-Regular",
+                    "fontStyle": "normal",
+                    "fontWeight": 400,
+                    "fontSize": 22,
+                    "textDecoration": "",
+                    "content": "",
+                    "contents": [
+                        {
+                            "color": "",
+                            "fontFamily": "SourceHanSansSC-Regular",
+                            "fontSize": 22,
+                            "fontStyle": "normal",
+                            "fontWeight": 400,
+                            "textDecoration": "",
+                            "content": ""
+                        }
+                    ],
+                    "gridCategory": "normal",
+                    "version": "7.1.70",
+                    "imageUrl": "https://gd-filems-fat.my-static.dancf.com/saas/5r3em4/55683/ea3d3b59-3527-4ef4-8fab-bcfa705b591a65882.png",
+                    "tableData": {
+                        "table": {
+                            "textAlign": "center",
+                            "color": "#777f89ff",
+                            "backgroundColor": "#ffffffff"
+                        },
+                        "rows": [
+                            {
+                                "coefficient": 1,
+                                "remainder": 0,
+                                "borders": [
+                                    null,
+                                    null,
+                                    {
+                                        "color": "#b5babfff",
+                                        "width": 1,
+                                        "style": "solid"
+                                    },
+                                    null
+                                ]
+                            },
+                            {
+                                "coefficient": 0,
+                                "remainder": 1,
+                                "borders": [
+                                    {
+                                        "color": "#b5babfff",
+                                        "width": 1,
+                                        "style": "solid"
+                                    },
+                                    null,
+                                    null,
+                                    null
+                                ],
+                                "color": "#777f89ff",
+                                "backgroundColor": "#d9dbdeff",
+                                "fontWeight": "bold"
+                            },
+                            {
+                                "coefficient": 0,
+                                "remainder": 6,
+                                "borders": [
+                                    null,
+                                    null,
+                                    {
+                                        "color": "#b5babfff",
+                                        "width": 1,
+                                        "style": "solid"
+                                    },
+                                    null
+                                ]
+                            }
+                        ],
+                        "cols": [
+                            {
+                                "coefficient": 1,
+                                "remainder": 0,
+                                "borders": [
+                                    null,
+                                    {
+                                        "color": "#b5babfff",
+                                        "width": 1,
+                                        "style": "solid"
+                                    },
+                                    null,
+                                    null
+                                ]
+                            },
+                            {
+                                "coefficient": 0,
+                                "remainder": 7,
+                                "borders": [
+                                    null,
+                                    {
+                                        "color": "#b5babfff",
+                                        "width": 1,
+                                        "style": "solid"
+                                    },
+                                    null,
+                                    null
+                                ]
+                            },
+                            {
+                                "coefficient": 0,
+                                "remainder": 1,
+                                "borders": [
+                                    null,
+                                    null,
+                                    null,
+                                    {
+                                        "color": "#b5babfff",
+                                        "width": 1,
+                                        "style": "solid"
+                                    }
+                                ]
+                            }
+                        ],
+                        "cells": [
+                            [
+                                {
+                                    "content": "尺寸"
+                                },
+                                {
+                                    "content": "身高范围"
+                                },
+                                {
+                                    "content": "衣长"
+                                },
+                                {
+                                    "content": "肩宽"
+                                },
+                                {
+                                    "content": "袖长"
+                                },
+                                {
+                                    "content": "胸围"
+                                },
+                                {
+                                    "content": "适合体重"
+                                }
+                            ],
+                            [
+                                {
+                                    "content": "S"
+                                },
+                                {
+                                    "content": "hello world"
+                                },
+                                {
+                                    "content": "63"
+                                },
+                                {
+                                    "content": "37.5"
+                                },
+                                {
+                                    "content": "58.5"
+                                },
+                                {
+                                    "content": "95"
+                                },
+                                {
+                                    "content": "40-45"
+                                }
+                            ],
+                            [
+                                {
+                                    "content": "M"
+                                },
+                                {
+                                    "content": "160-165"
+                                },
+                                {
+                                    "content": "65"
+                                },
+                                {
+                                    "content": "37.5"
+                                },
+                                {
+                                    "content": "58.5"
+                                },
+                                {
+                                    "content": "95"
+                                },
+                                {
+                                    "content": "45-55"
+                                }
+                            ],
+                            [
+                                {
+                                    "content": "L"
+                                },
+                                {
+                                    "content": "165-170"
+                                },
+                                {
+                                    "content": "67"
+                                },
+                                {
+                                    "content": "37.5"
+                                },
+                                {
+                                    "content": "58.5"
+                                },
+                                {
+                                    "content": "95"
+                                },
+                                {
+                                    "content": "55-65"
+                                }
+                            ],
+                            [
+                                {
+                                    "content": "XL"
+                                },
+                                {
+                                    "content": "170-175"
+                                },
+                                {
+                                    "content": "69"
+                                },
+                                {
+                                    "content": "37.5"
+                                },
+                                {
+                                    "content": "58.5"
+                                },
+                                {
+                                    "content": "95"
+                                },
+                                {
+                                    "content": "65-70"
+                                }
+                            ],
+                            [
+                                {
+                                    "content": "2XL"
+                                },
+                                {
+                                    "content": "175-180"
+                                },
+                                {
+                                    "content": "71"
+                                },
+                                {
+                                    "content": "37.5"
+                                },
+                                {
+                                    "content": "58.5"
+                                },
+                                {
+                                    "content": "95"
+                                },
+                                {
+                                    "content": "70以上"
+                                }
+                            ]
+                        ]
+                    }
+                }
+            ],
+            "title": "",
+            "backgroundImage": null,
+            "backgroundEffectImage": null,
+            "backgroundColor": "#ffffff00",
+            "backgroundImageInfo": null,
+            "backgroundWatermarkEnable": false,
+            "backgroundRepeat": "no-repeat",
+            "backgroundGradient": null,
+            "backgroundMask": {
+                "color": "#000000ff",
+                "opacity": 0.7
+            },
+            "height": 800,
+            "width": 800,
+            "mosaic": null,
+            "border": null,
+            "className": null,
+            "repeatId": null,
+            "repeatGroup": null,
+            "metaInfo": null,
+            "watermarkEnable": true,
+            "filter": null,
+            "filterInfo": null,
+            "userAdded": false,
+            "top": 0
+        }
+    ]
+}

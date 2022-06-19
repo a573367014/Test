@@ -1,0 +1,181 @@
+.editor-contextmenu {
+    --red: #f54531;
+
+    /* 中性色 */
+    --black: #000;
+    --black-9: #33383e;
+    --black-8: #636c78;
+    --black-7: #7f8792;
+    --black-6: #9da3ac;
+    --black-5: #b4b8bf;
+    --black-4: #d9dcdf;
+    --black-3: #e8eaec;
+    --black-2: #f1f2f4;
+    --black-1: #f6f7f9;
+    --text-title: var(--black);
+    --text-emphasis: var(--black);
+    --text-default: var(--black-9);
+    --text-secondary: var(--black-8);
+    --text-tertiary: var(--black-6);
+    --text-placeholder: var(--black-5);
+    --stroke: var(--black-3);
+    --text-dis: #bec3c9;
+    --border: 1px solid var(--stroke);
+    --panel-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.08);
+    --danger: var(--red);
+    --bg-reg: #f0f3f4;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    width: 164px;
+    padding: 8px 0;
+    font-family: Alibaba Sans, -apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC,
+        Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial, sans-serif,
+        Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+    font-size: 14px;
+    color: var(--text-default);
+    background-color: #fff;
+    border: 1px solid var(--stroke);
+    border-radius: 4px;
+    outline: 0;
+    box-shadow: var(--panel-shadow);
+    user-select: none;
+}
+
+.editor-contextmenu--submenu {
+    position: absolute;
+    top: auto;
+    bottom: -8px;
+    left: 100%;
+}
+.editor-contextmenu-layer-list {
+    li {
+        height: auto !important;
+        padding: 0 !important;
+    }
+}
+
+.editor-contextmenu-no-sub-space .editor-contextmenu--submenu {
+    right: 100%;
+    left: auto;
+}
+
+.editor-contextmenu__item:not([aria-expanded='true']) .editor-contextmenu--submenu {
+    display: none;
+}
+
+.editor-contextmenu__delimiter {
+    height: 1px;
+    margin: 3px 0;
+    background-color: var(--stroke);
+}
+
+.editor-contextmenu__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 36px;
+    padding: 0 15px;
+}
+
+.editor-contextmenu__item[aria-haspopup]::after {
+    border-color: transparent transparent transparent var(--text-secondary);
+    border-style: solid;
+    border-width: 4px 0 4px 6px;
+    content: '';
+}
+
+.editor-contextmenu__item--danger {
+    color: var(--danger);
+}
+
+.editor-contextmenu__item[aria-disabled] {
+    color: var(--text-dis);
+    pointer-events: none;
+}
+
+.editor-contextmenu__item:focus-within {
+    background-color: var(--bg-reg);
+    outline: 0;
+}
+
+// .editor-contextmenu__item span {
+//     cursor: default;
+// }
+
+.editor-contextmenu__item-shortcut {
+    font-size: 12px;
+    color: var(--text-dis);
+}
+
+.editor-contextmenu--editor {
+    width: 196px;
+    padding: 8px 0 !important;
+}
+
+.editor-contextmenu--editor .editor-contextmenu--submenu {
+    min-width: 176px;
+    width: auto;
+    white-space: nowrap;
+    padding: 8px 0 !important;
+}
+
+.editor-contextmenu--editor .editor-contextmenu__item {
+    padding: 0 16px;
+
+    span:nth-child(1) {
+        padding-right: 20px;
+    }
+}
+
+.editor-contextmenu__item--thumbnail {
+    justify-content: flex-start;
+    height: 56px;
+}
+
+.editor-contextmenu__item--thumbnail .layer-thumbnail {
+    flex: none;
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+    overflow: hidden;
+    border: 1px solid var(--stroke);
+    border-radius: 4px;
+}
+
+.editor-contextmenu__item--thumbnail .layer-thumbnail > span {
+    display: block;
+    width: 100% !important;
+    height: 100% !important;
+    background-repeat: no-repeat;
+    background-position: center !important;
+    background-size: contain !important;
+}
+
+.editor-contextmenu__item--thumbnail .thumbnail-svg {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.editor-contextmenu__item--thumbnail .thumbnail-svg > svg {
+    width: 90%;
+}
+
+.editor-contextmenu__item--thumbnail .thumbnail-group,
+.editor-contextmenu__item--thumbnail .thumbnail-text {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    font-family: -webkit-pictograph, serif;
+    font-size: 26px;
+}
+
+.editor-contextmenu__item--thumbnail .layer-info {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

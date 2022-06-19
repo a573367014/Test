@@ -1,0 +1,37 @@
+<span class="editor-percentage-scaler">
+    <span class="scaler-wrapper">
+        <span class="scaler-mask" @click.stop="seek" ref="bar">
+            <span class="scaler-mask-inner">
+                <span class="scaler-bar" :style="{width: scaleOffset + 'px'}"></span>
+            </span>
+        </span>
+        <i
+            class="scaler-line"
+            v-show="initialScaleOffset"
+            :style="{left: initialScaleOffset + 'px'}"
+        ></i>
+        <div
+            v-if="scale && elementLoaded"
+            class="scaler-btn"
+            :class="{active: isDragging}"
+            :style="{left: scaleOffset - 8 + 'px'}"
+            @mousedown.stop="beginScale"
+            @touchstart.stop="beginScale"
+        >
+            <span
+                data-cursor="pointer"
+                class="editor-tooltips scaler-tooltip-wrapper"
+                :aria-label="scalePercentage"
+            ></span>
+        </div>
+    </span>
+    <button
+        v-if="hasCropButton && !isBackgroundActive"
+        data-cursor="pointer"
+        class="scaler-crop-button"
+        :class="{active: isInnerActive}"
+        @click="switchCropper"
+    >
+        {{$tsl('裁剪')}}
+    </button>
+</span>

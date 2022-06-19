@@ -1,0 +1,67 @@
+{
+    "name": "@gaoding/editor-elements",
+    "version": "8.3.0-alpha.4",
+    "description": "",
+    "license": "ISC",
+    "author": "",
+    "maintainers": [
+        {
+            "name": "liulangren",
+            "email": "liulangren@gaoding.com"
+        },
+        {
+            "name": "juanbai",
+            "email": "juanbai@gaoding.com"
+        },
+        {
+            "name": "kuake",
+            "email": "kuake@gaoding.com"
+        },
+        {
+            "name": "facai",
+            "email": "facai@gaoding.com"
+        },
+        {
+            "name": "qiancong",
+            "email": "qiancong@gaoding.com"
+        }
+    ],
+    "main": "dist/editor-elements.common.js",
+    "module": "index.js",
+    "files": [],
+    "scripts": {
+        "build": "babel ./ -d lib --delete-dir-on-start --extensions '.js,.ts' --copy-files --no-copy-ignored && rm -rf lib/package.json lib/node_modules",
+        "publish-gd": "npm publish --registry https://registry-npm.gaoding.com",
+        "publish-hlg": "npm publish --registry https://npm.huanleguang.com"
+    },
+    "dependencies": {
+        "@gaoding/chart-render": "^0.0.18",
+        "@gaoding/editor-framework": "8.3.0-alpha.4",
+        "@gaoding/editor-utils": "1.2.5",
+        "@gaoding/three-font-parser": "0.4.2",
+        "@gaoding/vue-i18next": "^1.3.8",
+        "@handsontable/vue": "4.1.1",
+        "bluebird": "3.5.5",
+        "canvas-filters": "1.0.1",
+        "lodash": "^4.17.15",
+        "opentype.js": "1.1.0",
+        "paper": "0.12.15",
+        "tinycolor2": "^1.4.1",
+        "typescript": "^4.3.5"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.12.8",
+        "@babel/core": "^7.12.10",
+        "@babel/plugin-proposal-class-properties": "^7.12.1",
+        "@babel/plugin-transform-runtime": "^7.12.10",
+        "@babel/preset-env": "^7.12.10",
+        "@vue/composition-api": "^1.4.9"
+    },
+    "peerDependencies": {
+        "@vue/composition-api": "^1.2.4",
+        "vue": "^2.6.11"
+    },
+    "build": {
+        "entry": "index.js"
+    }
+}

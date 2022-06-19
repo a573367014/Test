@@ -1,0 +1,17 @@
+<ul class="editor-layer-list">
+    <li
+        v-for="(element) in layerList"
+        :key="element.$id"
+        data-cursor="pointer"
+        @click="selectCall(element)"
+        @mouseenter="highlightElement(element)"
+        @mouseleave="highlightElement(false)"
+    >
+        <component
+            :is="'thumbnail-' + element.type"
+            :element="element"
+            :editor="editor"
+            :class="thumbnailClass"
+        ></component>
+    </li>
+</ul>

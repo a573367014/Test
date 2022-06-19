@@ -1,0 +1,11 @@
+<div
+    class="editor-element"
+    :class="[
+        'editor-element-' + model.type,
+        model.lock ? 'editor-element-lock' : '',
+        model.$selected ? 'editor-element-selected' : ''
+    ]"
+    :style="cssStyle"
+>
+    <i v-show="!global.$draging" class="border-before"></i>
+</div>

@@ -1,0 +1,24 @@
+{
+  "version": "5.6.5",
+  "type": "poster",
+  "global": {
+    "zoom": 1,
+    "source": "gaoding"
+  },
+  "layouts": [
+    {
+      "title": "",
+      "backgroundSize": null,
+      "backgroundImage": null,
+      "backgroundColor": "#ffffffff",
+      "backgroundRepeat": "no-repeat",
+      "height": 250,
+      "width": 350,
+      "className": null,
+      "repeatId": null,
+      "repeatGroup": null,
+      "elements": [],
+      "top": 0
+    }
+  ]
+}

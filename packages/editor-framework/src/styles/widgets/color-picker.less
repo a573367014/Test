@@ -1,0 +1,117 @@
+// minicolors shim
+.minicolors {
+    &,
+    * {
+        box-sizing: content-box;
+    }
+}
+
+// editor-color-picker
+.editor-color-picker {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+
+    .editor-popup {
+        margin-top: 18px;
+        margin-left: -5px;
+        background-color: #f9f9f9;
+    }
+}
+// editor-color-picker
+.editor-color-wrapper {
+    margin: 0 -4px;
+
+    .editor-color-sider {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .color-kit {
+        margin-top: 8px;
+        color: #666;
+
+        span {
+            display: inline-block;
+            margin-bottom: 3px;
+        }
+    }
+
+    .color-history {
+        float: left;
+        width: 160px;
+    }
+
+    .color-switch {
+        float: right;
+        width: 24px;
+        height: 40px;
+
+        .switch-icon {
+            display: block;
+            width: 20px;
+            height: 20px;
+            margin-left: 3px;
+            overflow: hidden;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+
+        .switch-icon.icon-hue,
+        .switch-icon.icon-block {
+            b {
+                .icon(color-switch-block);
+
+                width: 20px;
+                height: 20px;
+                background-size: 100%;
+            }
+        }
+
+        .switch-icon.icon-hue b {
+            background-image: url(../assets/slice/icon-color-switch-hue@2x.png);
+        }
+    }
+
+    .editor-color-inp {
+        position: absolute;
+        width: 100px;
+        height: 26px;
+        padding: 2px 3px;
+        margin-top: -28px;
+        text-align: center;
+        background: #fff;
+        border: 1px solid #ccc;
+        border-radius: 2px;
+        outline: 0;
+    }
+
+    .minicolors {
+        vertical-align: top;
+    }
+    .minicolors-panel {
+        vertical-align: top;
+        background: none;
+        border: 0;
+    }
+
+    .minicolors-grid-inner {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.toolbar-north {
+    .editor-color-picker {
+        .editor-popup {
+            bottom: 100%;
+            margin-bottom: 18px;
+
+            &::before {
+                bottom: 0;
+                margin-top: 5px;
+                box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+            }
+        }
+    }
+}

@@ -1,0 +1,129 @@
+<!-- Layout -->
+<div
+    class="editor-layout"
+    v-if="layout"
+    :key="layout.$id"
+    :class="[layout.className, {
+        'editor-layout-dragover': layout.$dragOver,
+        'editor-layout-current': isCurrentLayout,
+        'editor-layout-loaded': layout.$loaded,
+        'editor-layout-preview': options.mode === 'preview'
+    }]"
+    :style="layoutStyle"
+    @click="setCurrentLayout(layout)"
+>
+    <global-background
+        v-if="global.layout && !options.notGlobal"
+        ref="globalBackground"
+        :selected="global.layout.$backgroundSelected"
+        :mode="options.mode"
+        :global="global"
+        :editor="editor"
+        :options="options"
+        :global-layout="global.layout"
+        :layout="layout"
+    />
+
+    <background
+        ref="background"
+        v-show="!layout.$backgroundEditing || !layout.$backgroundImageInfo || !editor.editable"
+        :key="layout.$id"
+        :selected="layout.$backgroundSelected"
+        :mode="options.mode"
+        :global="global"
+        :options="options"
+        :layout="layout"
+    >
+        <background-mosaic
+            v-if="layout.mosaic && layout.mosaic.enable && (options.operateMode === 'mosaic' || layout.mosaic.paths.length)"
+            ref="backgroundMosaic"
+            :global="global"
+            :options="options"
+            :editor="editor"
+            :layout="layout"
+        >
+            <background-mosaic-path-element
+                v-for="(element) in layout.mosaic.paths"
+                :class="{
+                        'editor-element-disabled': options.operateMode !== 'mosaic'
+                    }"
+                :key="element.$id"
+                :options="options"
+                :global="global"
+                :model="element"
+                :editor="editor"
+            />
+        </background-mosaic>
+
+        <watermark
+            slot="watermark"
+            v-if="layout.background && layout.background.watermarkEnable"
+            :global="global"
+            :options="options"
+            :layout="layout"
+        />
+    </background>
+
+    <background-mask
+        v-if="backgroundMaskElements.length"
+        ref="backgroundMask"
+        :elements="backgroundMaskElements"
+        :mode="options.mode"
+        :global="global"
+        :options="options"
+        :editor="editor"
+        :layout="layout"
+    />
+
+    <border
+        v-if="layout.border && layout.border.enable"
+        v-show="!layout.$backgroundEditing"
+        :global="global"
+        :options="options"
+        :mode="options.mode"
+        :layout="layout"
+    />
+
+    <!-- elements -->
+    <template v-for="(element) in elements">
+        <component
+            :key="element.$id"
+            :is="element.type + '-element'"
+            :data-id="element.$id"
+            v-if="editor.supportTypesMap[element.type]"
+            :options="options"
+            :global="global"
+            :model="element"
+            :editor="editor"
+            :class="[{
+                'editor-element-current': editor.currentElement === element,
+                'editor-element-disabled': options.operateMode === 'mosaic'
+            }, element.$className]"
+        />
+
+        <template v-else-if="element.$maskElement">
+            <mask-wrap
+                v-if="element.$maskElement.maskInfo.enable && element.elements.length"
+                :elements="element.elements"
+                :maskInfoElement="element.$maskElement"
+                :key="`mask-wrap-${element.$maskElement.id}`"
+                :model="element"
+                :global="global"
+                :options="options"
+                :editor="editor"
+            />
+        </template>
+
+        <!-- 默认元素 -->
+        <common-element
+            v-else
+            :key="element.$id"
+            :model="element"
+            :global="global"
+            :options="options"
+            :editor="editor"
+        />
+    </template>
+
+    <watermark v-if="watermarkEnable" :global="global" :options="options" :layout="layout" />
+</div>

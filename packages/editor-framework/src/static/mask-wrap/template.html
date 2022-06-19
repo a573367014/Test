@@ -1,0 +1,28 @@
+<div class="editor-mask-wrap">
+    <!-- mask-image -->
+    <div class="editor-mask" :style="maskStyle">
+        <!-- maskInfoElement 矩阵反转-->
+        <div :style="reversedMaskInfoElementMatrix">
+            <!-- maskInfoElement 用来同步位移属性-->
+            <div :style="reversedMaskInfoElementOffset" class="editor-mask-info-element-move">
+                <template v-for="element in elements">
+                    <component
+                        :key="element.$id"
+                        :is="element.type + '-element'"
+                        :data-id="element.$id"
+                        v-if="editor.supportTypesMap[element.type]"
+                        :options="options"
+                        :global="global"
+                        :model="element"
+                        :editor="editor"
+                        :class="[{
+                            'editor-element-current': editor.currentElement === element,
+                            'editor-element-disabled': options.operateMode === 'mosaic'
+                        }, element.$className]"
+                    >
+                    </component>
+                </template>
+            </div>
+        </div>
+    </div>
+</div>

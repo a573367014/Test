@@ -1,0 +1,78 @@
+// editor-layer-list
+.editor-layer-list {
+    @itemHeight: 53px;
+
+    max-height: @itemHeight * 5;
+    overflow: auto;
+    list-style: none;
+
+    li {
+        @padding: 4px;
+
+        height: @itemHeight;
+        padding: @padding 0 @padding 20px;
+
+        &:hover {
+            background-color: #f0f0f0;
+        }
+
+        &:active {
+            background-color: #e6e6e6;
+        }
+
+        .layer-thumbnail {
+            position: relative;
+            display: inline-block;
+            width: 45px;
+            height: 45px;
+            overflow: hidden;
+            vertical-align: middle;
+            background-color: #fff;
+            border: 1px solid #ddd;
+
+            .thumbnail-image {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                transform: translate(-50%, -50%);
+            }
+
+            .thumbnail-text,
+            .thumbnail-group {
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                font-family: -webkit-pictograph, serif;
+                font-size: 26px;
+                line-height: 43px;
+                text-align: center;
+            }
+
+            .thumbnail-svg svg {
+                width: 100%;
+                height: 100%;
+            }
+
+            .thumbnail-arrow {
+                position: absolute;
+                transform-origin: 0 0;
+                svg {
+                    position: absolute;
+                }
+            }
+        }
+
+        .layer-info {
+            display: inline-block;
+            width: 160px;
+            padding-left: 12px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            vertical-align: middle;
+        }
+    }
+}

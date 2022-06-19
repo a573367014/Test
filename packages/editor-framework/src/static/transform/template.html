@@ -1,0 +1,221 @@
+<div
+    class="editor-transform-wrap"
+    @mouseenter="toggleMouseenter(true, true)"
+    @mouseleave="toggleMouseenter(false, true)"
+>
+    <div
+        v-if="model && visible"
+        ref="transformEle"
+        class="editor-transform"
+        :class="[
+            model.lock ? 'editor-transform-lock' : '',
+            model.hidden ? 'editor-transform-hidden' : '',
+            model.frozen ? 'editor-transform-frozen' : '',
+            model.$editing ? 'editor-transform-editing' : '',
+            cropperInner ? 'editor-transform-inner' : '',
+            isMultiple ? 'editor-transform-multiple' : '',
+            (isTranforming || hidden) ? 'editor-transform-thin-border' : '',
+            (action.tempGroup || model.$showCoordinate) ? 'editor-fadeout' : '',
+            isTable && !config.tableOnlyContentEditable ? 'editor-transform-custom': '',
+        ]"
+        :style="transformStyle"
+        @dblclick="checkClickAdp"
+        @click="checkClickAdp"
+        :data-cursor="cursorStyle"
+    >
+        <i
+            v-for="dir in gripDirs"
+            v-if="resizeVisible"
+            :key="dir"
+            :class="[
+                'editor-grip',
+                'editor-grip-' + dir,
+                !cropperInner && isCenterResize ? 'editor-grip-round' : '',
+                addFadeout('grip', dir) ? 'editor-fadeout' : '',
+                lazyAddTransition ? 'editor-transition' : ''
+            ]"
+            :style="{
+                padding: (cropperInner ? gripPadding + 3 : gripPadding) + 'px',
+            }"
+            :data-cursor="octantCursor[dir]"
+            @mousedown="initResize($event, dir)"
+            @touchstart="initResize($event, dir)"
+        >
+            <b :style="getGripSizeStyle(dir)"> </b>
+        </i>
+
+        <!-- 旋转按钮 -->
+        <i
+            class="editor-rotator"
+            ref="rotatorHandle"
+            :data-cursor="'cursor:rotator, rotate:' + rotator"
+            :class="{
+                'editor-fadeout': addFadeout('rotator'),
+                'editor-transition': lazyAddTransition
+            }"
+            v-show="rotateVisible"
+            @mousedown.stop="initRotaor($event)"
+            @touchstart.stop="initRotaor($event)"
+            :style="isThreeText ? 'margin-top: 20px' : ''">
+            <b
+                :style="{transform: transformInvert}">
+                <span
+                    v-show="action.rotate"
+                >{{model.rotate | angle}}</span>
+            </b>
+        </i>
+
+        <!-- 3d 旋转按钮 -->
+        <i
+            class="editor-rotator-three"
+            :class="{
+                'editor-fadeout': addFadeout('rotator-three'),
+                'editor-transition': lazyAddTransition
+            }"
+            v-if="threeTextRotateVisible"
+            v-show="model.rotatable"
+            data-cursor="pointer"
+            ref="rotatorHandle"
+            @mousedown.stop="initRotaor3d($event)"
+            @touchstart.stop="initRotaor3d($event)"
+            @selectstart.prevent
+        >
+            <b></b>
+        </i>
+
+        <!-- 解锁 -->
+        <i
+            v-if="model && model.lock"
+            data-cursor="pointer"
+            class="editor-lock-icon editor-tips"
+            :editor-aria-label="$tsl('点击解除锁定')"
+            @click.stop="unlock($event)"
+            :style="{transform: transformInvert}"
+        />
+
+        <!-- 临时组按钮 -->
+        <div
+            v-if="tempGroupVisible"
+            :editor-aria-label="$tsl('解锁组内移动')"
+            data-cursor="pointer"
+            class="editor-temp-group-icon"
+            :class="{
+                'editor-transition': lazyAddTransition,
+                'editor-fadeout': addFadeout('temp-group'),
+                'editor-tips': !(options.tipsOptions.tempGroup)
+            }"
+            :style="{transform: transformInvert}"
+            mousedown.stop
+            @click.stop="createTempGroup"
+        >
+            <span @click.stop data-cursor="default" v-if="options.tipsOptions.tempGroup">
+                {{$tsl('点击此处，可以临时移动组内元素')}}
+                <b data-cursor="'pointer'" @click="hideTempGroupTips"></b>
+            </span>
+        </div>
+
+        <!-- 水印按钮 -->
+        <div
+            v-if="isWatermark && model.waterType === 1"
+            data-cursor="pointer"
+            class="editor-watermark-edit-popover"
+            :style="{transform: transformInvert}"
+            @click.stop="editWatermark"
+        >
+            <div class="editor-watermark-edit-popover-icon"></div>
+            <div>{{$tsl('编辑水印')}}</div>
+        </div>
+
+        <!-- Text Editor -->
+        <text-editor
+            v-if="(isText || isThreeText || isStyledText || isEffectText) && model.$editing && !model.lock"
+            :options="options"
+            :global="global"
+            :model="model"
+            :editor="editor"
+            :removeEmptyEnable="config.removeEmptyTextEnable"
+        ></text-editor>
+
+        <!-- Group Text Editor -->
+        <div
+            v-if="isGroup && subModel && (isText || isContainThreeText || isStyledText || isEffectText) && subModel.$editing"
+            data-cursor="text"
+            class="editor-transform-submodel-wrap"
+            :style="mixSubModelStyle"
+        >
+            <text-editor
+                :options="options"
+                :global="global"
+                :model="subModel"
+                :editor="editor"
+                :removeEmptyEnable="config.removeEmptyTextEnable"
+            ></text-editor>
+        </div>
+
+        <!-- Collage Editor  -->
+        <collage-editor
+            v-if="!model.lock && model.type === 'collage'"
+            :model="model"
+            :class="{'transform-resizing': dragLocked}"
+            :options="options"
+            :global="global"
+        ></collage-editor>
+
+        <!-- Transform Inner -->
+        <div
+            @mousedown="innerClick"
+            @mouseup="innerClick"
+            @click.prevent.stop
+            class="editor-transform-inner"
+            v-if="model.type=='$croper' || model.type=='$masker'"
+            :style="innerStyle"
+        ></div>
+
+        <div v-if="isWatermarkEditor">
+            <WatermarkTransform :options="options" :editor="editor" :model="model" />
+        </div>
+        <div
+            v-if="subModel && isSupportImageTransform"
+            class="editor-transform-submodel-wrap"
+            :style="mixSubModelStyle"
+            @mouseenter="toggleMouseenter(true)"
+            @mouseleave="toggleMouseenter(false)"
+        >
+            <ImageTransform
+                v-show="imageTransformVisible"
+                :options="options"
+                :editor="editor"
+                :parentModel="model"
+                :model="subModel || model"
+            />
+        </div>
+
+        <ImageTransform
+            v-else-if="isSupportImageTransform"
+            v-show="imageTransformVisible"
+            :options="options"
+            :editor="editor"
+            :parentModel="model"
+            :model="subModel || model"
+        />
+
+        <div
+            v-if="isGroup && subModel && isVideo && editor.supportTypesMap.video"
+            class="editor-transform-submodel-wrap"
+            :style="mixSubModelStyle"
+        >
+            <VideoController :model="subModel" :editor="editor" />
+        </div>
+        <VideoController
+            v-else-if="isVideo && editor.supportTypesMap.video"
+            :model="model"
+            :editor="editor"
+        />
+        <table-editor
+            v-else-if="isTable && !model.lock"
+            :editor="editor"
+            :model="model"
+            :onlyContentEditable="config.tableOnlyContentEditable"
+        />
+    </div>
+</div>

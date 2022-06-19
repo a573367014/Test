@@ -1,0 +1,45 @@
+// editor-select-picker
+.editor-select-picker {
+    display: inline-block;
+    vertical-align: top;
+
+    &.active {
+        position: relative;
+        z-index: 9;
+    }
+
+    .label {
+        padding: 0 7px;
+        line-height: 28px;
+        cursor: pointer;
+
+        span {
+            display: inline-block;
+            max-width: 6em;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            vertical-align: top;
+        }
+
+        &::after {
+            .icon(arrow-down);
+
+            width: 8px;
+            height: 8px;
+            margin: 12px 0 0 5px;
+            vertical-align: top;
+            content: '';
+        }
+    }
+
+    .preview {
+        display: block;
+
+        img {
+            width: 140px;
+            height: auto;
+            vertical-align: top;
+        }
+    }
+}

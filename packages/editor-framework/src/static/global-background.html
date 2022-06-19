@@ -1,0 +1,24 @@
+<div
+    class="editor-global-background"
+    :class="{
+            'editor-global-background--hasimage': !!backgroundImageInfo,
+            'editor-global-background--selected': selected,
+            'editor-global-background--loaded': editor.global.$backgroundLoaded
+        }"
+>
+    <div :style="cssStyle">
+        <div
+            v-if="backgroundImageInfo"
+            class="editor-global-background__main"
+            :style="mainStyle"
+        >
+            <img
+                v-if="!isRepeat && imageUrl"
+                draggable="false"
+                crossorigin="anonymous"
+                :src="imageUrl"
+                :style="imageStyle"
+            />
+        </div>
+    </div>
+</div>

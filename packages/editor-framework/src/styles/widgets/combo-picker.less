@@ -1,0 +1,67 @@
+// editor-combo-picker
+.editor-combo-picker {
+    display: inline-block;
+    vertical-align: top;
+
+    &.active {
+        position: relative;
+        z-index: 9;
+    }
+
+    .label {
+        display: inline-block;
+        padding: 0 7px;
+        line-height: 28px;
+        vertical-align: top;
+        cursor: pointer;
+
+        span {
+            display: inline-block;
+            min-width: 1.2em;
+            max-width: 5em;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            vertical-align: top;
+        }
+
+        input {
+            display: inline-block;
+            width: 2.2em;
+            height: 24px;
+            padding: 2px 3px;
+            vertical-align: top;
+            border: 1px solid #d9dade;
+            border-radius: 2px;
+            outline: 0;
+
+            &:focus {
+                border-color: #aaa;
+            }
+        }
+
+        &::after {
+            .icon(arrow-down);
+
+            width: 8px;
+            height: 8px;
+            margin: 12px 0 0 5px;
+            vertical-align: top;
+            content: '';
+        }
+    }
+
+    .editor-popup {
+        margin-left: -5px;
+    }
+    .editor-popup .label {
+        padding-right: 0;
+        padding-left: 0;
+        white-space: nowrap;
+
+        &::after {
+            margin-top: 9px;
+            transform: rotate(-180deg);
+        }
+    }
+}

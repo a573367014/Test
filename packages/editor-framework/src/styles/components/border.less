@@ -1,0 +1,17 @@
+.editor-border {
+    display: none;
+    pointer-events: none;
+    &--loaded {
+        display: block;
+    }
+}
+
+.editor-border,
+.editor-border__main {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    &.is-element {
+        z-index: -1;
+    }
+}

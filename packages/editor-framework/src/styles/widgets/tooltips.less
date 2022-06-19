@@ -1,0 +1,74 @@
+// editor-tooltips
+.editor-tooltips[aria-label] {
+    position: relative;
+
+    &::before {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        z-index: 999;
+        display: none;
+        width: 0;
+        height: 0;
+        margin: 3px 0 0 -5px;
+        color: rgba(0, 0, 0, 0.8);
+        border: 5px solid rgba(0, 0, 0, 0);
+        border-bottom-color: rgba(0, 0, 0, 0.7);
+        pointer-events: none;
+        content: '';
+    }
+
+    &::after {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        z-index: 1;
+        display: none;
+        padding: 5px 8px;
+        margin-top: 13px;
+        color: #fff;
+        text-align: center;
+        word-wrap: break-word;
+        white-space: pre;
+        background: rgba(0, 0, 0, 0.7);
+        border-radius: 3px;
+        pointer-events: none;
+        content: attr(aria-label);
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        -webkit-font-smoothing: subpixel-antialiased;
+    }
+
+    &.tip-top {
+        &::before {
+            top: initial;
+            left: 50%;
+            margin: -8px 0 0 -5px;
+            border-top-color: rgba(0, 0, 0, 0.7);
+            border-bottom-color: transparent;
+        }
+
+        &::after {
+            top: initial;
+            bottom: 100%;
+            margin-bottom: 8px;
+        }
+    }
+
+    &:hover,
+    &:active {
+        &::before,
+        &::after {
+            display: block;
+            text-decoration: none;
+        }
+    }
+    // 禁用
+    &.disabled:hover,
+    &.disabled:active {
+        &::before,
+        &::after {
+            display: none;
+        }
+    }
+}

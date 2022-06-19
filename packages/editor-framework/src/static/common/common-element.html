@@ -1,0 +1,34 @@
+<div
+    v-if="visible"
+    class="editor-element"
+    :class="[
+        'editor-element-' + model.type,
+        model.lock ? 'editor-element-lock' : '',
+        model.hidden ? 'editor-element-hidden' : '',
+        model.frozen ? 'editor-element-frozen' : '',
+        model.$loaded ? '' : 'editor-element-loading',
+        model.$selected ? 'editor-element-selected' : '',
+        model.$editing ? 'editor-element-editing' : ''
+    ]"
+    :style="cssStyle"
+>
+    <div
+        draggable="false"
+        class="element-main"
+        style="display: flex; align-items: center; justify-content: center"
+        data-cursor="text"
+        :style="{
+            boxShadow: boxShadow,
+            padding: padding,
+            borderRadius: borderRadius,
+        }"
+    >
+        <img v-if="model.imageUrl" :style="effectedImageRect" :src="model.imageUrl" />
+        <span class="editor-element-common__load--error" v-else>
+            <i class="editor-element-common__load--icon" :style="iconStyle"></i>
+            {{ errorText }}
+        </span>
+    </div>
+
+    <i v-show="!global.$draging" class="border-before"></i>
+</div>

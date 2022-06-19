@@ -1,0 +1,11 @@
+<div class="editor-canvas editor-mirror">
+    <editor-layout
+        v-for="(layout, index) in layouts"
+        :key="layout.$id || index"
+        :editor="editor"
+        :options="options"
+        :global="global"
+        :layout="layout"
+    >
+    </editor-layout>
+</div>

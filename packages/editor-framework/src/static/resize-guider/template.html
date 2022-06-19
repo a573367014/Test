@@ -1,0 +1,29 @@
+<div class="editor-guider">
+    <template v-for="(item, index) in xSideStyles">
+        <div class="editor-guider-x" :style="item" v-if="!item.isSide" />
+
+        <div class="editor-equally-guider-x" :style="item" v-else>
+            <i>
+                <span
+                    class="editor-equally-guider-text"
+                    v-if="item.value && options.marginGuiderOptions.showValue"
+                    >{{item.value}}</span
+                >
+            </i>
+        </div>
+    </template>
+
+    <template v-for="item in ySideStyles">
+        <div class="editor-guider-y" :style="item" v-if="!item.isSide" />
+
+        <div class="editor-equally-guider-y" :style="item" v-else>
+            <i>
+                <span
+                    class="editor-equally-guider-text"
+                    v-if="item.value && options.marginGuiderOptions.showValue"
+                    >{{item.value}}</span
+                >
+            </i>
+        </div>
+    </template>
+</div>

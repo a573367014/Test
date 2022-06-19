@@ -1,0 +1,10 @@
+<backgroundInnerEditor
+    ref="innerEditor"
+    v-if="model"
+    :model="model"
+    :current-layout="layout"
+    :global="global"
+    :options="options"
+>
+    <slot slot="watermark"></slot>
+</backgroundInnerEditor>

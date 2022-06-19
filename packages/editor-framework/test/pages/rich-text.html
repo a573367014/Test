@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="renderer" content="webkit" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <title>Rich Text Editing Demo</title>
+    </head>
+
+    <body>
+        <a onclick="todo('undo')">undo</a>
+        <a onclick="todo('redo')">redo</a>
+        <a onclick="todo('bold')">加粗</a>
+        <a onclick="todo('italic')">倾斜</a>
+        <a onclick="todo('fontName', 'Arial')">字体</a>
+        <a
+            >字体大小
+            <select onchange="todo('fontSize', this.value)">
+                <option value="20">20px</option>
+                <option value="40">40px</option>
+            </select>
+        </a>
+
+        <a onclick="todo('foreColor', '#ff0000')">颜色</a>
+        <a onclick="todo('textDecoration', 'line-through')">删除线</a>
+        <a onclick="todo('textDecoration', 'underline')">下划线</a>
+        <a onclick="exportJSON()">导出JSON</a>
+
+        <div
+            id="app"
+            contenteditable
+            style="font-weight: bold; font-style:italic"
+        ></div>
+    </body>
+</html>
+
+<script type="module">
+    import $ from 'jquery';
+    import Vue from 'vue';
+    import RichText from '../../src/utils/rich-text/index';
+
+    window.richText = new RichText('#app', { options: {} });
+
+    window.autoSelect = function autoSelect() {
+        richText.selection.createRangeByElem($('#app')[0], true);
+    };
+    window.todo = function todo(name, value) {
+        richText.cmd.do(name, value);
+    };
+    window.exportJSON = function exportJSON() {
+        let json = richText.fromJSON($('#app').html());
+        console.log(json, richText.fromHTML(json));
+    };
+
+    window.richText.selection.on('change', function() {
+        console.log('italic', richText.cmd.queryCommandValue('italic'));
+        console.log(
+            'strikeThrough',
+            richText.cmd.queryCommandValue('strikeThrough')
+        );
+        console.log('underline', richText.cmd.queryCommandValue('underline'));
+        console.log('fontName', richText.cmd.queryCommandValue('fontName'));
+        console.log('bold', richText.cmd.queryCommandValue('bold'));
+        console.log('foreColor', richText.cmd.queryCommandValue('foreColor'));
+        console.log('fontSize', richText.cmd.queryCommandValue('fontSize'));
+    });
+</script>

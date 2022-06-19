@@ -1,0 +1,25 @@
+<div
+    class="editor-toolbar-wrap editor-toolbar-pop"
+    :class="[toolbarPosition]"
+    v-if="isRenderToolbar"
+    v-show="show"
+    :style="{
+        left: rect.left + 'px',
+        top: rect.top + 'px'
+    }"
+    @mousedown.stop="onMousedown"
+    @click.stop="onClick"
+>
+    <component
+        v-if="type"
+        :is="'toolbar-' + type"
+        :template="options.toolbarTemplates && options.toolbarTemplates[type]"
+        :$events="$events"
+        :options="options"
+        :global="global"
+        :model="model"
+        :sub-model="subModel"
+        :config="config"
+        ref="toolbar"
+    ></component>
+</div>

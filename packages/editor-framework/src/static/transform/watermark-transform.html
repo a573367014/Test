@@ -1,0 +1,20 @@
+<div
+    class="editor-watermark-transform"
+    :class="[
+        action.rotate ? 'is-rotator': '',
+    ]"
+    @mousedown.stop
+    @click.stop
+>
+    <span
+        class="editor-watermark-transform__item editor-watermark-transform__rotator"
+        :style="{
+            transform: 'rotate(' + rotate + 'deg)',
+            height: action.rotate ? activeRotatorHeight + 'px' : rotatorHeight + 'px'
+        }"
+    >
+        <b @mousedown="initRotator($event)" data-cursor="rotator" :style="{transform: 'rotate(-' + rotate + 'deg)'}">
+            <span class="text-tip">{{rotate | angle}}</span>
+        </b>
+    </span>
+</div>

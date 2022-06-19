@@ -1,0 +1,24 @@
+.eui-v2-cursor(@name, @filename, @x:10, @y:10) {
+    &.eui-v2-cursor-@{name} {
+        cursor: pointer;
+        cursor: url('./icons/@{filename}.png') @x @y, auto;
+    }
+}
+
+.eui-v2-cursor-svg(@name, @filename, @x: 10, @y: 10, @color: black) {
+    &.eui-v2-cursor-@{name} {
+        cursor: pointer;
+        cursor: svg-load('./icons/@{filename}.svg', fill=@color) @x @y, auto;
+    }
+}
+
+.eui-v2-cursor {
+    .eui-v2-cursor(straw, straw, 2, 14);
+    .eui-v2-cursor(line-straw, line-straw, 2, 14);
+    .eui-v2-cursor(drop, drop, 8, 8);
+    .eui-v2-cursor(keep, keep, 8, 8);
+    .eui-v2-cursor(pan, pan, 8, 8);
+    .eui-v2-cursor(path, path, 0, -20); 
+    .eui-v2-cursor(eraser, eraser, 8, 8);
+    .eui-v2-cursor-svg(drop-black, drop, 5, 1, black);
+}

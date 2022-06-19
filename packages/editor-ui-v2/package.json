@@ -1,0 +1,108 @@
+{
+    "version": "1.0.0",
+    "name": "@gaoding/editor-ui-v2",
+    "description": "A poster editor based on Vue.js",
+    "author": "xuebi",
+    "license": "UNLICENSED",
+    "repository": {
+        "type": "git",
+        "url": "git@git.huanleguang.com:danchaofan/gd-editor.git"
+    },
+    "scripts": {
+        "dev": "npx i18n build -w & npm run build:icon && gdc serve --config ./demo/vpe/gd.config.js",
+        "dev:three": "npm run build:icon && webpack-dev-server --config ./demo/three/webpack.config.js --mode development",
+        "dev:illusion": "npm run build:icon && webpack-dev-server --config ./demo/illusion/webpack.config.js --mode development",
+        "build": "npm run build:icon && npm run build:js",
+        "build:js": "node scripts/build.js",
+        "build:icon": "node scripts/build_icon.js",
+        "changelog": "node scripts/changelog.js",
+        "analyse": "cross-env ANALYSE_BUNDLE=true npm run dev",
+        "release": "./scripts/release.sh",
+        "lint": "eslint src && eslint demo",
+        "link": "npm run build && node scripts/link.js",
+        "link2": "node scripts/link2.js",
+        "docs:dev": "npm run build:icon && vuepress dev docs",
+        "docs:build": "npm run build:icon && vuepress build docs",
+        "coverage": "nyc report | tee coverage-report.md",
+        "check-coverage": "nyc check-coverage",
+        "publish-hlg": "npm publish --registry https://npm.huanleguang.com",
+        "publish-gd": "npm publish --registry https://registry-npm.gaoding.com"
+    },
+    "maintainers": [
+        {
+            "email": "juanbai@gaoding.com",
+            "name": "juanbai"
+        },
+        {
+            "email": "facai@gaoding.com",
+            "name": "facai"
+        },
+        {
+            "email": "liulangren@gaoding.com",
+            "name": "liulangren"
+        },
+        {
+            "email": "kuake@gaoding.com",
+            "name": "kuake"
+        }
+    ],
+    "main": "dist/index.js",
+    "files": [
+        "README.md",
+        "dist",
+        "src"
+    ],
+    "dependencies": {
+        "@gaoding/color-alchemy": "1.0.0",
+        "@gaoding/editor-utils": "workspace:*",
+        "@gaoding/gd-antd": "^2.5.4",
+        "@gaoding/vue-i18next": "^1.3.8",
+        "@gaoding/editor-framework": "workspace:*",
+        "@vue/component-compiler": "4.1.0",
+        "justified-layout": "3.0.0",
+        "lodash": "^4.17.15",
+        "lru_map": "^0.3.3",
+        "tinycolor2": "^1.4.1",
+        "vue": "^2.6.11",
+        "vue-color": "2.7.0",
+        "vue-router": "^3.0.6"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.17.10",
+        "@babel/core": "^7.18.5",
+        "@babel/plugin-proposal-function-sent": "^7.5.0",
+        "@babel/plugin-proposal-throw-expressions": "^7.2.0",
+        "@babel/preset-env": "^7.18.2",
+        "@babel/runtime": "^7.18.3",
+        "@gaoding/editor-elements": "workspace:*",
+        "@gdcli/cli": "^2.3.21",
+        "@vue/babel-helper-vue-jsx-merge-props": "^1.2.1",
+        "@vue/component-compiler": "4.1.0",
+        "@vue/composition-api": "^1.2.4",
+        "babel-loader": "^8.2.5",
+        "babel-plugin-add-module-exports": "^1.0.2",
+        "babel-plugin-lodash": "3.3.4",
+        "babel-plugin-transform-inline-environment-variables": "^0.4.3",
+        "babel-plugin-transform-remove-console": "^6.9.4",
+        "babel-preset-jsx": "link:@@vue/babel-preset-jsx",
+        "core-js": "^3.23.1",
+        "html-loader": "^0.4.4",
+        "less-loader": "^11.0.0",
+        "postcss-inline-svg": "^4.1.0",
+        "postcss-loader": "^7.0.0",
+        "regenerator-runtime": "^0.13.9",
+        "style-loader": "^3.3.1",
+        "style-resources-loader": "^1.5.0",
+        "svg-sprite": "^1.5.0",
+        "svg-url-loader": "^7.1.1",
+        "ts-loader": "^9.3.0",
+        "url-loader": "^4.1.1",
+        "vue-loader": "15",
+        "vue-template-compiler": "^2.6.11",
+        "worker-loader": "^3.0.0"
+    },
+    "peerDependencies": {
+        "@vue/composition-api": "^1.2.4",
+        "vue": "^2.6.14"
+    }
+}

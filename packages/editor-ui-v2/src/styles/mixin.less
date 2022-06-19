@@ -1,0 +1,156 @@
+
+
+.dropdown-button__icon(@font-color) {
+    .eui-v2-dropdown-button__suffix__icon {
+        border-color: @font-color transparent transparent;
+    }
+}
+
+.eui-v2-button(@name, @color, @hover-color, @active-color, @font-color:white) {
+    .eui-v2-button {
+        &--@{name} {
+            color: @font-color;
+            background-color: @color;
+            border-color: @color;
+
+            &:hover {
+                color: @font-color;
+                background-color: @hover-color;
+                border-color: @hover-color;
+                .dropdown-button__icon(@font-color);
+
+            }
+
+            &:active, &.activated {
+                color: @font-color;
+                background-color: @active-color;
+                border-color: @active-color;
+                .dropdown-button__icon(@font-color);
+            }
+
+            &:disabled {
+                opacity: .6;
+                color: @font-color;
+                background-color: @color;
+                border-color: @color;
+                .dropdown-button__icon(@font-color);
+            }
+
+            .dropdown-button__icon(@font-color);
+        }
+
+        &--@{name}--outline {
+            color: @color;
+            background-color: #fbfbfe;
+            border-color: fade(@color, 70%);
+
+            &:hover {
+                color: @hover-color;
+                background-color: #fbfbfe;
+                border-color: @hover-color;
+                .dropdown-button__icon(@hover-color);
+
+            }
+
+            &:active, &.activated {
+                color: @active-color;
+                background-color: #fbfbfe;
+                border-color: @active-color;
+                .dropdown-button__icon(@active-color);
+
+            }
+
+            &:disabled {
+                opacity: .6;
+                color: @color;
+                background-color: #fbfbfe;
+                border-color: @color;
+                .dropdown-button__icon(@color);
+            }
+
+            .dropdown-button__icon(@color);
+        }
+
+        &--@{name}--clear {
+            color: @color;
+            background-color: transparent;
+            border-color: transparent;
+
+            &:hover {
+                color: @hover-color;
+                background-color: transparent;
+                border-color: transparent;
+                .dropdown-button__icon(@hover-color);
+
+            }
+
+            &:active, &.activated {
+                color: @active-color;
+                background-color: transparent;
+                border-color: transparent;
+                .dropdown-button__icon(@active-color);
+
+            }
+
+            &:disabled {
+                opacity: .6;
+                color: @color;
+                background-color: transparent;
+                border-color: transparent;
+                .dropdown-button__icon(@color);
+            }
+
+            .dropdown-button__icon(@color);
+        }
+    }
+}
+
+.eui-v2-button-size(@name, @scale) {
+    .eui-v2-button {
+        &--@{name} {
+            font-size: 14px * @scale;
+            line-height: 20px * @scale;
+            padding: 10px * @scale 16px * @scale;
+
+            &.eui-v2-button {
+                &__icon--block {
+                    .eui-v2-icon {
+                        font-size: 18px * @scale;
+                        line-height: 18px * @scale;
+                        margin: 0 auto 8px * @scale;
+                    }
+                }
+
+                &__icon--only {
+                    padding: 12px * @scale 16px * @scale;
+                    font-size: 16px * @scale;
+                }
+
+                &__icon--left,
+                &__icon--right {
+                    .eui-v2-icon {
+                        font-size: 20px * @scale;
+                    }
+                }
+
+                &__icon--left {
+                    .eui-v2-icon {
+                        margin-right: 6px * @scale;   
+                    }
+                }
+        
+                &__icon--right {
+                    .eui-v2-icon {
+                        margin-left: 6px * @scale;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.transparent-background(@size: 12px, @opacity: 1) {
+    background-image: linear-gradient(to top right, rgba(204,204,204, @opacity) 25%, transparent 25%, transparent 75%, rgba(204,204,204,@opacity) 75%, rgba(204,204,204,@opacity)), linear-gradient(to top right, rgba(204,204,204,@opacity) 25%, transparent 25%, transparent 75%, rgba(204,204,204,@opacity) 75%, rgba(204,204,204,@opacity));
+    background-size: @size @size;
+    background-position: 0 0, @size/2 @size/2;
+}

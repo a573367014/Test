@@ -36,8 +36,8 @@
     },
     "dependencies": {
         "@gaoding/chart-render": "^0.0.18",
-        "@gaoding/editor-framework": "8.3.0-alpha.4",
-        "@gaoding/editor-utils": "1.2.5",
+        "@gaoding/editor-framework": "workspace:*",
+        "@gaoding/editor-utils": "workspace:*",
         "@gaoding/three-font-parser": "0.4.2",
         "@gaoding/vue-i18next": "^1.3.8",
         "@handsontable/vue": "4.1.1",

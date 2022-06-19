@@ -1,6 +1,5 @@
 /* eslint-disable */
 /* Zepto v1.2.0 - zepto event ajax form ie - zeptojs.com/license */
-/* eslint-disable */
 let Zepto;
 (function (global, factory) {
     if (typeof define === 'function' && define.amd) {

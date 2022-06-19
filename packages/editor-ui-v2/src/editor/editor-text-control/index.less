@@ -1,0 +1,125 @@
+.eui-v2-editor-text-control {
+    &__popup {
+        background: white;
+        border-radius: @button-border-radius;
+        border: 1px solid @border-color;
+        box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.06);
+        box-sizing: border-box;
+        height: 163px;
+
+        &--col {
+            position: absolute;
+            left: 12px;
+            top: 12px;
+            right: 12px;
+            bottom: 12px;
+
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        &--row {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            &--center {
+                justify-content: center;
+            }
+
+            &--between {
+                justify-content: space-between;
+            }
+        }
+
+        &__label {
+            font-size: 14px;
+            line-height: 20px;
+            color: @normal-color;
+        }
+
+        &__line-box {
+            position: absolute;
+            left: 36px;
+            top: 27px;
+            right: 36px;
+            bottom: 27px;
+            z-index: 0;
+            border: 1px solid @border-color;
+            border-radius: @button-border-radius;
+        }
+
+        input {
+            background: white;
+            text-align: center;
+            border: 1px solid transparent;
+            outline: none;
+            font-size: 14px;
+            line-height: 18px;
+            width: 47px;
+            padding: 6px;
+            border-radius: @button-border-radius;
+            box-sizing: border-box;
+            cursor: col-resize;
+
+            &:focus {
+                border-color: @border-color;
+                cursor: text;
+            }
+
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+            &[type='number'] {
+                -moz-appearance: textfield;
+            }
+        }
+
+        .eui-v2-buttons-bar--large {
+            height: 44px;
+        }
+    }
+
+    .eui-v2-list-buttons-bar {
+        .eui-v2-button {
+            width: 25%;
+            font-size: 16px;
+            &.activated {
+                z-index: 1;
+            }
+
+            .eui-v2-icon {
+                position: relative;
+                top: 2px;
+            }
+        }
+        .eui-v2-button__container {
+            text-align: center;
+        }
+    }
+}
+.e-ui-input-style-menus {
+    margin-left: -78px;
+}
+
+.e-ui-input-style-menus,
+.e-ui-align-style-menus {
+    .eui-v2-dropdown-menu {
+        line-height: 1.5;
+        svg {
+            margin-right: 8px;
+            color: #33383e;
+        }
+        .eui-v2-dropdown-menu__content {
+            display: flex;
+            align-items: center;
+        }
+    }
+    .eui-v2-dropdown-menu.activated {
+        background-color: #f6f7f9;
+    }
+}

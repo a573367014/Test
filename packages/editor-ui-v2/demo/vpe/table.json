@@ -1,0 +1,393 @@
+{
+    "version": "7.2.1",
+    "type": "poster",
+    "global": {
+        "zoom": 0.48609077598828704,
+        "dpi": 72,
+        "unit": "px",
+        "showWatermark": false,
+        "referenceLines": [],
+        "layout": {
+            "height": 768,
+            "width": 1366,
+            "backgroundImage": null,
+            "backgroundColor": "#ffffff00",
+            "backgroundImageInfo": {
+                "opacity": 1,
+                "width": 100,
+                "height": 100,
+                "transform": {
+                    "a": 1,
+                    "b": 0,
+                    "c": 0,
+                    "d": 1,
+                    "tx": 0,
+                    "ty": 0
+                }
+            },
+            "backgroundRepeat": "no-repeat",
+            "backgroundSize": [
+                0,
+                0
+            ],
+            "watermarkEnable": false
+        },
+        "metaInfo": null,
+        "cover": null,
+        "watermarkEnable": false
+    },
+    "layouts": [
+        {
+            "uuid": "b151d12d-88b3-477c-8bcf-f4ac4c9cf95b",
+            "elements": [
+                {
+                    "uuid": "b4ba72fc-1fa3-4189-a8ad-22b07724c267",
+                    "type": "table",
+                    "title": "",
+                    "category": "",
+                    "opacity": 1,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "width": 542,
+                    "height": 267,
+                    "left": 80.88410689170189,
+                    "top": 35.01677918424758,
+                    "transform": {
+                        "a": 1,
+                        "b": 0,
+                        "c": 0,
+                        "d": 1,
+                        "tx": 0,
+                        "ty": 0
+                    },
+                    "boxShadow": null,
+                    "resize": 7,
+                    "dragable": true,
+                    "rotatable": true,
+                    "editable": true,
+                    "frozen": false,
+                    "hidden": false,
+                    "lock": false,
+                    "borderRadius": 0,
+                    "filter": {
+                        "contrast": 0,
+                        "sharpness": 0,
+                        "hueRotate": 0,
+                        "saturate": 0,
+                        "brightness": 0,
+                        "gaussianBlur": 0,
+                        "temperature": 0,
+                        "tint": 0
+                    },
+                    "watermarkEnable": false,
+                    "metaInfo": {
+                        "materials": []
+                    },
+                    "linkId": "",
+                    "groupable": true,
+                    "flex": null,
+                    "backgroundColor": null,
+                    "backgroundEffect": null,
+                    "border": null,
+                    "blendMode": null,
+                    "maskInfo": {
+                        "enable": false,
+                        "showSelf": false,
+                        "imageUrl": "",
+                        "effectedResult": {
+                            "width": 0,
+                            "height": 0,
+                            "left": 0,
+                            "top": 0
+                        }
+                    },
+                    "transitionIn": null,
+                    "transitionOut": null,
+                    "animations": [],
+                    "fontFamily": "SourceHanSansSC-Regular",
+                    "tableData": {
+                        "cells": [
+                            [
+                                {
+                                    "content": "r1c1",
+                                    "styles": [
+                                        "001"
+                                    ]
+                                },
+                                {
+                                    "content": "r1c2",
+                                    "styles": [
+                                        "001"
+                                    ]
+                                },
+                                {
+                                    "content": "r1c3",
+                                    "styles": [
+                                        "001"
+                                    ]
+                                },
+                                {
+                                    "content": "r1c4",
+                                    "styles": [
+                                        "001"
+                                    ]
+                                },
+                                {
+                                    "content": "r1c5",
+                                    "styles": [
+                                        "001"
+                                    ]
+                                },
+                                {
+                                    "content": "r1c6",
+                                    "styles": [
+                                        "001"
+                                    ]
+                                }
+                            ],
+                            [
+                                {
+                                    "content": "r2c1",
+                                    "styles": [
+                                        "001"
+                                    ]
+                                },
+                                {
+                                    "content": "r2c2",
+                                    "styles": [
+                                        "001"
+                                    ]
+                                },
+                                {
+                                    "content": "r2c3",
+                                    "styles": [
+                                        "001"
+                                    ]
+                                },
+                                {
+                                    "content": "r2c4",
+                                    "styles": [
+                                        "001"
+                                    ]
+                                },
+                                {
+                                    "content": "r2c5",
+                                    "styles": [
+                                        "001"
+                                    ]
+                                },
+                                {
+                                    "content": "r2c6",
+                                    "styles": [
+                                        "001"
+                                    ]
+                                }
+                            ],
+                            [
+                                {
+                                    "content": "r3c1",
+                                    "styles": [
+                                        "001"
+                                    ]
+                                },
+                                {
+                                    "content": "r3c2",
+                                    "styles": [
+                                        "001"
+                                    ]
+                                },
+                                {
+                                    "content": "r3c3",
+                                    "styles": [
+                                        "001"
+                                    ]
+                                },
+                                {
+                                    "content": "r3c4",
+                                    "styles": [
+                                        "001"
+                                    ]
+                                },
+                                {
+                                    "content": "r3c5",
+                                    "styles": [
+                                        "001"
+                                    ]
+                                },
+                                {
+                                    "content": "r3c6",
+                                    "styles": [
+                                        "001"
+                                    ]
+                                }
+                            ],
+                            [
+                                {
+                                    "content": "r4c1",
+                                    "styles": [
+                                        "001"
+                                    ]
+                                },
+                                {
+                                    "content": "r4c2",
+                                    "styles": [
+                                        "001"
+                                    ]
+                                },
+                                {
+                                    "content": "r4c3",
+                                    "styles": [
+                                        "001"
+                                    ]
+                                },
+                                {
+                                    "content": "r4c4",
+                                    "styles": [
+                                        "001"
+                                    ]
+                                },
+                                {
+                                    "content": "r4c5",
+                                    "styles": [
+                                        "001"
+                                    ]
+                                },
+                                {
+                                    "content": "r4c6",
+                                    "styles": [
+                                        "001"
+                                    ]
+                                }
+                            ],
+                            [
+                                {
+                                    "content": "r5c1",
+                                    "styles": [
+                                        "001"
+                                    ]
+                                },
+                                {
+                                    "content": "r5c2",
+                                    "styles": [
+                                        "001"
+                                    ]
+                                },
+                                {
+                                    "content": "r5c3",
+                                    "styles": [
+                                        "001"
+                                    ]
+                                },
+                                {
+                                    "content": "r5c4",
+                                    "styles": [
+                                        "001"
+                                    ]
+                                },
+                                {
+                                    "content": "r5c5",
+                                    "styles": [
+                                        "001"
+                                    ]
+                                },
+                                {
+                                    "content": "r5c6",
+                                    "styles": [
+                                        "001"
+                                    ]
+                                }
+                            ]
+                        ],
+                        "rows": [
+                            {
+                                "height": 53
+                            },
+                            {
+                                "height": 54
+                            },
+                            {
+                                "height": 53
+                            },
+                            {
+                                "height": 54
+                            },
+                            {
+                                "height": 53
+                            }
+                        ],
+                        "cols": [
+                            {
+                                "width": 90
+                            },
+                            {
+                                "width": 90
+                            },
+                            {
+                                "width": 90
+                            },
+                            {
+                                "width": 90
+                            },
+                            {
+                                "width": 90
+                            },
+                            {
+                                "width": 90
+                            }
+                        ],
+                        "styles": [
+                            [
+                                "001",
+                                {
+                                    "fontSize": 20,
+                                    "backgroundColor": "#ff0000ff",
+                                    "color": "#ffffffff"
+                                }
+                            ],
+                            [
+                                "002",
+                                {
+                                    "fontSize": 30,
+                                    "backgroundColor": "#008000ff",
+                                    "color": "#333333ff"
+                                }
+                            ]
+                        ]
+                    },
+                    "contents": null,
+                    "content": null,
+                    "version": "7.2.1",
+                    "imageUrl": "https://gd-filems.dancf.com/mcm79j/mcm79j/98184/153fb48e-0e77-4037-bbbc-787598885618578.png",
+                    "_currentRange": null
+                }
+            ],
+            "title": "",
+            "backgroundEffectImage": null,
+            "background": {
+                "color": "#ffffffff",
+                "watermarkEnable": false
+            },
+            "backgroundMask": {
+                "color": "#000000ff",
+                "opacity": 0.7
+            },
+            "height": 768,
+            "width": 1366,
+            "mosaic": null,
+            "border": null,
+            "className": null,
+            "repeatId": null,
+            "repeatGroup": null,
+            "metaInfo": null,
+            "watermarkEnable": false,
+            "userAdded": false,
+            "top": 0,
+            "backgroundColor": "#ffffffff",
+            "backgroundWatermarkEnable": false
+        }
+    ]
+}

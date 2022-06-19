@@ -15,7 +15,8 @@
     "declarationDir": "types-dist",
     "emitDeclarationOnly": true,
     "declaration": true,
-    "rootDir": "./src"
+    "rootDir": "./src",
+    "allowJs": true
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
   "references": [{ "path": "./tsconfig.node.json" }]

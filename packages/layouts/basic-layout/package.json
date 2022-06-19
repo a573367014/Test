@@ -1,0 +1,25 @@
+{
+  "name": "@gaoding-es/basic-layout",
+  "version": "0.0.2",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./dist/index.js",
+    "./vue2-adapter": "./dist/vue2-adapter.js"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "pnpm web-builder build --watch",
+    "build": "pnpm web-builder build --no-clean",
+    "prepublishOnly": "pnpm run build"
+  },
+  "devDependencies": {
+    "@web-widget/container": "^0.0.25"
+  },
+  "license": "MIT"
+}

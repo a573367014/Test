@@ -19,9 +19,12 @@
         "packages/**/**.ts",
         "packages/**/**.vue",
         "packages/**/**.d.ts",
-        "app/**/*.vue",
-        "app/**/*.ts",
-        "app/**/*.d.ts",
+        "apps/**/*.vue",
+        "apps/**/*.ts",
+        "apps/**/*.d.ts",
+        "widgets/**/*.vue",
+        "widgets/**/*.ts",
+        "widgets/**/*.d.ts",
         "env.d.ts"
     ],
     "exclude": ["test", "dist", "node_modules", "**/*spec.ts"]

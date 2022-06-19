@@ -840,9 +840,9 @@ export class YBinding {
 
         // TODO: 优化日志堆栈，尽可能输出更多信息
         let orignalTraceLimit;
-        if (Error.stackTraceLimit) {
-            orignalTraceLimit = Error.stackTraceLimit;
-            Error.stackTraceLimit = Infinity;
+        if ((Error as any).stackTraceLimit) {
+            orignalTraceLimit = (Error as any).stackTraceLimit;
+            (Error as any).stackTraceLimit = Infinity;
         }
 
         try {
@@ -882,8 +882,8 @@ export class YBinding {
         }
 
         // TODO: 优化日志堆栈，尽可能输出更多信息
-        if (Error.stackTraceLimit) {
-            Error.stackTraceLimit = orignalTraceLimit;
+        if ((Error as any).stackTraceLimit) {
+            (Error as any).stackTraceLimit = orignalTraceLimit;
         }
 
         this.yTemplet.observeDeep(this._remoteObserver);

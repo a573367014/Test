@@ -2,8 +2,7 @@
     "pipeline": {
         "build": {
             "dependsOn": ["^build"],
-            "outputs": ["dist/**", ".next/**"],
-            "ignore": "packages/gd-eui/gd-eui-doc/typedoc"
+            "outputs": ["dist/**", ".next/**"]
         },
         "lint": {
             "outputs": []

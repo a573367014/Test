@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "path": "/cdm/*",
+      "element": "web-widget",
+      "properties": {
+        "import": "@gaoding-es/cdm",
+        "rendertarget": "light"
+      }
+    },
+    {
+      "path": "/dam/*",
+      "element": "web-widget",
+      "properties": {
+        "import": "@gaoding-es/dam",
+        "rendertarget": "light"
+      }
+    },
+    {
+      "path": "/enterprise/*",
+      "element": "web-widget",
+      "properties": {
+        "import": "@gaoding-es/enterprise",
+        "rendertarget": "light"
+      }
+    }
+  ]
+}

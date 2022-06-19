@@ -1,6 +1,6 @@
 import * as Y from '@gaoding/yjs';
 import type { IVPEditor, ILayoutModel, IGroupElementModel, ElementModel, VPEAction, UID, ITempletModel } from '../../types/editor';
-import type { YElement, YGlobal, YLayout, YUrlMap, YTemplet, YActionLogs } from '../../types/y';
+import type { YElement, YGlobal, YLayout, YUrlMap, yFallbackMap, YTemplet, YActionLogs } from '../../types/y';
 export declare function logVPEAction(...args: unknown[]): void;
 export declare class YBinding {
     doc: Y.Doc;
@@ -8,6 +8,7 @@ export declare class YBinding {
     undoMgr: Y.UndoManager;
     yTemplet: YTemplet;
     yUrlMap: YUrlMap;
+    yFallbackMap: yFallbackMap;
     yActionLogs: YActionLogs;
     config: {
         transactable: boolean;

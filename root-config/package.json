@@ -1,0 +1,36 @@
+{
+  "name": "@gaoding-es/root-config",
+  "version": "0.0.0",
+  "description": "",
+  "license": "MIT",
+  "exports": {
+    "./importmap.json": "./importmap.json",
+    "./index.html": "./index.html",
+    "./routemap.json": "./routemap.json"
+  },
+  "scripts": {
+    "build": "pnpm cross-env NODE_ENV=production npm run generator",
+    "dev": "pnpm cross-env NODE_ENV=development npm run generator && npm run dev:serve",
+    "dev:serve": "web-dev-server --app-index index.html",
+    "generator": "npm run generator-importmap && npm run generator-html",
+    "generator-html": "node scripts/generator-html.mjs",
+    "generator-importmap": "node scripts/generator-importmap.mjs"
+  },
+  "dependencies": {
+    "@gaoding-es/cdm": "workspace:*",
+    "@gaoding-es/dam": "workspace:*",
+    "@gaoding-es/enterprise": "workspace:*",
+    "@growing-web/bootstrap": "workspace:*"
+  },
+  "devDependencies": {
+    "@growing-web/wpm": "^0.1.0",
+    "@web/dev-server": "^0.1.31",
+    "dotenv": "^16.0.1",
+    "fs-extra": "^10.1.0",
+    "koa-proxies": "0.12.2",
+    "html-minifier-terser": "^7.0.0-alpha.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

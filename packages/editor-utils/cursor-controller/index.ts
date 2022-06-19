@@ -1,4 +1,4 @@
-import type { IVPEditor } from '@gaoding/editor-framework/src/types/editor';
+import type { IEditor as IVPEditor } from '../types/editor';
 import { cloneDeep, isEqual } from 'lodash';
 import { CommonCursorPreset, ShapeCursorPreset, ICursorDefinition } from './presets';
 import {

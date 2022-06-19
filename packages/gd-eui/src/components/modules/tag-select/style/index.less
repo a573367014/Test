@@ -1,0 +1,47 @@
+@import '../../../../style/themes/index.less';
+
+.ge-tag-select {
+    margin-bottom: -4px;
+    &__tag {
+        background-color: @gray-1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        max-width: 100%;
+        color: @gray-9;
+        padding: 6px 8px;
+        margin-right: 4px;
+        border-radius: 4px;
+        font-size: 12px;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        transition: background-color 0.3s, color 0.3s;
+        margin-bottom: 4px;
+        &:hover {
+            background-color: @gray-4;
+        }
+        &__handler {
+            display: inline-flex;
+            align-items: center;
+            svg {
+                transition: transform 0.3s;
+            }
+        }
+        &--disabled {
+            pointer-events: none;
+            cursor: default;
+            color: @gray-5 !important;
+        }
+        &--active,
+        &--active:hover {
+            background-color: @primary-color;
+            color: #fff;
+        }
+    }
+    &--expand &__tag__handler {
+        &__icon {
+            transform: rotateZ(-180deg);
+        }
+    }
+}

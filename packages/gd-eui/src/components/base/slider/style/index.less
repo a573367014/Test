@@ -1,0 +1,182 @@
+@import '../../../../style/themes/index.less';
+
+.ge-slider {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    min-width: 200px;
+    &__prefix {
+        margin-right: 20px;
+    }
+    &__suffix {
+        margin-left: 20px;
+    }
+    &__select {
+        display: inline-flex;
+        align-items: center;
+        white-space: nowrap;
+        font-size: 13px;
+        color: @gray-9;
+        margin-left: 12px;
+        &:hover {
+            color: @gray-9;
+        }
+        &-menu {
+            .active {
+                color: @primary-6;
+            }
+        }
+    }
+    .slider_input {
+        border-color: transparent;
+        font-size: 13px;
+        margin-left: 12px;
+        padding: 4px;
+        width: 48px;
+        height: 28px;
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+        }
+        &:hover {
+            border-color: transparent;
+            background-color: #f6f7f9;
+        }
+        &:focus {
+            box-shadow: none;
+            border-color: #2254f4;
+            background-color: #fff;
+        }
+    }
+    &__head-text,
+    &__tail-text {
+        display: inline-block;
+        font-size: 13px;
+        color: @gray-9;
+        user-select: none;
+    }
+    &__head-text {
+        &--limit-label-width {
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+    }
+    &__tail-text {
+        min-width: 30px;
+    }
+    &__head-text {
+        // margin: 0 27px 0 0;
+        white-space: nowrap;
+        user-select: none;
+    }
+    &__multi-line {
+        width: 100%;
+        padding-bottom: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        user-select: none;
+    }
+    &__track {
+        position: relative;
+        display: flex;
+        height: 2px;
+        border-radius: 15px;
+        cursor: pointer;
+        &.disabled {
+            cursor: not-allowed;
+            z-index: 5;
+            .ge-slider__button-wrapper {
+                cursor: not-allowed;
+            }
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            top: -8px;
+            height: 16px;
+            width: 100%;
+            background: transparent;
+        }
+        &__mark {
+            position: absolute;
+            bottom: -5px;
+            left: 0px;
+            height: 4px;
+            width: 100%;
+            &__item {
+                position: absolute;
+                bottom: -10px;
+                display: inline-block;
+                height: 4px;
+                width: 1px;
+                background: @gray-6;
+                cursor: pointer;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: -5px;
+                    left: -10px;
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+                    background: transparent;
+                    pointer-events: none;
+                }
+            }
+        }
+    }
+    &__bar {
+        position: absolute;
+        z-index: 2;
+        border-radius: 1px;
+    }
+}
+.is-vertical {
+    .ge-slider {
+        &__button-wrapper {
+            top: auto;
+            transform: translateY(50%);
+            left: -12px;
+            bottom: 0%;
+        }
+        &__head-text {
+            margin: 0 0 14px 0;
+        }
+        &__tail-text {
+            margin: 27px 0 0 0;
+        }
+    }
+}
+
+.ge-slider__button-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: -12px;
+    left: 0%;
+    transform: translateX(-50%);
+    background: transparent;
+    z-index: 2;
+    .ge-slider__button {
+        width: 14px;
+        height: 14px;
+        background: @white;
+        border-radius: 50%;
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+        &:hover {
+            transform: scale(1.2);
+        }
+
+    }
+    &:hover {
+        cursor: grab;
+    }
+    &--dragging {
+        cursor: grabbing !important;
+    }
+}

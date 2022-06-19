@@ -1,0 +1,34 @@
+@import '../../../../style/themes/index.less';
+
+.ge-layout-ratio-popover {
+    &__item {
+        height: 40px;
+        width: 212px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 9px 16px;
+        cursor: pointer;
+        &__left {
+            display: flex;
+            align-items: center;
+            &-title {
+                margin-left: 16px;
+            }
+        }
+        &__active {
+            color: @primary-6;
+            &-icon {
+                justify-self: end;
+            }
+        }
+        &:hover {
+            background: @primary-gd-1;
+        }
+    }
+    &__popover {
+        .gda-popover-inner-content {
+            padding: 0px;
+        }
+    }
+}

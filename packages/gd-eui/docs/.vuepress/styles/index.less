@@ -1,0 +1,22 @@
+@import url('../../../es/style/themes/index.less');
+
+body a.sidebar-link.active {
+    color: @primary-color;
+    border-left-color: @primary-color;
+}
+
+a {
+    color: @primary-color;
+}
+
+body a.sidebar-link:hover {
+    color: @primary-color;
+}
+
+body .nav-item > a:not(.external).router-link-active {
+    border-bottom: 2px solid @primary-color;
+}
+
+body .nav-item > a:not(.external):hover {
+    border-bottom: 2px solid @primary-color;
+}

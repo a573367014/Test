@@ -1,0 +1,71 @@
+@import '../../../../style/themes/index.less';
+
+.ge-composition-search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    .gda-popover {
+        width: 100%;
+        left: 0px !important;
+    }
+    &__left {
+        // position: relative;
+        display: flex;
+        align-items: center;
+        border-radius: @border-radius-base;
+        border: 1px solid @gray-3;
+        height: 40px;
+        padding: 10px;
+        transition: all 0.24s linear;
+        cursor: pointer;
+        width: 40px;
+
+        &--fill {
+            width: 100%;
+        }
+        &--content {
+            display: inline-block;
+            flex: 1;
+            min-width: 100px;
+            color: @gray-9;
+            font-size: 14px;
+            margin-left: 6px;
+        }
+        &--menu {
+            font-size: 20px;
+        }
+        &--down {
+            font-size: 16px;
+        }
+    }
+
+    &__right {
+        position: relative;
+        margin-left: 8px;
+        flex-basis: 100%;
+        transition: all 0.24s linear;
+        cursor: pointer;
+        &--blur {
+            flex-basis: 40px;
+            .gda-input-affix-wrapper {
+                .gda-input-suffix {
+                    display: none;
+                }
+                .gda-input:not(:first-child) {
+                    padding-left: 26px;
+                }
+                .gda-input:not(:last-child) {
+                    padding-right: 12px;
+                }
+                .gda-input-prefix {
+                    left: 11px;
+                }
+            }
+        }
+    }
+    &__popover {
+        .gda-popover-arrow {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+@import '../../../../style/themes/index.less';
+
+.color-input {
+    display: flex;
+    &__color__wrap {
+        width: 116px;
+        background: @primary-gd-1;
+        border-radius: 4px;
+    }
+    &__alpha__wrap {
+        margin-left: 8px;
+        width: 56px;
+        background: @primary-gd-1;
+        border-radius: 4px;
+    }
+    &__focus {
+        height: 32px;
+        text-align: center;
+        padding: 0;
+        border: 0;
+        outline: none;
+        background: @primary-gd-1;
+        cursor: pointer;
+        &:focus {
+            cursor: text;
+            text-transform: uppercase;
+        }
+    }
+}

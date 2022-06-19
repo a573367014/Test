@@ -1,0 +1,48 @@
+{
+  "name": "gd-eui-node",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "yarn pm2:delete || echo 'no process!' && pm2 start index.js --name gd-eui-node",
+    "dev": "NODE_ENV=local ./node_modules/.bin/nodemon ./index.js",
+    "prd": "NODE_ENV=production pm2 start ./index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pm2:logs": "pm2 logs",
+    "pm2:list": "pm2 list",
+    "pm2:delete": "pm2 stop all && pm2 delete all"
+  },
+  "dependencies": {
+    "jscpd": "^3.4.5",
+    "koa": "^2.7.0",
+    "koa-body": "^4.2.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-convert": "^1.2.0",
+    "koa-json": "^2.0.2",
+    "koa-onerror": "^4.1.0",
+    "koa-router": "^7.4.0",
+    "koa2-cors": "^2.0.6",
+    "lodash": "^4.17.21",
+    "socket.io": "^4.4.1",
+    "typhonjs-escomplex": "^0.1.0",
+    "util": "^0.12.4"
+  },
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.31.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-html": "^6.1.2",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-standard": "^5.0.0",
+    "nodemon": "^1.19.1",
+    "pm2": "^5.2.0"
+  }
+}

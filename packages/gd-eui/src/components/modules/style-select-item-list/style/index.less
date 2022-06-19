@@ -1,0 +1,42 @@
+@import '../../../../style/themes/index.less';
+
+.ge-style-select-item-list {
+    &__segment {
+        display: flex;
+        flex-direction: column;
+        margin-top: 32px;
+    }
+    &__segment:first-child {
+        margin-top: 0px;
+    }
+    &__subtitle {
+        font-family: PingFang SC;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 17px;
+        color: #9da3ac;
+    }
+    &__row {
+        display: flex;
+        flex-direction: column;
+        margin-top: 16px;
+        &__items {
+            display: flex;
+        }
+        &__slider {
+            margin-top: 16px;
+        }
+    }
+    &__item {
+        &__title {
+            margin-top: 8px;
+            text-align: center;
+            font-family: PingFang SC;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 12px;
+        }
+    }
+}

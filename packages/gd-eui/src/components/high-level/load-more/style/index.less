@@ -1,0 +1,47 @@
+@import '../../../../style/themes/index.less';
+
+.ge-load-more {
+    min-height: 1px;
+    background-color: #fff;
+
+    &__nomore {
+        text-align: center;
+        width: 100%;
+    }
+
+    &__min-height {
+        min-height: 48px;
+        margin-bottom: 70px;
+    }
+
+    &__loading {
+        min-height: 48px;
+        height: auto !important;
+        display: block;
+        line-height: 48px;
+        padding: 0;
+        margin-bottom: 70px;
+        color: #888;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    &__btn {
+        position: relative;
+        border-radius: 2px;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .gdaicon-loading {
+        margin-right: 6px;
+        margin-left: -20px;
+    }
+
+    &__primary-text {
+        color: #005cf9;
+    }
+}

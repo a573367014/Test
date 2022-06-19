@@ -1,0 +1,114 @@
+@import '../../../../style/themes/index.less';
+
+.ge-dropdown-font-size {
+    position: relative;
+    width: 55px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: @primary-gd-1;
+    border: none;
+    border-radius: 6px;
+    overflow-x: auto;
+
+    &:hover {
+        border: 1px solid @primary-color;
+    }
+
+    &__input {
+        width: 100%;
+        padding: 10px 20px 10px 0px;
+        font-size: 14px;
+        line-height: 20px;
+        color: transparent;
+        background: none;
+        border: none;
+        outline: none;
+        box-shadow: none;
+        cursor: pointer;
+        font-family: initial;
+        text-align: center;
+
+        &:focus {
+            cursor: text;
+            color: @primary-gd-2;
+        }
+
+        &:disabled {
+            cursor: not-allowed;
+            color: transparent;
+        }
+
+        &-mixed {
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+    }
+
+    &__size {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 20px;
+        padding: 10px 0 10px 0px;
+        font-size: 14px;
+        line-height: 20px;
+        color: @primary-gd-2;
+        user-select: none;
+        pointer-events: none;
+        overflow: hidden;
+        text-align: center;
+        white-space: nowrap;
+        &-mixed {
+            right: 0px;
+            padding-left: 0px;
+        }
+    }
+
+    &__bts {
+        position: absolute;
+        width: 22px;
+        height: 100%;
+        top: 0px;
+        right: 0px;
+        display: flex;
+        flex-direction: column;
+        border-left: 1px solid @gray-3;
+    }
+
+    &__increase,
+    &__decrease {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        border-left: none;
+        color: @text-color;
+        cursor: pointer;
+
+        &:hover {
+            color: black;
+        }
+
+        &--disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        .gdaicon {
+            color: @gray-6;
+            font-size: 8px;
+        }
+    }
+
+    &__decrease {
+        border-top: 1px solid @gray-3;
+    }
+
+    &__menu {
+        width: 104px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+}

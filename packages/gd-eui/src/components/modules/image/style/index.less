@@ -1,0 +1,238 @@
+@import '../../../../style/themes/index.less';
+
+.ge-image__tip {
+    padding-top: 0;
+    .gda-popover-arrow {
+        display: none;
+    }
+
+    .gda-popover-inner-content {
+        padding: 0;
+    }
+}
+.ge-image__container {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: @border-radius-base;
+    cursor: pointer;
+    overflow: hidden;
+
+    &__upload {
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        background: rgba(@black, 0.65);
+        border-radius: @border-radius-base;
+        z-index: 5;
+        .gda-progress-inner {
+            background: rgba(@white, 0.2) !important;
+        }
+        &--icon {
+            position: absolute;
+            right: 6px;
+            top: 6px;
+            font-size: 20px;
+        }
+        &--retry {
+            width: 44px;
+            height: 32px;
+            text-align: center;
+            line-height: 32px;
+            color: @white;
+            border: 1px solid @white;
+            border-radius: @border-radius-base;
+            margin: 20px auto 0 auto;
+        }
+        &--status {
+            color: @white;
+            font-size: 14px;
+            width: 100%;
+            padding: 9px;
+            text-align: center;
+            &__text {
+                &--uploading {
+                    display: inline-block;
+                    margin-bottom: 11px;
+                    font-weight: 400;
+                }
+                &--error {
+                    white-space: nowrap;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+    &__skeleton {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: 4;
+        background: linear-gradient(90deg, #f2f2f2 25%, #e6e6e6 37%, #f2f2f2 63%);
+        background-size: 400% 100%;
+        -webkit-animation: gda-skeleton-loading 1.4s ease infinite;
+        animation: gda-skeleton-loading 1.4s ease infinite;
+    }
+    &__checkBox {
+        position: absolute;
+        left: 6px;
+        top: 6px;
+        z-index: 4;
+    }
+    &__check {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid @primary-color;
+        border-radius: @border-radius-base;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: @border-radius-base;
+            width: 100%;
+            height: 100%;
+            border: 2px solid @white;
+        }
+    }
+    @keyframes gda-skeleton-loading {
+        0% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    .ge-image {
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        overflow: hidden;
+        text-align: center;
+        &__img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            object-fit: contain;
+        }
+        &--default {
+            width: 120px;
+            height: auto;
+            background: #000;
+            border-radius: @border-radius-base;
+        }
+        .gdaicon {
+            font-size: 20px;
+        }
+        &:hover {
+            &::before {
+                // content: '';
+                // position: absolute;
+                // top: 0;
+                // left: 0;
+                // width: 100%;
+                // height: 100%;
+                // background: rgba(#000, 6%);
+            }
+            .ge-image__more {
+                opacity: 1;
+                transform: translateY(0);
+                transition: opacity 0.15s ease-in-out, transform 0.15s ease-in-out;
+            }
+            .ge-image-tagContent,
+            .ge-image__more,
+            .ge-image-copyright {
+                display: block;
+            }
+        }
+        &__top-left-corner {
+            position: absolute;
+            top: 6px;
+            left: 6px;
+            z-index: 4;
+        }
+        &__bottom-right-corner {
+            position: absolute;
+            right: 6px;
+            bottom: 6px;
+        }
+        &__bottom-left-corner {
+            position: absolute;
+            left: 6px;
+            bottom: 6px;
+        }
+        &__bottom-right-corner {
+            position: absolute;
+            right: 6px;
+            bottom: 6px;
+        }
+        &-copyright {
+            display: none;
+            font-size: 20px;
+        }
+        &-tagContent {
+            display: none;
+            position: absolute;
+            right: 6px;
+            bottom: 6px;
+            width: 28px;
+            height: 16px;
+        }
+        &__more {
+            opacity: 0;
+            transform: translateY(-16px);
+            position: absolute;
+            right: 6px;
+            top: 6px;
+            width: 24px;
+            height: 16px;
+            line-height: 16px;
+            text-align: center;
+            background: rgba(#000, 0.6);
+            border-radius: 15px;
+            color: #fff;
+            font-size: 16px;
+            z-index: 2;
+            &:hover {
+                background: @primary-6;
+            }
+            .gdaicon {
+                font-size: 16px;
+            }
+        }
+        &__background {
+            &--mark {
+                background-color: initial;
+                background-image: linear-gradient(
+                        45deg,
+                        rgba(0, 0, 0, 0.25098039215686274),
+                        rgba(0, 0, 0, 0.25098039215686274)
+                    ),
+                    linear-gradient(45deg, #eee 25%, transparent 0, transparent 75%, #eee 0, #eee),
+                    linear-gradient(45deg, #eee 25%, #fff 0, #fff 75%, #eee 0, #eee);
+                background-size: 12px 12px;
+                background-position: 0 0, 0 0, 6px 6px;
+            }
+        }
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+}

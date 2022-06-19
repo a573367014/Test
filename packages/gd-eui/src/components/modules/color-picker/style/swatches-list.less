@@ -1,0 +1,66 @@
+@import '../../../../style/themes/index.less';
+
+.swatches {
+    display: flex;
+    flex-direction: column;
+    min-height: 52px;
+    max-height: 116px;
+    &__dropdown {
+        display: flex;
+        align-items: center;
+        .title {
+            color: @gray-9;
+            font-weight: 500;
+            height: 20px;
+            font-size: 13px;
+            line-height: 20px; 
+            cursor: pointer;
+        }
+    }
+    &__title__wrap {
+        display: flex;
+    }
+    &__icon {
+        margin-left: 4px;
+        width: 16px;
+        height: 16px;
+    }
+    &__content {
+        display: flex;
+    }
+    &__list {
+        display: flex;
+        margin-top: 8px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        &::-webkit-scrollbar {
+            display: none;
+            width: 0px !important;
+        }
+        &__item {
+            position: relative;
+            margin-left: 7.43px;
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+            &__color {
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                z-index: 1;
+                border-radius: 4px;
+            }
+        }
+        &__item:first-child {
+            margin-left: 0px;
+        }
+    }
+    &__check__board {
+        border-radius: 4px;
+    }
+    &__menu__item {
+        width: 150px;
+    }
+}

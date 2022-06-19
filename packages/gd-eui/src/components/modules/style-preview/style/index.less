@@ -1,0 +1,40 @@
+@import '../../../../style/themes/index.less';
+
+.style-preview {
+    display: flex;
+    width: 220px;
+    padding: 12px;
+    align-items: center;
+    justify-content: space-between;
+    background: @primary-gd-1;
+    cursor: pointer;
+    &__wrap {
+        display: flex;
+        align-items: center;
+    }
+    &__title {
+        margin-left: 12px;
+        color: @gray-9;
+        font-size: 14px;
+    }
+    &__image {
+        width: 44px;
+        height: 44px;
+        background: @white;
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.04);
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .style-preview__image__icon {
+        width: 16px;
+        height: 16px;
+    }
+    .style-preview__arrow {
+        color: @gray-6;
+    }
+}

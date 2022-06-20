@@ -4,4 +4,3 @@ packages:
   - 'packages/**'
   - 'widgets/**'
   - '!**/gd-eui/**/typedoc/**'
-  - '!**/gd-eui/service/**'

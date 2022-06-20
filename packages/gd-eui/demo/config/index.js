@@ -1,7 +1,7 @@
 const ENV = {
     env: 'beta',
 };
-module.exports = {
+export default {
     VERSION: '0.0.1',
     DEBUG: false,
     DOMAIN: ENV.env === 'beta' ? 'http://localhost:3000/' : window.location.origin + '/',

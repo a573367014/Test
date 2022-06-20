@@ -1,5 +1,5 @@
 import template from './video-controls.html';
-import RangeSlider from 'vue-slider-component';
+import RangeSlider from 'vue-slider-component/lib/index';
 import ceil from 'lodash/ceil';
 import bemMixin from '../../utils/bem';
 import $ from '@gaoding/editor-utils/zepto';

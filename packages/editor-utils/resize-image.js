@@ -3,9 +3,8 @@
  */
 
 import Promise from 'bluebird';
-
-// pica 默认入口使用 ES6 语法，会导致某些打包出来的代码可能无法执行，引入 dist 包
 import Pica from 'pica';
+console.log(Pica);
 
 const resizeImage = (src, dist, options = {}) => {
     const throwError = !!options.throwError;

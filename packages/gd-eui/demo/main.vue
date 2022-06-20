@@ -122,7 +122,7 @@
 
 <script>
 import routes from './router';
-import VueJsonEditor from 'vue-json-editor';
+import VueJsonEditor from './third-party/vue-json-editor/index.vue';
 import Vue from 'vue';
 import { Button, message, Modal, Tree, Popover } from '@gaoding/gd-antd';
 import { Performance } from './utils/performance';
@@ -238,6 +238,8 @@ export default {
                 data = value;
             } else {
                 const Component = Vue.component(name);
+                if(!Component) return;
+
                 data = new Component()._props;
             }
             this.componentPendantData = data;

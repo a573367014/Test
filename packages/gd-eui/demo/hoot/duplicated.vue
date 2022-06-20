@@ -79,7 +79,7 @@
 
 <script>
 import { common } from '../api';
-import VueMonacoEditor from 'vue-monaco-editor';
+import VueMonacoEditor from '../third-party/vue-monaco-editor/index.vue';
 
 export default {
     components: {

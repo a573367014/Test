@@ -19,8 +19,11 @@ loadScript('https://unpkg.com/vconsole@latest/dist/vconsole.min.js', () => {
 Vue.use(GdEUI);
 Vue.use(VueRouter);
 
-const requireComponent = require.context('../src/components', true, /[\w-]+\.vue$/);
-requireComponent.keys().forEach((fileName) => {
+
+const requireComponent = import.meta.globEager('../src/components/*.vue');
+console.log()
+// require.context('../src/components', true, /[\w-]+\.vue$/);
+Object.keys(requireComponent).forEach((fileName) => {
     const componentConfig = requireComponent(fileName);
     let componentName = upperFirst(
         camelCase(

@@ -1,0 +1,17 @@
+{
+    "name": "@gaoding/beam",
+    "description": "A WebGL Library",
+    "repository": "https://git.gaoding.com/xuebi/beam.git",
+    "license": "UNLICENSED",
+    "source": true,
+    "version": "0.1908.5",
+    "scripts": {
+        "build": "vite build"
+    },
+    "devDependencies": {
+        "marked": "0.7.0",
+        "vite": "^2.9.9"
+    },
+    "main": "./dist/beam.cjs.js",
+    "module": "./dist/beam.es.js"
+}

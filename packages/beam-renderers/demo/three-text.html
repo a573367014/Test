@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Demo</title>
+  </head>
+  <style>
+    * { margin: auto 0; padding: 0; }
+    body { height: 100vh; }
+    #control {
+      position: fixed; top: 0; right: 0; width: 300px;
+      padding: 10px; box-sizing: border-box;
+      background: white; opacity: 0.3; color: #666;
+    }
+  </style>
+  <body>
+    <div id="control">
+      <!-- BEGIN point light 0 -->
+      <input type="color" id="color" value="#ffffff">
+      <label for="color">颜色</label> <br/>
+      <input type="range" min="-180" max="180" value="0" step="0.01" id="rotate-y">
+      <label for="rotate-y">rotate-x</label>
+      <input type="range" min="-180" max="180" value="0" step="0.01" id="rotate-x">
+      <label for="rotate-x">rotate-y</label>
+      <input type="range" min="0" max="1" value="0.5" step="0.01" id="strength">
+      <label for="strength">strength</label>
+
+      <input type="range" min="-3" max="3" value="0" step="0.01" id="cameraRotate-x">
+      <label for="cameraRotate-x">cameraRotate-x</label>
+      <input type="range" min="-3" max="3" value="0" step="0.01" id="cameraRotate-y">
+      <label for="cameraRotate-y">cameraRotate-y</label>
+      <input type="range" min="0" max="1" value="0" step="0.01" id="roughness">
+      <label for="roughness">roughness</label>
+      <input type="range" min="0" max="1" value="1" step="0.01" id="metalness">
+      <label for="metalness">metalness</label>
+      <div>
+        <input type="radio" id="left" name="textAlign" value="left" checked>
+        <label for="left">left</label>
+      </div>
+      <div>
+        <input type="radio" id="center" name="textAlign" value="center">
+        <label for="center">center</label>
+      </div>
+      <div>
+        <input type="radio" id="right" name="textAlign" value="right">
+        <label for="right">right</label>
+      </div>
+
+      <!-- END point light 0 -->
+    </div>
+    <canvas></canvas>
+    <script src="./three-text.js"></script>
+  </body>
+</html>

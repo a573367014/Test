@@ -4,7 +4,6 @@
 
 import Promise from 'bluebird';
 import Pica from 'pica';
-console.log(Pica);
 
 const resizeImage = (src, dist, options = {}) => {
     const throwError = !!options.throwError;

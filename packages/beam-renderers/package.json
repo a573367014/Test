@@ -1,0 +1,36 @@
+{
+    "name": "@gaoding/beam-renderers",
+    "version": "0.1.2",
+    "description": "an custom renderer base on beam",
+    "main": "./dist/beam-renderers.cjs.js",
+    "module": "./dist/beam-renderers.es.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "vite build",
+        "wave": "parcel ./demo/wave.html",
+        "publish-hlg": "npm publish --registry https://npm.huanleguang.com",
+        "publish-gd": "npm publish --registry https://registry-npm.gaoding.com"
+    },
+    "dependencies": {
+        "@gaoding/beam": "workspace:*",
+        "@gaoding/three-font-parser": "workspace:*",
+        "gl-matrix": "^3.0.0",
+        "lru_map": "^0.3.3",
+        "tinycolor2": "^1.4.1"
+    },
+    "author": "kuake",
+    "license": "ISC",
+    "maintainers": [
+        {
+            "name": "kuake",
+            "email": "kuake@gaoding.com"
+        }
+    ],
+    "browserslist": [
+        "last 1 Chrome versions"
+    ],
+    "devDependencies": {
+        "parcel-bundler": "^1.11.0",
+        "vite": "^2.9.9"
+    }
+}

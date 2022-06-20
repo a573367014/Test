@@ -1,0 +1,103 @@
+import pointSchema from '../point/point-schema';
+
+export default [
+    {
+        prop: 'startAngle',
+        name: '起始角度',
+        type: 'range',
+        unit: '°',
+        min: 0,
+        max: 360,
+        step: 1,
+        default: 90,
+    },
+    {
+        prop: 'allAngle',
+        name: '整圆角度',
+        type: 'range',
+        unit: '°',
+        min: 0,
+        max: 360,
+        step: 1,
+        default: 360,
+    },
+    {
+        prop: 'coordRadius',
+        name: '半径百分比',
+        type: 'ratioRange',
+        unit: '%',
+        min: 0,
+        max: 1,
+        step: 0.01,
+        default: 1,
+    },
+    {
+        prop: 'coordInnerRadius',
+        name: '内半径比例',
+        type: 'ratioRange',
+        unit: '%',
+        min: 0,
+        max: 0.99,
+        step: 0.01,
+        default: 0,
+    },
+    {
+        prop: 'shapeType',
+        name: '折线类型',
+        type: 'select',
+        options: [
+            {
+                label: '直角类型',
+                value: 'area',
+            },
+            {
+                label: '曲面类型',
+                value: 'smooth',
+            },
+        ],
+        default: 'area',
+    },
+    {
+        prop: 'lineWidth',
+        name: '折线宽度',
+        type: 'range',
+        unit: 'px',
+        min: 0,
+        max: 20,
+        default: 3,
+    },
+    {
+        prop: 'lineDash',
+        name: '虚线',
+        type: 'lineDash',
+        default: [0, 0],
+    },
+    {
+        prop: 'lineOpacity',
+        type: 'opacity',
+        unit: '%',
+        name: '透明度',
+        default: 0.8,
+    },
+    {
+        prop: 'enableArea',
+        type: 'block',
+        default: false,
+        name: '增加面积',
+        block: [
+            {
+                prop: 'areaOpacity',
+                type: 'opacity',
+                name: '透明度',
+                default: 0.7,
+            },
+        ],
+    },
+    {
+        prop: 'enablePoint',
+        type: 'block',
+        default: true,
+        name: '增加辅助点',
+        block: pointSchema,
+    },
+];

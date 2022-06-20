@@ -1,0 +1,10 @@
+.git
+.lock-wscript
+.DS_Store
+._*
+npm-debug.log
+.npmrc
+node_modules
+config.gypi
+*.orig
+package-lock.json

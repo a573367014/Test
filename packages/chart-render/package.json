@@ -1,0 +1,54 @@
+{
+    "name": "@gaoding/chart-render",
+    "version": "0.0.18",
+    "description": "g2 chart render",
+    "main": "./dist/chart-render.cjs.js",
+    "module": "./dist/chart-render.es.js",
+    "scripts": {
+        "build": "vite build",
+        "analyz": "cross-env ANALYZ_REPORT=true npm run build",
+        "lint": "eslint src --ext .js --fix",
+        "changelog": "node scripts/changelog.js",
+        "release": "sh ./scripts/release.sh",
+        "publish-gd": "npm publish --registry https://registry-npm.gaoding.com"
+    },
+    "keywords": [
+        "g2",
+        "renderer",
+        "chart"
+    ],
+    "author": "qiancong",
+    "license": "UNLICENSED",
+    "dependencies": {
+        "@antv/g2": "~3.5.17",
+        "@antv/component": "~0.3.10",
+        "wolfy87-eventemitter": "~5.1.0",
+        "tinycolor2": "^1.4.1"
+    },
+    "maintainers": [
+        {
+            "name": "qiancong",
+            "email": "qiancong@gaoding.com"
+        },
+        {
+            "name": "nuoya",
+            "email": "nuoya@gaoding.com"
+        },
+        {
+            "name": "facai",
+            "email": "facai@gaoding.com"
+        }
+    ],
+    "publishConfig": {
+        "access": "public",
+        "registry": "https://registry-npm.gaoding.com"
+    },
+    "devDependencies": {
+        "vite": "^2.9.9",
+        "vite-plugin-vue2": "^1.9.3",
+        "vue": "^2.6.14",
+        "@babel/plugin-proposal-class-properties": "^7.13.0",
+        "@babel/plugin-proposal-decorators": "^7.14.2",
+        "@rollup/plugin-babel": "^5.3.1"
+    }
+}

@@ -56,8 +56,8 @@
         "release": "./scripts/release.sh"
     },
     "dependencies": {
-        "@gaoding/beam-renderers": "^0.1.2",
-        "@gaoding/editor-illusion": "1.0.2",
+        "@gaoding/beam-renderers": "workspace:*",
+        "@gaoding/editor-illusion": "workspace:*",
         "@gaoding/editor-utils": "workspace:*",
         "@gaoding/vue-i18next": "^1.3.8",
         "@gaoding/yjs": "13.5.23-gdhotfix.1",
